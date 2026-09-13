@@ -1,0 +1,97 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "MOBIL SHC PM 220",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "ExxonMobil Petroleum & Chemical BV",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+        },
+        {
+          "page": 2,
+          "quote": "3.2. MIXTURES This material is defined as a mixture."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "value": ">225°C (437°F) [ASTM D-92]",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 4,
+          "quote": "FLAMMABILITY PROPERTIES Flash Point [Method]: >225°C (437°F) [ASTM D-92]"
+        }
+      ]
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": []
+  },
+  "usage": {
+    "input_tokens": 7990,
+    "output_tokens": 620,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 15.084396899997955,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

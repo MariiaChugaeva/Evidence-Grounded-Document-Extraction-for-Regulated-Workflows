@@ -1,0 +1,130 @@
+{
+  "document": "sds_14.pdf",
+  "split": "dev",
+  "note": "Veterinary vaccine. The flash point is a qualitative assertion rather than a temperature, which the ontology treats as PRESENT: the document does state something substantive about the property. Several ingredients are biological toxoids with no CAS number.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Dalgety 6 in 1 B12 Vaccine",
+      "evidence": [{ "page": 1, "text": "Trade name Dalgety 6 in 1 B12 Vaccine" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Nutrien Ag Solutions Limited",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Details of the supplier of the safety data sheet Nutrien Ag Solutions Limited"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 1, "text": "Mixture of substances as listed below." },
+        {
+          "page": 1,
+          "text": "Description of the mixture Mixture of substances listed below with ingredients not classified as hazardous."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "Mixture of substances as listed below." }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "Mixture of substances as listed below." }]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "Mixture of substances as listed below." }]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "does not flash up to boiling point",
+      "evidence": [
+        { "page": 4, "text": "Flash point does not flash up to boiling point" }
+      ],
+      "note": "Qualitative value: no temperature is given, so the value is compared as canonical text rather than as a quantity."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [
+      { "page": 1, "text": "Name of substance CAS No Wt% Classification acc. to GHS" }
+    ],
+    "items": [
+      {
+        "name": "Acetatocobalamin",
+        "cas_number": "22465-48-1",
+        "cas_state": "PRESENT",
+        "concentration": "\u2264 0.2",
+        "evidence": [{ "page": 1, "text": "Acetatocobalamin 22465-48-1" }]
+      },
+      {
+        "name": "Clostridium septicum toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "\u2264 0.1",
+        "evidence": [{ "page": 1, "text": "Clostridium septicum toxoid" }]
+      },
+      {
+        "name": "Clostridium novyl Type B toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "\u2264 0.1",
+        "evidence": [{ "page": 1, "text": "Clostridium novyl Type B toxoid" }]
+      },
+      {
+        "name": "Clostridium tetani toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "\u2264 0.1",
+        "evidence": [{ "page": 1, "text": "Clostridium tetani toxoid" }]
+      },
+      {
+        "name": "Clostridium perfringens Type D, toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "\u2264 0.1",
+        "evidence": [{ "page": 1, "text": "Clostridium perfringens Type D, toxoid" }]
+      },
+      {
+        "name": "Clostridium chauvoei bacterin",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "\u2264 0.1",
+        "evidence": [{ "page": 1, "text": "Clostridium chauvoei bacterin" }]
+      },
+      {
+        "name": "Corynebacterium Pseudotuberculosis bacterin",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "\u2264 0.1",
+        "evidence": [
+          { "page": 1, "text": "Corynebacterium Pseudotuber- culosis bacterin" }
+        ]
+      },
+      {
+        "name": "Thimerosal",
+        "cas_number": "54-64-8",
+        "cas_state": "PRESENT",
+        "concentration": "\u2264 0.015",
+        "evidence": [{ "page": 1, "text": "Thimerosal 54-64-8" }]
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+document,field,gold_state,gold_derivation,value_cited,value_page,value_span,value_bbox,value_support,value_localized,evidence_available,evidence_read,evidence_state,evidence_value,evidence_support,verify_available,verify_support,verify_note,pipeline_joint
+sds_21.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_21.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_21.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_21.pdf,product_cas_number,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_21.pdf,molecular_weight,NO_DATA,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_21.pdf,flash_point,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_22.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_22.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_22.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_22.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_22.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_22.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_22.pdf,flash_point,NO_DATA,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_23.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_23.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_23.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,violated,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_23.pdf,product_cas_number,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_23.pdf,chemical_formula,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_23.pdf,molecular_weight,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_23.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_24.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_24.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_24.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,violated,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_24.pdf,product_cas_number,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_24.pdf,flash_point,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_25.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_25.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,violated,satisfied,False,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_25.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_25.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_25.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_25.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_25.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,True,satisfied,satisfied,satisfied,violated,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_26.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_26.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_26.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_26.pdf,product_cas_number,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_26.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_27.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_27.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_27.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,violated,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_27.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,True,violated,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_27.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,True,violated,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_27.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,True,violated,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_27.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,True,satisfied,satisfied,satisfied,violated,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_28.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_28.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_28.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,violated,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_28.pdf,product_cas_number,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_28.pdf,molecular_weight,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,no
+sds_28.pdf,flash_point,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,violated,violated,True,satisfied,,no
+sds_29.pdf,product_name,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_29.pdf,supplier_name,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,violated,satisfied,True,satisfied,,no
+sds_29.pdf,substance_or_mixture,PRESENT,EXPLICIT,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,,yes
+sds_29.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_29.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_29.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,True,satisfied,violated,violated,satisfied,False,True,True,satisfied,satisfied,satisfied,True,satisfied,premise establishes MIXTURE,yes
+sds_29.pdf,flash_point,PRESENT,EXPLICIT,True,satisfied,satisfied,satisfied,satisfied,True,True,True,satisfied,satisfied,satisfied,True,satisfied,,no

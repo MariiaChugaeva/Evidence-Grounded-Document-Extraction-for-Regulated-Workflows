@@ -1,0 +1,69 @@
+{
+  "document": "sds_24.pdf",
+  "split": "locked",
+  "note": "Locked split. Isopropyl alcohol electronics cleaner sold as \"824\" by MG Chemicals, a single substance in the DR-software WHMIS/HCS template. The trade name is the product code; the descriptive name is given under \"Other Means of Identification\". Section 1 gives the CAS number, Section 3 is headed \"Chemical characterization: Substances\" and lists the substance at 99.7 % w/w on page 3, Section 9 gives the flash point. No formula or molecular weight is mentioned. Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "824",
+      "evidence": [{ "page": 1, "text": "Trade name: 824" }],
+      "note": "\"Isopropyl Alcohol: Electronics Cleaner\" is printed as other means of identification, not as the trade name."
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MG Chemicals (Head Office)",
+      "accepted_values": ["MG Chemicals"],
+      "evidence": [{ "page": 1, "text": "Manufacturer/Supplier: MG Chemicals (Head Office)" }],
+      "note": "A distributor (Masline) is listed separately and is not the supplier of the sheet."
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SUBSTANCE",
+      "evidence": [{ "page": 2, "text": "Chemical characterization: Substances" }]
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "67-63-0",
+      "evidence": [
+        { "page": 1, "text": "CAS Number: 67-63-0" },
+        { "page": 2, "text": "67-63-0 Propan-2-ol" }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "No formula anywhere in the sheet."
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "No molecular weight anywhere in the sheet."
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "12 °C (53.6 °F)",
+      "accepted_values": ["12 °C", "53.6 °F"],
+      "evidence": [{ "page": 6, "text": "Flash point: 12 °C (53.6 °F)" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 2, "text": "CAS No. Description" }],
+    "items": [
+      {
+        "name": "Propan-2-ol",
+        "cas_number": "67-63-0",
+        "cas_state": "PRESENT",
+        "concentration": "99.7% w/w",
+        "evidence": [{ "page": 3, "text": "67-63-0 Propan-2-ol 99.7% w/w" }],
+        "note": "The Section 3 row on page 2 has no percentage; the \"Dangerous components\" entry on page 3 repeats the row with 99.7% w/w."
+      }
+    ]
+  }
+}

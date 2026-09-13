@@ -1,0 +1,83 @@
+document,field,gold_state,gold_derivation,gold_value,value_exact_native,value_exact_ocr,value_typed_native,value_typed_ocr,value_fuzzy_native,value_fuzzy_ocr,value_located_native,value_located_ocr,value_located_pages_native,value_located_pages_ocr,value_on_gold_page_native,value_on_gold_page_ocr,span_exact_native,span_exact_ocr,span_fuzzy_ocr,note
+sds_21.pdf,product_name,PRESENT,EXPLICIT,"HYDROQUINONE, CRYSTAL",yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_21.pdf,supplier_name,PRESENT,EXPLICIT,Spectrum Chemical Mfg. Corp.,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_21.pdf,substance_or_mixture,PRESENT,EXPLICIT,SUBSTANCE,yes,yes,yes,yes,yes,yes,yes,yes,2;5;7;8;9,2;5;7;8;9,yes,yes,yes,yes,yes,
+sds_21.pdf,product_cas_number,PRESENT,EXPLICIT,123-31-9,yes,yes,yes,yes,yes,yes,yes,yes,2;4;6;7;8;9,2;4;6;7;8;9,yes,yes,yes,no,no,gold span missing from ocr
+sds_21.pdf,chemical_formula,NOT_STATED,ABSENT,,,,,,,,,,,,,,,,,
+sds_21.pdf,molecular_weight,NO_DATA,EXPLICIT,,,,,,,,,,,,,,yes,yes,yes,
+sds_21.pdf,flash_point,PRESENT,EXPLICIT,165 °C / 329 °F,yes,yes,yes,yes,yes,yes,yes,yes,5,5,yes,yes,yes,yes,yes,
+sds_21.pdf,ingredient_cas:123-31-9,PRESENT,EXPLICIT,123-31-9,yes,yes,yes,yes,yes,yes,yes,yes,2;4;6;7;8;9,2;4;6;7;8;9,yes,yes,yes,no,no,gold span missing from ocr
+sds_22.pdf,product_name,PRESENT,EXPLICIT,MEDAPROTECT,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7;8;9;10;11;12;13;14,1;2;3;5;6;9;10;12;13;14,yes,yes,yes,yes,yes,
+sds_22.pdf,supplier_name,PRESENT,EXPLICIT,MEDALKAN,yes,yes,yes,yes,yes,yes,yes,yes,1,1;2;3;4;5;6;7;8;9;10;11;12;13;14,yes,yes,yes,yes,yes,
+sds_22.pdf,substance_or_mixture,PRESENT,EXPLICIT,MIXTURE,yes,yes,yes,yes,yes,yes,yes,yes,1;2;4;6;7;11;13,1;2;4;6;7;11;13,yes,yes,yes,yes,yes,
+sds_22.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_22.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_22.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_22.pdf,flash_point,NO_DATA,EXPLICIT,,,,,,,,,,,,,,yes,yes,yes,
+sds_22.pdf,ingredient_cas:2372-82-9,PRESENT,EXPLICIT,2372-82-9,yes,yes,yes,yes,yes,yes,yes,yes,3;8,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_22.pdf,ingredient_cas:7173-51-5,PRESENT,EXPLICIT,7173-51-5,yes,yes,yes,yes,yes,yes,yes,yes,3;8,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_22.pdf,ingredient_cas:69011-36-5,PRESENT,EXPLICIT,69011-36-5,yes,no,yes,yes,yes,yes,yes,no,3;8,,yes,no,yes,no,no,value not locatable in ocr; gold span missing from ocr
+sds_22.pdf,ingredient_cas:67-63-0,PRESENT,EXPLICIT,67-63-0,yes,yes,yes,yes,yes,yes,yes,yes,3;5;8;9,3;5;9,yes,yes,yes,no,no,gold span missing from ocr
+sds_22.pdf,ingredient_cas:84625-32-1,PRESENT,EXPLICIT,84625-32-1,yes,yes,yes,yes,yes,yes,yes,yes,3,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_23.pdf,product_name,PRESENT,EXPLICIT,(S)-AL 8810,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7,1;2;6;7,yes,yes,yes,yes,yes,
+sds_23.pdf,supplier_name,PRESENT,EXPLICIT,Cayman Chemical Co.,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_23.pdf,substance_or_mixture,PRESENT,EXPLICIT,SUBSTANCE,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;5;6,1;2;3;5;6,yes,yes,yes,yes,yes,
+sds_23.pdf,product_cas_number,PRESENT,EXPLICIT,1224444-55-6,yes,yes,yes,yes,yes,yes,yes,yes,1;2,1;2,yes,yes,yes,yes,yes,
+sds_23.pdf,chemical_formula,PRESENT,EXPLICIT,C24H31O4F,yes,no,yes,no,yes,no,yes,no,4,,yes,no,yes,no,yes,value not locatable in ocr; gold span missing from ocr
+sds_23.pdf,molecular_weight,PRESENT,EXPLICIT,402.5 g/mol,yes,yes,no,no,yes,yes,yes,yes,4,4,yes,yes,yes,yes,yes,
+sds_23.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,,,,,,,,,,,,,,yes,yes,yes,
+sds_23.pdf,ingredient_cas:1224444-55-6,PRESENT,EXPLICIT,1224444-55-6,yes,yes,yes,yes,yes,yes,yes,yes,1;2,1;2,yes,yes,yes,yes,yes,
+sds_24.pdf,product_name,PRESENT,EXPLICIT,824,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7;8;9;10;11;12,1;2;3;4;5;6;7;8;9;10;11;12,yes,yes,yes,yes,yes,
+sds_24.pdf,supplier_name,PRESENT,EXPLICIT,MG Chemicals (Head Office),yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_24.pdf,substance_or_mixture,PRESENT,EXPLICIT,SUBSTANCE,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;6;7;8;11;12,1;2;3;4;6;7;8;11;12,yes,yes,yes,yes,yes,
+sds_24.pdf,product_cas_number,PRESENT,EXPLICIT,67-63-0,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;5;8,1;2;3;5;8,yes,yes,yes,yes,yes,
+sds_24.pdf,chemical_formula,NOT_STATED,ABSENT,,,,,,,,,,,,,,,,,
+sds_24.pdf,molecular_weight,NOT_STATED,ABSENT,,,,,,,,,,,,,,,,,
+sds_24.pdf,flash_point,PRESENT,EXPLICIT,12 °C (53.6 °F),yes,yes,no,no,yes,yes,yes,yes,6,6,yes,yes,yes,no,yes,gold span missing from ocr
+sds_24.pdf,ingredient_cas:67-63-0,PRESENT,EXPLICIT,67-63-0,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;5;8,1;2;3;5;8,yes,yes,yes,no,yes,gold span missing from ocr
+sds_25.pdf,product_name,PRESENT,EXPLICIT,NS 100,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21,1,yes,yes,yes,no,no,gold span missing from ocr
+sds_25.pdf,supplier_name,PRESENT,EXPLICIT,Martin Mathys NV,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_25.pdf,substance_or_mixture,PRESENT,EXPLICIT,MIXTURE,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;11;12;13;14;15,1;2;3;4;11;12;13;14;15,yes,yes,yes,yes,yes,
+sds_25.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_25.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_25.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_25.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,,,,,,,,,,,,,,yes,yes,yes,
+sds_26.pdf,product_name,PRESENT,EXPLICIT,Bis-Tris,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7,1;2;3;4;5;6;7,yes,yes,yes,yes,yes,
+sds_26.pdf,supplier_name,PRESENT,EXPLICIT,AppliChem GmbH,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_26.pdf,substance_or_mixture,PRESENT,EXPLICIT,SUBSTANCE,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7,1;2;3;4;5;6;7,yes,yes,yes,yes,yes,
+sds_26.pdf,product_cas_number,PRESENT,EXPLICIT,6976-37-0,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_26.pdf,chemical_formula,NOT_STATED,ABSENT,,,,,,,,,,,,,,,,,
+sds_26.pdf,molecular_weight,NOT_STATED,ABSENT,,,,,,,,,,,,,,,,,
+sds_26.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,,,,,,,,,,,,,,yes,yes,yes,
+sds_26.pdf,ingredient_cas:6976-37-0,PRESENT,EXPLICIT,6976-37-0,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_27.pdf,product_name,PRESENT,EXPLICIT,perform® ID,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31,1,yes,yes,yes,yes,yes,
+sds_27.pdf,supplier_name,PRESENT,EXPLICIT,Schülke & Mayr UK Ltd.,yes,no,yes,no,yes,yes,yes,no,1,,yes,no,yes,no,yes,value not locatable in ocr; gold span missing from ocr
+sds_27.pdf,substance_or_mixture,PRESENT,EXPLICIT,MIXTURE,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;5;10;11;12;19;20;26;28;29;30,1;2;3;5;10;11;12;19;20;26;28;29;30,yes,yes,yes,yes,yes,
+sds_27.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_27.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_27.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_27.pdf,flash_point,NOT_APPLICABLE,EXPLICIT,,,,,,,,,,,,,,yes,yes,yes,
+sds_27.pdf,ingredient_cas:70693-62-8,PRESENT,EXPLICIT,70693-62-8,yes,yes,yes,yes,yes,yes,yes,yes,3,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_27.pdf,ingredient_cas:532-32-1,PRESENT,EXPLICIT,532-32-1,yes,yes,yes,yes,yes,yes,yes,yes,3,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_27.pdf,ingredient_cas:87-69-4,PRESENT,EXPLICIT,87-69-4,yes,yes,yes,yes,yes,yes,yes,yes,3,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_27.pdf,ingredient_cas:151-21-3,PRESENT,EXPLICIT,151-21-3,yes,yes,yes,yes,yes,yes,yes,yes,3,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_27.pdf,ingredient_cas:78330-20-8,PRESENT,EXPLICIT,78330-20-8,yes,yes,yes,yes,yes,yes,yes,yes,3,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_27.pdf,ingredient_cas:497-19-8,PRESENT,EXPLICIT,497-19-8,yes,yes,yes,yes,yes,yes,yes,yes,4,4,yes,yes,yes,no,no,gold span missing from ocr
+sds_27.pdf,ingredient_cas:7727-21-1,PRESENT,EXPLICIT,7727-21-1,yes,yes,yes,yes,yes,yes,yes,yes,4,4,yes,yes,yes,no,no,gold span missing from ocr
+sds_28.pdf,product_name,PRESENT,EXPLICIT,Diethyl ether,yes,yes,yes,yes,yes,yes,yes,yes,1;3;10;11;12;13;15;16,3;10;11;12;13;15;16,yes,no,yes,no,yes,gold span missing from ocr
+sds_28.pdf,supplier_name,PRESENT,EXPLICIT,Merck Life Science LLC,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,yes,yes,
+sds_28.pdf,substance_or_mixture,PRESENT,EXPLICIT,SUBSTANCE,yes,yes,yes,yes,yes,yes,yes,yes,1;3;4;5;6;7;12;15;16;17;18;19;20;22;23;24;28,1;3;4;5;7;12;15;16;17;18;19;20;22;23;24;28,yes,yes,yes,yes,yes,
+sds_28.pdf,product_cas_number,PRESENT,EXPLICIT,60-29-7,yes,yes,yes,yes,yes,yes,yes,yes,1;3,1;3,yes,yes,yes,yes,yes,
+sds_28.pdf,chemical_formula,NOT_STATED,ABSENT,,,,,,,,,,,,,,,,,
+sds_28.pdf,molecular_weight,PRESENT,EXPLICIT,"74,12 g/mol",yes,yes,no,no,yes,yes,yes,yes,9,9,yes,yes,yes,yes,yes,
+sds_28.pdf,flash_point,PRESENT,EXPLICIT,-40 °C,yes,yes,yes,yes,yes,yes,yes,yes,8,8,yes,yes,yes,yes,yes,
+sds_28.pdf,ingredient_cas:60-29-7,PRESENT,EXPLICIT,60-29-7,yes,yes,yes,yes,yes,yes,yes,yes,1;3,1;3,yes,yes,yes,no,no,gold span missing from ocr
+sds_28.pdf,ingredient_cas:128-37-0,PRESENT,EXPLICIT,128-37-0,yes,yes,yes,yes,yes,yes,yes,yes,3,3,yes,yes,yes,no,no,gold span missing from ocr
+sds_29.pdf,product_name,PRESENT,EXPLICIT,PETROGREASE SANUS 154 MOLY 2,yes,yes,yes,yes,yes,yes,yes,yes,1;2;3;4;5;6;7,1;2;3;4;5;6;7,yes,yes,yes,yes,yes,
+sds_29.pdf,supplier_name,PRESENT,EXPLICIT,PETROFER ENDÜSTRİYEL YAĞLAR SAN. VE TİC. A.Ş.,yes,no,yes,no,yes,no,yes,no,1,,yes,no,yes,no,yes,value not locatable in ocr; gold span missing from ocr
+sds_29.pdf,substance_or_mixture,PRESENT,EXPLICIT,MIXTURE,yes,yes,yes,yes,yes,yes,yes,yes,1;5;6,1;5;6,yes,yes,yes,yes,yes,
+sds_29.pdf,product_cas_number,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_29.pdf,chemical_formula,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_29.pdf,molecular_weight,NOT_APPLICABLE,ONTOLOGY,,,,,,,,,,,,,,yes,yes,yes,
+sds_29.pdf,flash_point,PRESENT,EXPLICIT,>200 °C,yes,yes,yes,yes,yes,yes,yes,yes,4,4,yes,yes,yes,yes,yes,
+sds_29.pdf,ingredient_cas:4259-15-8,PRESENT,EXPLICIT,4259-15-8,yes,yes,yes,yes,yes,yes,yes,yes,1,1,yes,yes,yes,no,yes,gold span missing from ocr

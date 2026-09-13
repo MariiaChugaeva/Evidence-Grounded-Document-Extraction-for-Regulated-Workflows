@@ -1,0 +1,40 @@
+document,gold_index,predicted_index,key,gold_name,predicted_name,gold_concentration,predicted_concentration,name_ok,cas_ok,concentration_ok,evidence_ok,verbatim,record_ok,record_with_evidence_ok
+sds_03.pdf,0,0,cas,"Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated",Acute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 Danger,1 - <2.5 %,1 - <2.5 %,False,True,True,True,True,False,False
+sds_03.pdf,1,1,cas,m-phenylenebis(methylamine),Acute Tox. 4: H302+H332; Aquatic Chronic 3: H412; Eye Dam. 1: H318; Skin Corr. 1B: H314; Skin Sens. 1B: H317,<1 %,<1 %,False,True,True,True,True,False,False
+sds_03.pdf,2,2,cas,"1,2-benzisothiazol-3(2H)-one",Acute Tox. 4: H302; Aquatic Acute 1: H400; Eye Dam. 1: H318; Skin Irrit. 2: H315; Skin Sens. 1: H317 Danger,<1 %,<1 %,False,True,True,True,True,False,False
+sds_03.pdf,3,3,cas,Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1),Acute Tox. 2: H310+H330; Acute Tox. 3: H301; Aquatic Acute 1: H400; Aquatic Chronic 1: H410; Eye Dam. 1,<1 %,<1 %,False,True,True,True,True,False,False
+sds_04.pdf,0,0,cas,"1,1,1,2-Tetrafluoroethane","1,1,1,2-Tetrafluoroethane",100,100,True,True,True,True,True,True,True
+sds_05.pdf,1,0,cas,"Distillates (petroleum), hydrotreated heavy paraffinic","Distillates (petroleum), hydrotreated heavy 01-2119484627-25 Asp. Tox. 1 H304",1 - < 5%,1 - < 5%,False,True,True,True,True,False,False
+sds_05.pdf,2,1,cas,TRIS (METHYLPHENYL) PHOSPHATE,TRIS (METHYLPHENYL) PHOSPHATE 01-2119531335-46 Aquatic Acute 1 H400 (M,0.1 - < 1%,0.1 - < 1%,False,True,True,True,True,False,False
+sds_07.pdf,1,0,cas,Iron oxide(Fe2O3),EC,10% ~ 20%,,False,True,False,True,True,False,False
+sds_07.pdf,3,1,cas,Amorphous silica,EC,1% ~ 10%,,False,True,False,True,True,False,False
+sds_07.pdf,4,2,cas,Carbon black,EC,1% ~ 10%,,False,True,False,True,True,False,False
+sds_07.pdf,5,3,cas,Titanium dioxide,EC,~ 1%,,False,True,False,True,True,False,False
+sds_08.pdf,0,0,cas,mefentrifluconazole,Aquatic Acute,6.99 %,1,False,True,False,True,True,False,False
+sds_08.pdf,1,1,cas,Fluxapyroxad (ISO),Aquatic Acute,6.66 %,1,False,True,False,True,True,False,False
+sds_08.pdf,2,2,cas,"N,N-Dimethyldecan-1-amide",Eye Irrit.,< 55 %,2,False,True,False,True,True,False,False
+sds_08.pdf,3,3,cas,methyl methacrylate,Skin Sens.,< 3 %,1,False,True,False,True,True,False,False
+sds_08.pdf,4,4,cas,Dodecyl acrylate,Eye Irrit.,< 0.5 %,2,False,True,False,True,True,False,False
+sds_08.pdf,5,5,cas,Tetradecyl acrylate,Eye Irrit.,< 0.5 %,2,False,True,False,True,True,False,False
+sds_09.pdf,0,0,cas,sodium chloride,,80 - <100 %,,False,True,False,True,True,False,False
+sds_09.pdf,1,1,cas,sulfanilamide,,1 - <10 %,,False,True,False,True,True,False,False
+sds_09.pdf,2,2,cas,o-phosphoric acid,,1 - <10 %,,False,True,False,True,True,False,False
+sds_11.pdf,0,0,cas,"5-Bromo-5-Nitro-1,3-Dioxane","Test cassette 5-Bromo-5-Nitro-1,3-Dioxane H302 P280",≤ 0.01 %,≤ 0.01 %,False,True,True,True,True,False,False
+sds_11.pdf,1,1,cas,Nitrozellulose,Nitrozellulose H201 P250‐372,≤ 0.1 %,≤ 0.1 %,False,True,True,True,True,False,False
+sds_11.pdf,2,2,cas,Boric acid,Boric acid H360 P201,< 0.004 %,< 0.004 %,False,True,True,True,True,False,False
+sds_12.pdf,0,0,cas,Silicone dioxide,Silicone dioxide EC: Substance Exposure Limit with Workplace,45 – 55 %,45 – 55 %,False,True,True,True,True,False,False
+sds_13.pdf,0,0,cas,Argon,Argon,100,100,True,True,True,True,True,True,True
+sds_14.pdf,0,0,cas,Acetatocobalamin,Acetatocobalamin ≤ 0.2 Carc. / H351,≤ 0.2,2,False,True,False,True,True,False,False
+sds_14.pdf,7,1,cas,Thimerosal,Thimerosal ≤ 0.015 Acute Tox. / H300,≤ 0.015,2,False,True,False,True,True,False,False
+sds_16.pdf,0,0,cas,Sand,Sand EEC,>95,>95 -,False,True,True,True,True,False,False
+sds_17.pdf,0,0,cas,Petroleum Asphalt,1. Petroleum Asphalt N/A N/A,55-60,55-60,False,True,True,True,True,False,False
+sds_18.pdf,0,0,cas,"Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyanatobenzene]","Castor Oil, Polymer With 1,1'-Methylenebis[4- Trade Secret *",30 - 60,30 - 60,False,True,True,True,True,False,False
+sds_18.pdf,1,1,cas,"P,P'-Methylenebis(phenyl isocyanate)","P,P'-Methylenebis(phenyl isocyanate) Trade Secret *",30 - 60,30 - 60,False,True,True,True,True,False,False
+sds_18.pdf,2,2,cas,"4,4'-Diisocyanatodiphenylmethane polymer","4,4'-Diisocyanatodiphenylmethane polymer Trade Secret *",< 20,< 20,False,True,True,True,True,False,False
+sds_18.pdf,3,3,cas,"Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Propanetriol (3:1), Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]","Oxirane, Methyl-, Polymer With Oxirane, Ether With Trade Secret *",1 - 5,1 - 5,False,True,True,True,True,False,False
+sds_18.pdf,4,4,cas,Carbon Black,Carbon Black Trade Secret *,0.1 - 1,0.1 - 1,False,True,True,True,True,False,False
+sds_18.pdf,5,5,cas,Chromium Compound 1,Chromium Compound 1 Trade Secret,0.01 - 0.3,0.01 - 0.3,False,True,True,True,True,False,False
+sds_18.pdf,6,6,cas,Chromium Compound 2,Chromium Compound 2 Trade Secret,0.01 - 0.1,0.01 - 0.1,False,True,True,True,True,False,False
+sds_18.pdf,7,7,cas,Chromium Compound 3,Chromium Compound 3 Trade Secret,0.01 - 0.1,0.01 - 0.1,False,True,True,True,True,False,False
+sds_18.pdf,8,8,cas,Chromium,Chromium Trade Secret *,< 0.02,< 0.02,False,True,True,True,True,False,False
+sds_20.pdf,0,0,cas,2-ethylhexanol,"2-ethylhexanol+, + -compounds which %, NMT require skin and eye special protection JO while I 0 handling; (a) a aerosol",NMT 10,3,False,True,False,True,True,False,False

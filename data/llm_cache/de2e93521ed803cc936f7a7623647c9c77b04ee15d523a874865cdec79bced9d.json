@@ -1,0 +1,99 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Water Reducer 310",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Buddy Rhodes Concrete Products",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3.1 Substances\nNo ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication\nStandard 29 CFR 1910.1200 criteria."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3.1 Substances\nNo ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication\nStandard 29 CFR 1910.1200 criteria."
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3.1 Substances\nNo ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication\nStandard 29 CFR 1910.1200 criteria."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "Water Reducer 310",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "100%",
+        "citation": {
+          "page": 3,
+          "quote": "3.1 Substances\nNo ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication\nStandard 29 CFR 1910.1200 criteria."
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 4248,
+    "output_tokens": 695,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 20.10096009998233,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

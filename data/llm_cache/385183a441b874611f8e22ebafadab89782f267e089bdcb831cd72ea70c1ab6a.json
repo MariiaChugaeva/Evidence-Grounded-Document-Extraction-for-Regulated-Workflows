@@ -1,0 +1,94 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Argon",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Airgas USA, LLC and its affiliates",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "SUBSTANCE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "Substance/mixture : Substance"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "value": "39.95 g/mole",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 5,
+          "quote": "Molecular weight : 39.95 g/mole"
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "Argon",
+        "cas_number": "7440-37-1",
+        "cas_state": "PRESENT",
+        "concentration": "100",
+        "citation": {
+          "page": 2,
+          "quote": "Argon 100 7440-37-1"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 6600,
+    "output_tokens": 553,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 14.835633600014262,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

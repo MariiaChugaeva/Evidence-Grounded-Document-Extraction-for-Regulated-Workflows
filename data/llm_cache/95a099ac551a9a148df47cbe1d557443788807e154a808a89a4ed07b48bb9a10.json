@@ -1,0 +1,81 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Wood and Wood Dust (without chemical treatments or resins/additives), including Untreated Lumber (all species and grades), Logs, Chips, and Sawdust",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Weyerhaeuser",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "Wood wood chips) (wood dust, softwood or hardwood, logs,",
+        "cas_number": "NOT_APPLICABLE",
+        "cas_state": "NOT_STATED",
+        "concentration": "85-100",
+        "citation": null
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 6473,
+    "output_tokens": 489,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 12.13177770000766,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

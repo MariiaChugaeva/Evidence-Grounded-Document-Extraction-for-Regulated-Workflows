@@ -1,0 +1,67 @@
+{
+  "document": "sds_21.pdf",
+  "split": "locked",
+  "note": "Locked split. Hydroquinone crystal, a single substance in the Sub Systems template (same family as sds_16). Section 3 prints the subheading \"Substance\" and one row at 100 weight percent with a trade-secret asterisk. Section 9 gives the flash point with a closed-cup remark on the following line; the molecular-weight row says no information. Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "HYDROQUINONE, CRYSTAL",
+      "evidence": [{ "page": 1, "text": "Product Name HYDROQUINONE, CRYSTAL" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Spectrum Chemical Mfg. Corp.",
+      "evidence": [{ "page": 1, "text": "Supplier Address Spectrum Chemical Mfg. Corp." }],
+      "note": "The heading \"Details of the supplier of the safety data sheet\" is not adjacent to the name in reading order; the name is printed under \"Supplier Address\"."
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SUBSTANCE",
+      "evidence": [{ "page": 2, "text": "3. Composition/information on ingredients Substance" }],
+      "note": "The template prints \"Substance\" or \"Mixture\" as the Section 3 subheading."
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "123-31-9",
+      "evidence": [{ "page": 2, "text": "Hydroquinone 123-31-9 100" }],
+      "note": "Section 1 gives no CAS number; the only occurrence is the single composition row."
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "No formula anywhere in the sheet."
+    },
+    "molecular_weight": {
+      "state": "NO_DATA",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 5, "text": "Molecular weight No information available" }]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "165 °C / 329 °F",
+      "accepted_values": ["165 °C", "329 °F"],
+      "evidence": [{ "page": 5, "text": "Flash point 165 °C / 329 °F" }],
+      "note": "The remark \"CC (closed cup)\" is printed on the following line."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 2, "text": "Chemical name CAS No Weight-%" }],
+    "items": [
+      {
+        "name": "Hydroquinone",
+        "cas_number": "123-31-9",
+        "cas_state": "PRESENT",
+        "concentration": "100",
+        "evidence": [{ "page": 2, "text": "Hydroquinone 123-31-9 100" }],
+        "note": "The asterisk after 100 marks the exact percentage as a trade secret."
+      }
+    ]
+  }
+}

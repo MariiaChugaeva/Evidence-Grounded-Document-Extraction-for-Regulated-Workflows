@@ -1,0 +1,150 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Revygold®",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "BASF SE, BASF plc",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 4,
+          "quote": "Chemical nature\ncrop protection product, fungicide"
+        },
+        {
+          "page": 3,
+          "quote": "3.1. Substances\nNot applicable"
+        },
+        {
+          "page": 19,
+          "quote": "EUH208: Contains a solution of a methacrylate-based polymer. May produce an allergic reaction."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": "-",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": "-",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "value": "-",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "value": "120 °C",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": {
+        "page": 9,
+        "quote": "Flash point: 120 °C"
+      },
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "mefentrifluconazole",
+        "cas_number": "1417782-03-6",
+        "cas_state": "PRESENT",
+        "concentration": "6.99 %",
+        "citation": {
+          "page": 4,
+          "quote": "Content (W/W): 6.99 % Skin Sens. 1\nCAS Number: 1417782-03-6 Aquatic Acute 1\nAquatic Chronic 1\nM-factor acute: 1\nM-factor chronic: 1\nH317, H400, H410"
+        }
+      },
+      {
+        "name": "Fluxapyroxad (ISO)",
+        "cas_number": "907204-31-3",
+        "cas_state": "PRESENT",
+        "concentration": "6.66 %",
+        "citation": {
+          "page": 4,
+          "quote": "Content (W/W): 6.66 % Repr. Add. cat. lact.\nCAS Number: 907204-31-3 Aquatic Acute 1\nAquatic Chronic 1\nM-factor acute: 1\nM-factor chronic: 1\nH362, H400, H410"
+        }
+      },
+      {
+        "name": "N,N-Dimethyldecan-1-amide",
+        "cas_number": "14433-76-2",
+        "cas_state": "PRESENT",
+        "concentration": "< 55 %",
+        "citation": {
+          "page": 4,
+          "quote": "Content (W/W): < 55 % Skin Irrit. 2\nCAS Number: 14433-76-2 Eye Irrit. 2\nEC-Number: 238-405-1 STOT SE 3 (irr. to respiratory syst.)\nREACH registration number: 01- Aquatic Chronic 3\n2119485027-36 H319, H315, H335, H412"
+        }
+      },
+      {
+        "name": "methyl methacrylate",
+        "cas_number": "80-62-6",
+        "cas_state": "PRESENT",
+        "concentration": "< 3 %",
+        "citation": {
+          "page": 4,
+          "quote": "Content (W/W): < 3 % Flam. Liq. 2\nCAS Number: 80-62-6 Skin Sens. 1\nEC-Number: 201-297-1 Skin Irrit. 2\nREACH registration number: 01- STOT SE 3 (irr. to respiratory syst.)\n2119452498-28 H225, H315, H317, H335"
+        }
+      },
+      {
+        "name": "Dodecyl acrylate",
+        "cas_number": "2156-97-0",
+        "cas_state": "PRESENT",
+        "concentration": "< 0.5 %",
+        "citation": {
+          "page": 5,
+          "quote": "Content (W/W): < 0.5 % Skin Irrit. 2\nCAS Number: 2156-97-0 Eye Irrit. 2\nEC-Number: 218-463-4, 218-463-4 Skin Sens. 1\nREACH registration number: 01- STOT SE 3 (irr. to respiratory syst.)\n2119976296-23 Aquatic Chronic 2\nINDEX-Number: 607-133-00-9 H319, H315, H317, H335, H411\nSpecific concentration limit:\nSTOT SE 3, irr. to respiratory syst.: >= 10 %"
+        }
+      },
+      {
+        "name": "Tetradecyl acrylate",
+        "cas_number": "21643-42-5",
+        "cas_state": "PRESENT",
+        "concentration": "< 0.5 %",
+        "citation": {
+          "page": 5,
+          "quote": "Content (W/W): < 0.5 % Skin Irrit. 2\nCAS Number: 21643-42-5 Eye Irrit. 2\nEC-Number: 244-491-1, 244-491-1 Skin Sens. 1\nREACH registration number: 01- STOT SE 3 (irr. to respiratory syst.)\n2119976297-21 Aquatic Chronic 2\nINDEX-Number: 607-133-00-9 H319, H315, H317, H335, H411\nSpecific concentration limit:\nSTOT SE 3, irr. to respiratory syst.: >= 10 %"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 12638,
+    "output_tokens": 1692,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 38.319326900003944,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

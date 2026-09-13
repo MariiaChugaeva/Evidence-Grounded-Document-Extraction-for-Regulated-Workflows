@@ -1,0 +1,66 @@
+{
+  "document": "sds_25.pdf",
+  "split": "locked",
+  "note": "Locked split. Rust-Oleum NS 100 floor-coating additive, a mixture in the two-column label/value template (same family as sds_13). Reading order interleaves labels and values, so several spans are the value alone. Section 1.3 names Rust-Oleum Europe / Martin Mathys NV and Tor Coatings Limited, so the supplier is ambiguous and both are accepted. Section 3 declares a mixture with no reportable ingredients. Section 9 prints \"Not relevant due to nature of the product.\" three times in reading order (boiling point, flash point, auto-ignition); the flash-point value is the second occurrence. Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "NS 100",
+      "evidence": [{ "page": 1, "text": "Product name NS 100" }],
+      "note": "The colon of the label sits after the value in reading order."
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Martin Mathys NV",
+      "accepted_values": ["RUST-OLEUM EUROPE", "Tor Coatings Limited"],
+      "ambiguous": true,
+      "evidence": [
+        { "page": 1, "text": "RUST-OLEUM EUROPE Martin Mathys NV, Kolenbergstraat 23, B-3545 Zelem, Belgium" },
+        { "page": 1, "text": "Tor Coatings Limited" }
+      ],
+      "note": "The label \"1.3 Details of the supplier of the safety data sheet\" is not adjacent to either entity in reading order; both entities are accepted."
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 3, "text": "Product definition : Mixture" },
+        { "page": 4, "text": "3.2 Mixtures : Mixture" }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 3, "text": "Product definition : Mixture" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 3, "text": "Product definition : Mixture" }]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 3, "text": "Product definition : Mixture" }]
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 7, "text": "Not relevant due to nature of the product.", "occurrence": 2 }],
+      "note": "Rendered row: \"Flash point : Not relevant due to nature of the product.\" The label \"Flash point\" is separated from its value in reading order; the value text occurs three times on the page and the flash-point one is the second."
+    }
+  },
+  "ingredients": {
+    "state": "NOT_APPLICABLE",
+    "evidence": [{ "page": 4, "text": "There are no ingredients present which, within the current knowledge of the supplier and in the concentrations applicable, are classified as hazardous to health or the environment, are PBTs, vPvBs or Substances of equivalent concern, or have been assigned a workplace exposure limit and hence require reporting in this section." }],
+    "note": "The sheet declares that no ingredient requires reporting.",
+    "items": []
+  }
+}

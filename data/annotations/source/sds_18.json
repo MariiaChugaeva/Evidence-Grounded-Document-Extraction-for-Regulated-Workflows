@@ -1,0 +1,154 @@
+{
+  "document": "sds_18.pdf",
+  "split": "dev",
+  "note": "Two-part adhesive kit. The file is a cover page followed by two complete safety data sheets, one per part, so several fields have two equally correct locations. The flash point is the headline correction: the old ground truth recorded it as missing even though pages 8 and 19 both print \">=290 \u00baF [Test Method:Tagliabue Closed Cup]\". The old ground truth also recorded the ingredient CAS 101-68-8 as the product CAS.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "3M\u2122 Semi-Rigid Plastic Repair PN 04240",
+      "accepted_values": [
+        "3M\u2122 Plastic Repair, Semi-Rigid PNs 04240 (Part A)",
+        "3M\u2122 Semi-Rigid Plastic Repair PN 04240 - Part B"
+      ],
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Product identifier 3M\u2122 Semi-Rigid Plastic Repair PN 04240"
+        },
+        {
+          "page": 3,
+          "text": "1.1. Product identifier 3M\u2122 Plastic Repair, Semi-Rigid PNs 04240 (Part A)"
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "3M",
+      "evidence": [
+        { "page": 1, "text": "MANUFACTURER: 3M" },
+        { "page": 3, "text": "MANUFACTURER: 3M" }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "COMPOSITION_IMPLIED",
+      "rule": "composition_implies_form",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 5, "text": "Ingredient C.A.S. No. % by Wt" },
+        {
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 5, "text": "Ingredient C.A.S. No. % by Wt" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 5, "text": "Ingredient C.A.S. No. % by Wt" }]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 5, "text": "Ingredient C.A.S. No. % by Wt" }]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": ">=290 \u00baF [Test Method:Tagliabue Closed Cup]",
+      "accepted_values": [">=290 \u00b0F", ">=143.3 \u00b0C"],
+      "evidence": [
+        {
+          "page": 8,
+          "text": "Flash Point >=290 \u00baF [Test Method:Tagliabue Closed Cup]"
+        },
+        {
+          "page": 19,
+          "text": "Flash Point >=290 \u00baF [Test Method:Tagliabue Closed Cup]"
+        }
+      ],
+      "note": "Both parts of the kit report the same flash point. 290 F normalizes to 143.3 C."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "note": "Annotated for Part A, whose composition table is on page 5. Part B's table on page 16 belongs to the second embedded safety data sheet.",
+    "evidence": [{ "page": 5, "text": "Ingredient C.A.S. No. % by Wt" }],
+    "items": [
+      {
+        "name": "Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyanatobenzene]",
+        "cas_number": "68424-09-9",
+        "cas_state": "PRESENT",
+        "concentration": "30 - 60",
+        "evidence": [{ "page": 5, "text": "68424-09-9" }]
+      },
+      {
+        "name": "P,P'-Methylenebis(phenyl isocyanate)",
+        "cas_number": "101-68-8",
+        "cas_state": "PRESENT",
+        "concentration": "30 - 60",
+        "evidence": [{ "page": 5, "text": "101-68-8" }]
+      },
+      {
+        "name": "4,4'-Diisocyanatodiphenylmethane polymer",
+        "cas_number": "25686-28-6",
+        "cas_state": "PRESENT",
+        "concentration": "< 20",
+        "evidence": [{ "page": 5, "text": "25686-28-6" }]
+      },
+      {
+        "name": "Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Propanetriol (3:1), Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]",
+        "cas_number": "59675-67-1",
+        "cas_state": "PRESENT",
+        "concentration": "1 - 5",
+        "evidence": [{ "page": 5, "text": "59675-67-1" }]
+      },
+      {
+        "name": "Carbon Black",
+        "cas_number": "1333-86-4",
+        "cas_state": "PRESENT",
+        "concentration": "0.1 - 1",
+        "evidence": [{ "page": 5, "text": "1333-86-4" }]
+      },
+      {
+        "name": "Chromium Compound 1",
+        "cas_number": "71701-12-7",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.3",
+        "evidence": [{ "page": 5, "text": "71701-12-7" }]
+      },
+      {
+        "name": "Chromium Compound 2",
+        "cas_number": "74421-71-9",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.1",
+        "evidence": [{ "page": 5, "text": "74421-71-9" }]
+      },
+      {
+        "name": "Chromium Compound 3",
+        "cas_number": "71839-90-2",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.1",
+        "evidence": [{ "page": 5, "text": "71839-90-2" }]
+      },
+      {
+        "name": "Chromium",
+        "cas_number": "7440-47-3",
+        "cas_state": "PRESENT",
+        "concentration": "< 0.02",
+        "evidence": [{ "page": 5, "text": "7440-47-3" }]
+      }
+    ]
+  }
+}

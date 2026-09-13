@@ -1,0 +1,69 @@
+{
+  "document": "sds_13.pdf",
+  "split": "dev",
+  "note": "Compressed argon, a genuine single substance. Two corrections to the old ground truth. First, \"Chemical name : argon\" was recorded as the chemical formula; it is a name, and the document states no formula. Second, the flash-point evidence was recorded as \"Flash point : Not available. [Product does not sustain combustion.]\", but the flash-point row contains only the bracketed note; \"Not available.\" belongs to the evaporation-rate row below it. This sheet also uses a two-column layout in which the label and its value are not adjacent in reading order, so several spans can only be given as the value alone.",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Argon",
+      "evidence": [
+        { "page": 1, "text": "Argon", "occurrence": 1, "case_sensitive": true }
+      ],
+      "note": "The value sits on the same rendered row as the label \"GHS product identifier\" but is separated from it in reading order, so the span is the value alone. Case-sensitive matching distinguishes it from the lowercase chemical name \"argon\"."
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Airgas USA, LLC",
+      "accepted_values": ["Airgas USA, LLC and its affiliates"],
+      "evidence": [{ "page": 1, "text": "Airgas USA, LLC and its affiliates" }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SUBSTANCE",
+      "evidence": [{ "page": 2, "text": "Substance/mixture : Substance" }]
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "7440-37-1",
+      "evidence": [{ "page": 2, "text": "Argon 100 7440-37-1" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "No molecular formula appears anywhere. \"Chemical name : argon\" is a name."
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "39.95 g/mole",
+      "accepted_values": ["39.95"],
+      "evidence": [{ "page": 5, "text": "39.95 g/mole" }]
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "ambiguous": true,
+      "alternative_state": "NO_DATA",
+      "evidence": [{ "page": 5, "text": "[Product does not sustain combustion.]" }],
+      "note": "The sheet explains that the product cannot burn, so a flash point does not exist for it. The rendered row reads \"Flash point : [Product does not sustain combustion.]\", but reading order interleaves the two columns as \"... Auto-ignition temperature / Flash point / Not available. / [Product does not sustain combustion.]\". Taking the contiguous run after the label therefore attaches the auto-ignition value to the flash point, which is exactly the error in the old ground truth. The evidence span is the value alone."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 2, "text": "Ingredient name CAS number %" }],
+    "items": [
+      {
+        "name": "Argon",
+        "cas_number": "7440-37-1",
+        "cas_state": "PRESENT",
+        "concentration": "100",
+        "evidence": [{ "page": 2, "text": "Argon 100 7440-37-1" }]
+      }
+    ]
+  }
+}

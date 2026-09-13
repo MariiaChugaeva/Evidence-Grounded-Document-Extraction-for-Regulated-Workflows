@@ -1,0 +1,102 @@
+{
+  "document": "sds_05.pdf",
+  "split": "dev",
+  "note": "Synthetic lubricant. The product name is printed as a running header on every page as well as in Section 1.1, so both occurrences on page 1 are accepted evidence. The flash point is stated identically in Section 5 and Section 9.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MOBIL SHC PM 220",
+      "evidence": [
+        { "page": 1, "text": "Product Name: MOBIL SHC PM 220", "occurrence": 2 },
+        { "page": 1, "text": "Product Name: MOBIL SHC PM 220", "occurrence": 1 }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "ExxonMobil Petroleum & Chemical BV",
+      "evidence": [
+        { "page": 1, "text": "Supplier: ExxonMobil Petroleum & Chemical BV" }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+        },
+        { "page": 2, "text": "This material is defined as a mixture." }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+        }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 2, "text": "This material is defined as a mixture." }]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 2, "text": "This material is defined as a mixture." }]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": ">225\u00b0C (437\u00b0F) [ASTM D-92]",
+      "accepted_values": [">225\u00b0C"],
+      "evidence": [
+        { "page": 7, "text": "Flash Point [Method]: >225\u00b0C (437\u00b0F) [ASTM D-92]" },
+        { "page": 3, "text": "Flash Point [Method]: >225\u00b0C (437\u00b0F) [ASTM D-92]" }
+      ]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "note": "The first listed component has a dash in the CAS column and only an EC list number, so its ingredient CAS is NOT_APPLICABLE rather than missing.",
+    "evidence": [{ "page": 2, "text": "Name CAS# EC# Registration# Concentration" }],
+    "items": [
+      {
+        "name": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 RICH, ALKYLNAPTHALENESULPHONATE)",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "0.1 - < 1%",
+        "evidence": [
+          {
+            "page": 2,
+            "text": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 RICH, ALKYLNAPTHALENESULPHONATE)"
+          }
+        ]
+      },
+      {
+        "name": "Distillates (petroleum), hydrotreated heavy paraffinic",
+        "cas_number": "64742-54-7",
+        "cas_state": "PRESENT",
+        "concentration": "1 - < 5%",
+        "evidence": [{ "page": 2, "text": "64742-54-7" }]
+      },
+      {
+        "name": "TRIS (METHYLPHENYL) PHOSPHATE",
+        "cas_number": "1330-78-5",
+        "cas_state": "PRESENT",
+        "concentration": "0.1 - < 1%",
+        "evidence": [{ "page": 2, "text": "1330-78-5" }]
+      }
+    ]
+  }
+}

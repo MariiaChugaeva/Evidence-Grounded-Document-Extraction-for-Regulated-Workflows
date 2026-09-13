@@ -1,0 +1,76 @@
+{
+  "document": "sds_04.pdf",
+  "split": "dev",
+  "note": "Single-substance refrigerant, one of the few documents where the product-level identifier fields are genuinely defined. The flash point is declared not applicable in two places rather than given a value, which the old ground truth recorded as the value string \"Gas, not applicable per DOT regulations\".",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "R-134a",
+      "evidence": [{ "page": 1, "text": "PRODUCT NAME: R-134a" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "National Refrigerants, Inc.",
+      "evidence": [{ "page": 1, "text": "DISTRIBUTOR: National Refrigerants, Inc." }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "COMPOSITION_IMPLIED",
+      "rule": "composition_implies_form",
+      "value": "SUBSTANCE",
+      "evidence": [
+        { "page": 2, "text": "1,1,1,2-Tetrafluoroethane 811-97-2 100" },
+        {
+          "page": 2,
+          "text": "There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2"
+        }
+      ],
+      "note": "Section 3 lists a single ingredient at 100 weight percent and denies any other component."
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "811-97-2",
+      "evidence": [{ "page": 2, "text": "1,1,1,2-Tetrafluoroethane 811-97-2 100" }]
+    },
+    "chemical_formula": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "F3CCH2F",
+      "evidence": [{ "page": 4, "text": "CHEMICAL FORMULA: F3CCH2 F" }],
+      "note": "The text layer splits the formula as \"F3CCH2 F\"; the canonical value removes the spurious space."
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "102",
+      "accepted_values": ["102 g/mol"],
+      "evidence": [{ "page": 4, "text": "MOLECULAR WEIGHT: 102" }]
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [
+        { "page": 2, "text": "FLASH POINT: Gas, not applicable per DOT regulations" },
+        { "page": 5, "text": "FLASH POINT: Not applicable" }
+      ],
+      "note": "Both Section 5 and Section 9 declare the property not applicable. Either span is accepted as evidence."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 2, "text": "INGREDIENT NAME CAS NUMBER WEIGHT %" }],
+    "items": [
+      {
+        "name": "1,1,1,2-Tetrafluoroethane",
+        "cas_number": "811-97-2",
+        "cas_state": "PRESENT",
+        "concentration": "100",
+        "evidence": [{ "page": 2, "text": "1,1,1,2-Tetrafluoroethane 811-97-2 100" }]
+      }
+    ]
+  }
+}

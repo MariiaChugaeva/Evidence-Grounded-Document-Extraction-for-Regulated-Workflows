@@ -1,0 +1,47 @@
+{
+  "document": "sds_10.pdf",
+  "split": "dev",
+  "note": "Composite bearing material. \"No applicable data available\" is a NO_DATA statement, not a NOT_APPLICABLE one: it says the data is unavailable, and the same sheet uses a separate plain \"Not applicable\" for other rows. The state cue table has to prefer the longer NO_DATA cue.",
+  "product_form": "UNDETERMINED",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "CIP Composites",
+      "evidence": [{ "page": 1, "text": "Product Name: CIP Composites" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Columbia Industrial Products",
+      "evidence": [{ "page": 1, "text": "Company: Columbia Industrial Products" }]
+    },
+    "substance_or_mixture": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "product_cas_number": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "The old ground truth cited \"Product Use: Bearing and wear material\" as formula evidence."
+    },
+    "molecular_weight": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "flash_point": {
+      "state": "NO_DATA",
+      "derivation": "EXPLICIT",
+      "evidence": [
+        { "page": 3, "text": "Flash point: No applicable data available" },
+        { "page": 2, "text": "Flash point: No applicable data available" }
+      ]
+    }
+  },
+  "ingredients": {
+    "state": "NOT_APPLICABLE",
+    "note": "The sheet declares that no contained substance requires disclosure.",
+    "evidence": [
+      {
+        "page": 1,
+        "text": "The product contains no substances which, at their given concentration, are considered to be hazardous to health."
+      }
+    ],
+    "items": []
+  }
+}

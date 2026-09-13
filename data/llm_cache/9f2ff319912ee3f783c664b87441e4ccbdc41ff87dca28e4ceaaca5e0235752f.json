@@ -1,0 +1,73 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Sand, Ottawa",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Fisher Scientific UK, Thermo Fisher Scientific",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "SUBSTANCE",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "value": "14808-60-7",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "PRESENT",
+      "value": "O2 Si",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "value": "60.08",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "flash_point": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": []
+  },
+  "usage": {
+    "input_tokens": 5443,
+    "output_tokens": 403,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 11.02227300000959,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

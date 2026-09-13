@@ -1,0 +1,117 @@
+{
+  "document": "sds_07.pdf",
+  "split": "dev",
+  "note": "Toner cartridge, a mixture. The old ground truth recorded the iron-oxide ingredient CAS 1309-37-1 as the product CAS. The sheet is a combined Australia/New Zealand version and names two supplying entities, so the supplier field is genuinely ambiguous and both are accepted.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Standard Capacity T/C (Cyan) S050193",
+      "evidence": [
+        { "page": 1, "text": "Trade name: Standard Capacity T/C (Cyan) S050193" }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "EPSON Australia Pty Limited",
+      "accepted_values": ["EPSON New Zealand Pty Limited"],
+      "ambiguous": true,
+      "evidence": [
+        { "page": 1, "text": "Supplier in Astralia: EPSON Australia Pty Limited" },
+        { "page": 1, "text": "Supplier in New Zealand: EPSON New Zealand Pty Limited" }
+      ],
+      "note": "\"Astralia\" is a typo in the source document and is reproduced verbatim in the evidence span."
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 1, "text": "Mixture identification:" },
+        {
+          "page": 1,
+          "text": "Mixtures Hazardous components within the meaning of GHS regulation and related classifications:"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "Mixture identification:" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "Mixture identification:" }],
+      "note": "Fe2O3 in Section 3 is the formula of an ingredient, not of the toner."
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "Mixture identification:" }]
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 4, "text": "Flash point: Not Relevant" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [
+      {
+        "page": 1,
+        "text": "Hazardous components within the meaning of GHS regulation and related classifications:"
+      }
+    ],
+    "items": [
+      {
+        "name": "Styrene / acrylate resin",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "60% ~ 70%",
+        "evidence": [{ "page": 1, "text": "60% ~ 70% Styrene / acrylate resin" }]
+      },
+      {
+        "name": "Iron oxide(Fe2O3)",
+        "cas_number": "1309-37-1",
+        "cas_state": "PRESENT",
+        "concentration": "10% ~ 20%",
+        "evidence": [{ "page": 1, "text": "CAS: 1309-37-1" }]
+      },
+      {
+        "name": "Polyethylene",
+        "cas_number": null,
+        "cas_state": "NOT_STATED",
+        "concentration": "1% ~ 10%",
+        "evidence": [{ "page": 1, "text": "1% ~ 10% Polyethylene" }]
+      },
+      {
+        "name": "Amorphous silica",
+        "cas_number": "7631-86-9",
+        "cas_state": "PRESENT",
+        "concentration": "1% ~ 10%",
+        "evidence": [{ "page": 2, "text": "CAS: 7631-86-9" }]
+      },
+      {
+        "name": "Carbon black",
+        "cas_number": "1333-86-4",
+        "cas_state": "PRESENT",
+        "concentration": "1% ~ 10%",
+        "evidence": [{ "page": 2, "text": "CAS: 1333-86-4" }]
+      },
+      {
+        "name": "Titanium dioxide",
+        "cas_number": "13463-67-7",
+        "cas_state": "PRESENT",
+        "concentration": "~ 1%",
+        "evidence": [{ "page": 2, "text": "CAS: 13463-67-7" }]
+      }
+    ]
+  }
+}

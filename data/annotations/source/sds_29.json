@@ -1,0 +1,69 @@
+{
+  "document": "sds_29.pdf",
+  "split": "locked",
+  "note": "Locked split. Petrofer lubricating grease, a mixture in a Word-based Turkish/English template that still uses the pre-CLP word \"preparation\". Section 3 is headed \"3.2. Mixtures\" and lists one dangerous ingredient with a percentage written as \"%0,3-0,6\". Section 9 gives the flash point as \">200 °C\" split over three lines. No formula or molecular weight is mentioned. Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "PETROGREASE SANUS 154 MOLY 2",
+      "evidence": [{ "page": 1, "text": "1.1. Identification of the substance or preparation: PETROGREASE SANUS 154 MOLY 2" }],
+      "note": "The name also appears in the page header next to the form number."
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "PETROFER ENDÜSTRİYEL YAĞLAR SAN. VE TİC. A.Ş.",
+      "evidence": [{ "page": 1, "text": "1.3.Supplier (manufacturer/importer/downstream user/distributor): PETROFER ENDÜSTRİYEL YAĞLAR SAN. VE TİC. A.Ş." }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 1, "text": "3.2. Mixtures" },
+        { "page": 1, "text": "Chemical characterization (preparation)" }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "3.2. Mixtures" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "3.2. Mixtures" }]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "3.2. Mixtures" }]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": ">200 °C",
+      "evidence": [{ "page": 4, "text": "Flash point : >200 °C" }],
+      "note": "Value and unit are printed in separate table cells."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 1, "text": "Dangerous ingredients:" }],
+    "items": [
+      {
+        "name": "Zinc bis[O,O –bis(2-ethylhexyl)]bis dithiophosphate",
+        "cas_number": "4259-15-8",
+        "cas_state": "PRESENT",
+        "concentration": "%0,3-0,6",
+        "evidence": [{ "page": 1, "text": "4259-15-8 Zinc bis[O,O –bis(2-ethylhexyl)]bis dithiophosphate Eye Dam. 1 /H318, Aqu. Chronic 2 /H411 %0,3-0,6" }],
+        "note": "Percent sign before the range and decimal commas, as printed."
+      }
+    ]
+  }
+}

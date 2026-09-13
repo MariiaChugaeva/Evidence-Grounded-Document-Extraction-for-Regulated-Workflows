@@ -1,0 +1,95 @@
+{
+  "document": "sds_22.pdf",
+  "split": "locked",
+  "note": "Locked split. Disinfectant mixture in the DR-software template (same family as sds_23, sds_24, sds_26). Section 3 is headed \"3.2 Mixtures\" and describes the product as a mixture; the ingredient table on page 3 prints each row as CAS, list numbers, name, classification and a percentage range across several lines. No molecular weight or formula is mentioned. Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MEDAPROTECT",
+      "evidence": [{ "page": 1, "text": "Trade name: MEDAPROTECT" }],
+      "note": "The same line is a running header on pages 2-14; page 1 carries the Section 1.1 entry."
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MEDALKAN",
+      "evidence": [{ "page": 1, "text": "Manufacturer/Supplier: MEDALKAN" }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 2, "text": "3.2 Mixtures" },
+        { "page": 2, "text": "Description: Mixture: consisting of the following components." }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 2, "text": "3.2 Mixtures" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 2, "text": "3.2 Mixtures" }]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 2, "text": "3.2 Mixtures" }]
+    },
+    "flash_point": {
+      "state": "NO_DATA",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 7, "text": "Flash point: Not determined" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 3, "text": "Ingredients according Regulation (EU) 2020/878:" }],
+    "note": "Each row is annotated as the whole multi-line table row: CAS, list numbers, name, classification, percentage range.",
+    "items": [
+      {
+        "name": "N-(3-aminopropyl)-N-dodecylpropane-1,3-diamine",
+        "cas_number": "2372-82-9",
+        "cas_state": "PRESENT",
+        "concentration": "≥5-<10%",
+        "evidence": [{ "page": 3, "text": "CAS: 2372-82-9 EINECS: 219-145-8 N-(3-aminopropyl)-N-dodecylpropane-1,3-diamine Acute Tox. 3, H301; STOT RE 2, H373; Skin Corr. 1C, H314; Eye Dam. 1, H318; Aquatic Acute 1, H400 (M=10); Aquatic Chronic 1, H410 (M=1) ≥5-<10%" }]
+      },
+      {
+        "name": "didecyldimethylammonium chloride",
+        "cas_number": "7173-51-5",
+        "cas_state": "PRESENT",
+        "concentration": "≥3-<5%",
+        "evidence": [{ "page": 3, "text": "CAS: 7173-51-5 EINECS: 230-525-2 Index number: 612-131-00-6 didecyldimethylammonium chloride Skin Corr. 1B, H314; Acute Tox. 4, H302 ≥3-<5%" }]
+      },
+      {
+        "name": "Isotridecanol, ethoxylated",
+        "cas_number": "69011-36-5",
+        "cas_state": "PRESENT",
+        "concentration": "≥3-<5%",
+        "evidence": [{ "page": 3, "text": "CAS: 69011-36-5 NLP: 500-241-6 Isotridecanol, ethoxylated Eye Dam. 1, H318; Acute Tox. 4, H302; Acute Tox. 4, H312 ≥3-<5%" }]
+      },
+      {
+        "name": "propan-2-ol",
+        "cas_number": "67-63-0",
+        "cas_state": "PRESENT",
+        "concentration": "≥1-<2.5%",
+        "evidence": [{ "page": 3, "text": "CAS: 67-63-0 EINECS: 200-661-7 Index number: 603-117-00-0 Reg.nr.: 01-2119457558-25- XXXX propan-2-ol Flam. Liq. 2, H225; Eye Irrit. 2, H319; STOT SE 3, H336 ≥1-<2.5%" }]
+      },
+      {
+        "name": "Eucalyptus globulus oil",
+        "cas_number": "84625-32-1",
+        "cas_state": "PRESENT",
+        "concentration": "≥0.1-<0.25%",
+        "evidence": [{ "page": 3, "text": "CAS: 84625-32-1 EINECS: 283-406-2 Reg.nr.: 01-2119978250-37- XXXX Eucalyptus globulus oil Flam. Liq. 3, H226; Asp. Tox. 1, H304; Aquatic Chronic 2, H411; Skin Irrit. 2, H315; Skin Sens. 1, H317 ≥0.1-<0.25%" }]
+      }
+    ]
+  }
+}

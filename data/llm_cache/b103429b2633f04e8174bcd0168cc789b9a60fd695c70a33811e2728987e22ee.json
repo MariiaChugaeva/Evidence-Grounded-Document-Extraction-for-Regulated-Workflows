@@ -1,0 +1,111 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "MEL-ROL® Part Number: 5110060",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Product: MEL-ROL® Part Number: 5110060"
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "W. R. MEADOWS, INC.",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Manufacturer: W. R. MEADOWS, INC. Address: 300 Industrial Drive Hampshire, Illinois 60140"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Product is classified as non-hazardous per OSHA 1910.1200. Mel-Rol is defined by OSHA as an \"article.\" A manufactured item that is formed to a specific shape or design during manufacture that does not release or result in exposure to a hazardous chemical under normal use conditions."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Product is classified as non-hazardous per OSHA 1910.1200. Mel-Rol is defined by OSHA as an \"article.\" A manufactured item that is formed to a specific shape or design during manufacture that does not release or result in exposure to a hazardous chemical under normal use conditions."
+        }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Product is classified as non-hazardous per OSHA 1910.1200. Mel-Rol is defined by OSHA as an \"article.\" A manufactured item that is formed to a specific shape or design during manufacture that does not release or result in exposure to a hazardous chemical under normal use conditions."
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Product is classified as non-hazardous per OSHA 1910.1200. Mel-Rol is defined by OSHA as an \"article.\" A manufactured item that is formed to a specific shape or design during manufacture that does not release or result in exposure to a hazardous chemical under normal use conditions."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "value": "Not applicable; product is a solid.",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": {
+        "page": 2,
+        "quote": "FLASH POINT: See Section 5 FLAMMABILITY: N/D UEL/LEL: N/D"
+      },
+      "premises": [
+        {
+          "page": 2,
+          "quote": "FLASH POINT: See Section 5 FLAMMABILITY: N/D UEL/LEL: N/D"
+        }
+      ]
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": []
+  },
+  "usage": {
+    "input_tokens": 2160,
+    "output_tokens": 940,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 22.114178300020285,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

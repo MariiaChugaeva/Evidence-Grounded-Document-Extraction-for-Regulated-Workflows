@@ -1,0 +1,5779 @@
+{
+  "document": "sds_17.pdf",
+  "pages": [
+    {
+      "page_number": 1,
+      "words": [
+        {
+          "text": "__{",
+          "confidence": 12.0,
+          "bbox": [
+            123,
+            160,
+            366,
+            207
+          ]
+        },
+        {
+          "text": "W.R.",
+          "confidence": 83.0,
+          "bbox": [
+            116,
+            216,
+            190,
+            238
+          ]
+        },
+        {
+          "text": "MEADOWS.",
+          "confidence": 95.0,
+          "bbox": [
+            200,
+            216,
+            382,
+            238
+          ]
+        },
+        {
+          "text": "SAFETY",
+          "confidence": 95.0,
+          "bbox": [
+            618,
+            214,
+            784,
+            251
+          ]
+        },
+        {
+          "text": "DATA",
+          "confidence": 95.0,
+          "bbox": [
+            802,
+            215,
+            927,
+            250
+          ]
+        },
+        {
+          "text": "SHEET",
+          "confidence": 96.0,
+          "bbox": [
+            943,
+            214,
+            1083,
+            251
+          ]
+        },
+        {
+          "text": "WV",
+          "confidence": 38.0,
+          "bbox": [
+            222,
+            270,
+            267,
+            315
+          ]
+        },
+        {
+          "text": "Page",
+          "confidence": 95.0,
+          "bbox": [
+            1439,
+            284,
+            1503,
+            311
+          ]
+        },
+        {
+          "text": "1",
+          "confidence": 95.0,
+          "bbox": [
+            1513,
+            284,
+            1526,
+            305
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            1537,
+            282,
+            1565,
+            305
+          ]
+        },
+        {
+          "text": "2",
+          "confidence": 96.0,
+          "bbox": [
+            1573,
+            284,
+            1588,
+            305
+          ]
+        },
+        {
+          "text": "Product:",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            348,
+            193,
+            380
+          ]
+        },
+        {
+          "text": "MEL-ROL.",
+          "confidence": 37.0,
+          "bbox": [
+            396,
+            347,
+            518,
+            380
+          ]
+        },
+        {
+          "text": "Part",
+          "confidence": 96.0,
+          "bbox": [
+            1004,
+            354,
+            1045,
+            370
+          ]
+        },
+        {
+          "text": "Number:",
+          "confidence": 96.0,
+          "bbox": [
+            1053,
+            353,
+            1141,
+            370
+          ]
+        },
+        {
+          "text": "5110060",
+          "confidence": 96.0,
+          "bbox": [
+            1156,
+            354,
+            1243,
+            370
+          ]
+        },
+        {
+          "text": "Manufacturer:",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            378,
+            256,
+            412
+          ]
+        },
+        {
+          "text": "W.",
+          "confidence": 92.0,
+          "bbox": [
+            395,
+            384,
+            428,
+            404
+          ]
+        },
+        {
+          "text": "R.",
+          "confidence": 92.0,
+          "bbox": [
+            439,
+            385,
+            460,
+            404
+          ]
+        },
+        {
+          "text": "MEADOWS,",
+          "confidence": 96.0,
+          "bbox": [
+            472,
+            384,
+            618,
+            408
+          ]
+        },
+        {
+          "text": "INC.",
+          "confidence": 96.0,
+          "bbox": [
+            629,
+            384,
+            678,
+            404
+          ]
+        },
+        {
+          "text": "Address:",
+          "confidence": 90.0,
+          "bbox": [
+            1002,
+            386,
+            1090,
+            403
+          ]
+        },
+        {
+          "text": "—",
+          "confidence": 49.0,
+          "bbox": [
+            1108,
+            379,
+            1117,
+            413
+          ]
+        },
+        {
+          "text": "300",
+          "confidence": 95.0,
+          "bbox": [
+            1126,
+            386,
+            1162,
+            402
+          ]
+        },
+        {
+          "text": "Industrial",
+          "confidence": 95.0,
+          "bbox": [
+            1171,
+            385,
+            1262,
+            402
+          ]
+        },
+        {
+          "text": "Drive",
+          "confidence": 96.0,
+          "bbox": [
+            1272,
+            386,
+            1322,
+            402
+          ]
+        },
+        {
+          "text": "Hampshire,",
+          "confidence": 95.0,
+          "bbox": [
+            1127,
+            417,
+            1240,
+            438
+          ]
+        },
+        {
+          "text": "Illinois",
+          "confidence": 93.0,
+          "bbox": [
+            1249,
+            417,
+            1311,
+            434
+          ]
+        },
+        {
+          "text": "60140",
+          "confidence": 96.0,
+          "bbox": [
+            1325,
+            418,
+            1386,
+            434
+          ]
+        },
+        {
+          "text": "Telephone:",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            445,
+            221,
+            474
+          ]
+        },
+        {
+          "text": "(847)",
+          "confidence": 96.0,
+          "bbox": [
+            395,
+            449,
+            445,
+            470
+          ]
+        },
+        {
+          "text": "214-2100",
+          "confidence": 96.0,
+          "bbox": [
+            454,
+            450,
+            548,
+            466
+          ]
+        },
+        {
+          "text": "In",
+          "confidence": 95.0,
+          "bbox": [
+            881,
+            450,
+            896,
+            466
+          ]
+        },
+        {
+          "text": "case",
+          "confidence": 96.0,
+          "bbox": [
+            905,
+            454,
+            947,
+            466
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            955,
+            449,
+            975,
+            466
+          ]
+        },
+        {
+          "text": "emergency,",
+          "confidence": 96.0,
+          "bbox": [
+            982,
+            454,
+            1098,
+            470
+          ]
+        },
+        {
+          "text": "dial",
+          "confidence": 96.0,
+          "bbox": [
+            1107,
+            449,
+            1140,
+            466
+          ]
+        },
+        {
+          "text": "(800)",
+          "confidence": 95.0,
+          "bbox": [
+            1149,
+            449,
+            1199,
+            470
+          ]
+        },
+        {
+          "text": "424-9300",
+          "confidence": 93.0,
+          "bbox": [
+            1207,
+            450,
+            1302,
+            466
+          ]
+        },
+        {
+          "text": "(CHEMTREC)",
+          "confidence": 91.0,
+          "bbox": [
+            1310,
+            449,
+            1436,
+            470
+          ]
+        },
+        {
+          "text": "Revision",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            481,
+            192,
+            498
+          ]
+        },
+        {
+          "text": "Date:",
+          "confidence": 96.0,
+          "bbox": [
+            201,
+            482,
+            254,
+            498
+          ]
+        },
+        {
+          "text": "1/17/2024",
+          "confidence": 96.0,
+          "bbox": [
+            395,
+            480,
+            500,
+            501
+          ]
+        },
+        {
+          "text": "Product",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            513,
+            187,
+            530
+          ]
+        },
+        {
+          "text": "Use:",
+          "confidence": 96.0,
+          "bbox": [
+            195,
+            514,
+            238,
+            530
+          ]
+        },
+        {
+          "text": "Waterproofing",
+          "confidence": 96.0,
+          "bbox": [
+            394,
+            513,
+            543,
+            534
+          ]
+        },
+        {
+          "text": "Membrane",
+          "confidence": 96.0,
+          "bbox": [
+            551,
+            513,
+            661,
+            530
+          ]
+        },
+        {
+          "text": "HMIS",
+          "confidence": 57.0,
+          "bbox": [
+            288,
+            579,
+            336,
+            593
+          ]
+        },
+        {
+          "text": "|Health|",
+          "confidence": 86.0,
+          "bbox": [
+            111,
+            604,
+            194,
+            637
+          ]
+        },
+        {
+          "text": "|0|",
+          "confidence": 78.0,
+          "bbox": [
+            398,
+            609,
+            424,
+            631
+          ]
+        },
+        {
+          "text": "Product",
+          "confidence": 96.0,
+          "bbox": [
+            568,
+            608,
+            645,
+            625
+          ]
+        },
+        {
+          "text": "is",
+          "confidence": 96.0,
+          "bbox": [
+            653,
+            609,
+            666,
+            625
+          ]
+        },
+        {
+          "text": "classified",
+          "confidence": 96.0,
+          "bbox": [
+            673,
+            608,
+            762,
+            625
+          ]
+        },
+        {
+          "text": "as",
+          "confidence": 96.0,
+          "bbox": [
+            771,
+            613,
+            791,
+            625
+          ]
+        },
+        {
+          "text": "non-hazardous",
+          "confidence": 96.0,
+          "bbox": [
+            799,
+            608,
+            948,
+            625
+          ]
+        },
+        {
+          "text": "per",
+          "confidence": 96.0,
+          "bbox": [
+            956,
+            613,
+            988,
+            629
+          ]
+        },
+        {
+          "text": "OSHA",
+          "confidence": 93.0,
+          "bbox": [
+            996,
+            609,
+            1052,
+            625
+          ]
+        },
+        {
+          "text": "1910.1200.",
+          "confidence": 93.0,
+          "bbox": [
+            1060,
+            609,
+            1170,
+            625
+          ]
+        },
+        {
+          "text": "Mel-Rol",
+          "confidence": 92.0,
+          "bbox": [
+            1180,
+            608,
+            1255,
+            625
+          ]
+        },
+        {
+          "text": "is",
+          "confidence": 95.0,
+          "bbox": [
+            1265,
+            609,
+            1277,
+            625
+          ]
+        },
+        {
+          "text": "|",
+          "confidence": 45.0,
+          "bbox": [
+            111,
+            640,
+            114,
+            662
+          ]
+        },
+        {
+          "text": "Flammability",
+          "confidence": 45.0,
+          "bbox": [
+            123,
+            636,
+            249,
+            668
+          ]
+        },
+        {
+          "text": "|",
+          "confidence": 87.0,
+          "bbox": [
+            257,
+            640,
+            260,
+            662
+          ]
+        },
+        {
+          "text": "|1]",
+          "confidence": 39.0,
+          "bbox": [
+            398,
+            641,
+            424,
+            663
+          ]
+        },
+        {
+          "text": "defined",
+          "confidence": 96.0,
+          "bbox": [
+            567,
+            640,
+            641,
+            657
+          ]
+        },
+        {
+          "text": "by",
+          "confidence": 96.0,
+          "bbox": [
+            650,
+            640,
+            672,
+            661
+          ]
+        },
+        {
+          "text": "OSHA",
+          "confidence": 95.0,
+          "bbox": [
+            679,
+            641,
+            736,
+            657
+          ]
+        },
+        {
+          "text": "as",
+          "confidence": 95.0,
+          "bbox": [
+            743,
+            645,
+            763,
+            657
+          ]
+        },
+        {
+          "text": "an",
+          "confidence": 96.0,
+          "bbox": [
+            770,
+            645,
+            792,
+            657
+          ]
+        },
+        {
+          "text": "\"article.\"",
+          "confidence": 86.0,
+          "bbox": [
+            802,
+            640,
+            888,
+            657
+          ]
+        },
+        {
+          "text": "A",
+          "confidence": 96.0,
+          "bbox": [
+            896,
+            641,
+            909,
+            657
+          ]
+        },
+        {
+          "text": "manufactured",
+          "confidence": 96.0,
+          "bbox": [
+            917,
+            640,
+            1057,
+            657
+          ]
+        },
+        {
+          "text": "item",
+          "confidence": 96.0,
+          "bbox": [
+            1066,
+            641,
+            1109,
+            657
+          ]
+        },
+        {
+          "text": "that",
+          "confidence": 96.0,
+          "bbox": [
+            1117,
+            640,
+            1158,
+            657
+          ]
+        },
+        {
+          "text": "is",
+          "confidence": 96.0,
+          "bbox": [
+            1166,
+            641,
+            1178,
+            657
+          ]
+        },
+        {
+          "text": "formed",
+          "confidence": 96.0,
+          "bbox": [
+            1185,
+            640,
+            1258,
+            657
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 96.0,
+          "bbox": [
+            1266,
+            642,
+            1286,
+            657
+          ]
+        },
+        {
+          "text": "a",
+          "confidence": 96.0,
+          "bbox": [
+            1294,
+            645,
+            1303,
+            657
+          ]
+        },
+        {
+          "text": "specific",
+          "confidence": 96.0,
+          "bbox": [
+            1311,
+            640,
+            1385,
+            661
+          ]
+        },
+        {
+          "text": "|",
+          "confidence": 25.0,
+          "bbox": [
+            111,
+            672,
+            114,
+            694
+          ]
+        },
+        {
+          "text": "Reactivity",
+          "confidence": 25.0,
+          "bbox": [
+            122,
+            668,
+            216,
+            699
+          ]
+        },
+        {
+          "text": "|",
+          "confidence": 90.0,
+          "bbox": [
+            225,
+            672,
+            228,
+            694
+          ]
+        },
+        {
+          "text": "|0|",
+          "confidence": 60.0,
+          "bbox": [
+            398,
+            673,
+            424,
+            695
+          ]
+        },
+        {
+          "text": "shape",
+          "confidence": 95.0,
+          "bbox": [
+            566,
+            672,
+            624,
+            693
+          ]
+        },
+        {
+          "text": "or",
+          "confidence": 96.0,
+          "bbox": [
+            632,
+            677,
+            653,
+            689
+          ]
+        },
+        {
+          "text": "design",
+          "confidence": 96.0,
+          "bbox": [
+            660,
+            672,
+            722,
+            693
+          ]
+        },
+        {
+          "text": "during",
+          "confidence": 96.0,
+          "bbox": [
+            731,
+            672,
+            794,
+            693
+          ]
+        },
+        {
+          "text": "manufacture",
+          "confidence": 96.0,
+          "bbox": [
+            802,
+            672,
+            930,
+            689
+          ]
+        },
+        {
+          "text": "that",
+          "confidence": 96.0,
+          "bbox": [
+            937,
+            672,
+            978,
+            689
+          ]
+        },
+        {
+          "text": "does",
+          "confidence": 96.0,
+          "bbox": [
+            986,
+            672,
+            1032,
+            689
+          ]
+        },
+        {
+          "text": "not",
+          "confidence": 96.0,
+          "bbox": [
+            1040,
+            674,
+            1072,
+            689
+          ]
+        },
+        {
+          "text": "release",
+          "confidence": 96.0,
+          "bbox": [
+            1080,
+            672,
+            1150,
+            689
+          ]
+        },
+        {
+          "text": "or",
+          "confidence": 96.0,
+          "bbox": [
+            1158,
+            677,
+            1179,
+            689
+          ]
+        },
+        {
+          "text": "result",
+          "confidence": 96.0,
+          "bbox": [
+            1187,
+            672,
+            1242,
+            689
+          ]
+        },
+        {
+          "text": "in",
+          "confidence": 96.0,
+          "bbox": [
+            1250,
+            673,
+            1265,
+            689
+          ]
+        },
+        {
+          "text": "exposure",
+          "confidence": 96.0,
+          "bbox": [
+            1274,
+            677,
+            1365,
+            693
+          ]
+        },
+        {
+          "text": "[Personal",
+          "confidence": 25.0,
+          "bbox": [
+            111,
+            704,
+            207,
+            726
+          ]
+        },
+        {
+          "text": "Protection|",
+          "confidence": 92.0,
+          "bbox": [
+            216,
+            704,
+            330,
+            726
+          ]
+        },
+        {
+          "text": "|",
+          "confidence": 52.0,
+          "bbox": [
+            398,
+            705,
+            429,
+            727
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 95.0,
+          "bbox": [
+            566,
+            706,
+            586,
+            721
+          ]
+        },
+        {
+          "text": "a",
+          "confidence": 95.0,
+          "bbox": [
+            594,
+            709,
+            603,
+            721
+          ]
+        },
+        {
+          "text": "hazardous",
+          "confidence": 95.0,
+          "bbox": [
+            612,
+            704,
+            714,
+            721
+          ]
+        },
+        {
+          "text": "chemical",
+          "confidence": 96.0,
+          "bbox": [
+            722,
+            704,
+            809,
+            721
+          ]
+        },
+        {
+          "text": "under",
+          "confidence": 96.0,
+          "bbox": [
+            818,
+            704,
+            876,
+            721
+          ]
+        },
+        {
+          "text": "normal",
+          "confidence": 96.0,
+          "bbox": [
+            884,
+            704,
+            953,
+            721
+          ]
+        },
+        {
+          "text": "use",
+          "confidence": 96.0,
+          "bbox": [
+            962,
+            709,
+            995,
+            721
+          ]
+        },
+        {
+          "text": "conditions.",
+          "confidence": 96.0,
+          "bbox": [
+            1003,
+            704,
+            1111,
+            721
+          ]
+        },
+        {
+          "text": "%",
+          "confidence": 91.0,
+          "bbox": [
+            614,
+            771,
+            631,
+            787
+          ]
+        },
+        {
+          "text": "by",
+          "confidence": 95.0,
+          "bbox": [
+            639,
+            770,
+            662,
+            791
+          ]
+        },
+        {
+          "text": "SARA",
+          "confidence": 96.0,
+          "bbox": [
+            768,
+            771,
+            823,
+            787
+          ]
+        },
+        {
+          "text": "Vapor",
+          "confidence": 96.0,
+          "bbox": [
+            919,
+            770,
+            982,
+            790
+          ]
+        },
+        {
+          "text": "Pressure",
+          "confidence": 96.0,
+          "bbox": [
+            989,
+            770,
+            1077,
+            786
+          ]
+        },
+        {
+          "text": "LEL",
+          "confidence": 89.0,
+          "bbox": [
+            1165,
+            771,
+            1196,
+            787
+          ]
+        },
+        {
+          "text": "Chemical",
+          "confidence": 95.0,
+          "bbox": [
+            163,
+            801,
+            255,
+            818
+          ]
+        },
+        {
+          "text": "Name:",
+          "confidence": 95.0,
+          "bbox": [
+            264,
+            802,
+            329,
+            818
+          ]
+        },
+        {
+          "text": "CAS",
+          "confidence": 95.0,
+          "bbox": [
+            411,
+            803,
+            450,
+            819
+          ]
+        },
+        {
+          "text": "Number",
+          "confidence": 96.0,
+          "bbox": [
+            458,
+            802,
+            541,
+            819
+          ]
+        },
+        {
+          "text": "Weight",
+          "confidence": 96.0,
+          "bbox": [
+            601,
+            798,
+            675,
+            830
+          ]
+        },
+        {
+          "text": "313",
+          "confidence": 96.0,
+          "bbox": [
+            772,
+            799,
+            816,
+            830
+          ]
+        },
+        {
+          "text": "(mm",
+          "confidence": 87.0,
+          "bbox": [
+            919,
+            801,
+            966,
+            823
+          ]
+        },
+        {
+          "text": "Hg@20°C)",
+          "confidence": 87.0,
+          "bbox": [
+            975,
+            801,
+            1078,
+            823
+          ]
+        },
+        {
+          "text": "(@24°C)",
+          "confidence": 91.0,
+          "bbox": [
+            1137,
+            803,
+            1222,
+            824
+          ]
+        },
+        {
+          "text": "1.",
+          "confidence": 96.0,
+          "bbox": [
+            109,
+            834,
+            123,
+            850
+          ]
+        },
+        {
+          "text": "Petroleum",
+          "confidence": 96.0,
+          "bbox": [
+            133,
+            833,
+            236,
+            850
+          ]
+        },
+        {
+          "text": "Asphalt",
+          "confidence": 96.0,
+          "bbox": [
+            244,
+            833,
+            319,
+            854
+          ]
+        },
+        {
+          "text": "8052-42-4",
+          "confidence": 92.0,
+          "bbox": [
+            425,
+            835,
+            527,
+            851
+          ]
+        },
+        {
+          "text": "55-60",
+          "confidence": 96.0,
+          "bbox": [
+            610,
+            835,
+            667,
+            851
+          ]
+        },
+        {
+          "text": "No",
+          "confidence": 96.0,
+          "bbox": [
+            782,
+            835,
+            808,
+            851
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 95.0,
+          "bbox": [
+            981,
+            832,
+            1018,
+            853
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 95.0,
+          "bbox": [
+            1162,
+            833,
+            1199,
+            854
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            1198,
+            864,
+            1236,
+            885
+          ]
+        },
+        {
+          "text": "=",
+          "confidence": 96.0,
+          "bbox": [
+            1244,
+            872,
+            1255,
+            878
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            1262,
+            866,
+            1298,
+            882
+          ]
+        },
+        {
+          "text": "Applicable",
+          "confidence": 96.0,
+          "bbox": [
+            1303,
+            865,
+            1408,
+            886
+          ]
+        },
+        {
+          "text": "Under",
+          "confidence": 96.0,
+          "bbox": [
+            109,
+            897,
+            169,
+            914
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            175,
+            897,
+            208,
+            914
+          ]
+        },
+        {
+          "text": "reporting",
+          "confidence": 96.0,
+          "bbox": [
+            216,
+            898,
+            309,
+            918
+          ]
+        },
+        {
+          "text": "requirements",
+          "confidence": 96.0,
+          "bbox": [
+            317,
+            898,
+            451,
+            918
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            459,
+            897,
+            479,
+            914
+          ]
+        },
+        {
+          "text": "Section",
+          "confidence": 96.0,
+          "bbox": [
+            485,
+            898,
+            557,
+            914
+          ]
+        },
+        {
+          "text": "313",
+          "confidence": 96.0,
+          "bbox": [
+            566,
+            898,
+            601,
+            914
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            609,
+            897,
+            629,
+            914
+          ]
+        },
+        {
+          "text": "Title",
+          "confidence": 96.0,
+          "bbox": [
+            635,
+            897,
+            678,
+            914
+          ]
+        },
+        {
+          "text": "III",
+          "confidence": 65.0,
+          "bbox": [
+            687,
+            898,
+            702,
+            914
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            711,
+            897,
+            731,
+            914
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            737,
+            897,
+            769,
+            914
+          ]
+        },
+        {
+          "text": "Superfund",
+          "confidence": 96.0,
+          "bbox": [
+            776,
+            897,
+            879,
+            918
+          ]
+        },
+        {
+          "text": "Amendments",
+          "confidence": 96.0,
+          "bbox": [
+            887,
+            897,
+            1021,
+            914
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 96.0,
+          "bbox": [
+            1029,
+            897,
+            1064,
+            914
+          ]
+        },
+        {
+          "text": "Reauthorization",
+          "confidence": 96.0,
+          "bbox": [
+            1074,
+            897,
+            1232,
+            914
+          ]
+        },
+        {
+          "text": "Act",
+          "confidence": 96.0,
+          "bbox": [
+            1240,
+            898,
+            1272,
+            914
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            1280,
+            897,
+            1300,
+            914
+          ]
+        },
+        {
+          "text": "1966",
+          "confidence": 96.0,
+          "bbox": [
+            1308,
+            898,
+            1355,
+            914
+          ]
+        },
+        {
+          "text": "(SARA)",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            929,
+            174,
+            950
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 96.0,
+          "bbox": [
+            182,
+            929,
+            217,
+            946
+          ]
+        },
+        {
+          "text": "40",
+          "confidence": 96.0,
+          "bbox": [
+            226,
+            930,
+            249,
+            946
+          ]
+        },
+        {
+          "text": "CFR",
+          "confidence": 96.0,
+          "bbox": [
+            257,
+            930,
+            293,
+            946
+          ]
+        },
+        {
+          "text": "Part",
+          "confidence": 96.0,
+          "bbox": [
+            302,
+            930,
+            341,
+            946
+          ]
+        },
+        {
+          "text": "372,",
+          "confidence": 96.0,
+          "bbox": [
+            349,
+            930,
+            390,
+            950
+          ]
+        },
+        {
+          "text": "chemicals",
+          "confidence": 96.0,
+          "bbox": [
+            399,
+            929,
+            496,
+            946
+          ]
+        },
+        {
+          "text": "listed",
+          "confidence": 96.0,
+          "bbox": [
+            505,
+            929,
+            556,
+            946
+          ]
+        },
+        {
+          "text": "on",
+          "confidence": 97.0,
+          "bbox": [
+            565,
+            934,
+            588,
+            946
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            596,
+            929,
+            628,
+            946
+          ]
+        },
+        {
+          "text": "313",
+          "confidence": 96.0,
+          "bbox": [
+            636,
+            930,
+            671,
+            946
+          ]
+        },
+        {
+          "text": "List",
+          "confidence": 96.0,
+          "bbox": [
+            681,
+            930,
+            712,
+            946
+          ]
+        },
+        {
+          "text": "(40",
+          "confidence": 95.0,
+          "bbox": [
+            720,
+            929,
+            750,
+            950
+          ]
+        },
+        {
+          "text": "CFR",
+          "confidence": 96.0,
+          "bbox": [
+            758,
+            930,
+            794,
+            946
+          ]
+        },
+        {
+          "text": "Part",
+          "confidence": 96.0,
+          "bbox": [
+            803,
+            930,
+            842,
+            946
+          ]
+        },
+        {
+          "text": "373.65)",
+          "confidence": 96.0,
+          "bbox": [
+            850,
+            929,
+            924,
+            950
+          ]
+        },
+        {
+          "text": "are",
+          "confidence": 96.0,
+          "bbox": [
+            933,
+            934,
+            964,
+            946
+          ]
+        },
+        {
+          "text": "identified",
+          "confidence": 96.0,
+          "bbox": [
+            972,
+            929,
+            1065,
+            946
+          ]
+        },
+        {
+          "text": "under",
+          "confidence": 96.0,
+          "bbox": [
+            1074,
+            929,
+            1132,
+            946
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            1139,
+            929,
+            1171,
+            946
+          ]
+        },
+        {
+          "text": "heading",
+          "confidence": 96.0,
+          "bbox": [
+            1179,
+            929,
+            1258,
+            950
+          ]
+        },
+        {
+          "text": "\"SARA",
+          "confidence": 96.0,
+          "bbox": [
+            1266,
+            929,
+            1327,
+            946
+          ]
+        },
+        {
+          "text": "313.\"",
+          "confidence": 96.0,
+          "bbox": [
+            1335,
+            929,
+            1386,
+            946
+          ]
+        },
+        {
+          "text": "EYE",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            994,
+            143,
+            1010
+          ]
+        },
+        {
+          "text": "CONTACT:",
+          "confidence": 96.0,
+          "bbox": [
+            151,
+            994,
+            255,
+            1010
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            270,
+            994,
+            305,
+            1010
+          ]
+        },
+        {
+          "text": "expected",
+          "confidence": 96.0,
+          "bbox": [
+            312,
+            993,
+            402,
+            1014
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 95.0,
+          "bbox": [
+            410,
+            995,
+            430,
+            1010
+          ]
+        },
+        {
+          "text": "be",
+          "confidence": 95.0,
+          "bbox": [
+            439,
+            993,
+            461,
+            1010
+          ]
+        },
+        {
+          "text": "an",
+          "confidence": 96.0,
+          "bbox": [
+            469,
+            998,
+            491,
+            1010
+          ]
+        },
+        {
+          "text": "exposure",
+          "confidence": 96.0,
+          "bbox": [
+            500,
+            998,
+            590,
+            1014
+          ]
+        },
+        {
+          "text": "route.",
+          "confidence": 95.0,
+          "bbox": [
+            599,
+            995,
+            657,
+            1010
+          ]
+        },
+        {
+          "text": "SKIN",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            1026,
+            153,
+            1042
+          ]
+        },
+        {
+          "text": "CONTACT:",
+          "confidence": 95.0,
+          "bbox": [
+            161,
+            1026,
+            265,
+            1042
+          ]
+        },
+        {
+          "text": "Wash",
+          "confidence": 96.0,
+          "bbox": [
+            279,
+            1025,
+            334,
+            1042
+          ]
+        },
+        {
+          "text": "affected",
+          "confidence": 96.0,
+          "bbox": [
+            342,
+            1025,
+            423,
+            1042
+          ]
+        },
+        {
+          "text": "areas",
+          "confidence": 96.0,
+          "bbox": [
+            432,
+            1030,
+            485,
+            1042
+          ]
+        },
+        {
+          "text": "with",
+          "confidence": 96.0,
+          "bbox": [
+            492,
+            1025,
+            535,
+            1042
+          ]
+        },
+        {
+          "text": "soap",
+          "confidence": 96.0,
+          "bbox": [
+            543,
+            1030,
+            589,
+            1046
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 96.0,
+          "bbox": [
+            597,
+            1025,
+            632,
+            1042
+          ]
+        },
+        {
+          "text": "water",
+          "confidence": 96.0,
+          "bbox": [
+            640,
+            1027,
+            698,
+            1042
+          ]
+        },
+        {
+          "text": "if",
+          "confidence": 96.0,
+          "bbox": [
+            706,
+            1025,
+            718,
+            1042
+          ]
+        },
+        {
+          "text": "available.",
+          "confidence": 96.0,
+          "bbox": [
+            725,
+            1025,
+            817,
+            1042
+          ]
+        },
+        {
+          "text": "INHALATION:",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1058,
+            243,
+            1074
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            259,
+            1058,
+            294,
+            1074
+          ]
+        },
+        {
+          "text": "expected",
+          "confidence": 96.0,
+          "bbox": [
+            301,
+            1057,
+            391,
+            1078
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 96.0,
+          "bbox": [
+            399,
+            1059,
+            419,
+            1074
+          ]
+        },
+        {
+          "text": "be",
+          "confidence": 96.0,
+          "bbox": [
+            427,
+            1057,
+            450,
+            1074
+          ]
+        },
+        {
+          "text": "an",
+          "confidence": 96.0,
+          "bbox": [
+            458,
+            1062,
+            480,
+            1074
+          ]
+        },
+        {
+          "text": "exposure",
+          "confidence": 96.0,
+          "bbox": [
+            489,
+            1062,
+            579,
+            1078
+          ]
+        },
+        {
+          "text": "route.",
+          "confidence": 96.0,
+          "bbox": [
+            588,
+            1059,
+            646,
+            1074
+          ]
+        },
+        {
+          "text": "INGESTION:",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1090,
+            227,
+            1106
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            242,
+            1090,
+            277,
+            1106
+          ]
+        },
+        {
+          "text": "expected",
+          "confidence": 96.0,
+          "bbox": [
+            285,
+            1089,
+            375,
+            1110
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 96.0,
+          "bbox": [
+            382,
+            1091,
+            403,
+            1106
+          ]
+        },
+        {
+          "text": "be",
+          "confidence": 96.0,
+          "bbox": [
+            411,
+            1089,
+            434,
+            1106
+          ]
+        },
+        {
+          "text": "an",
+          "confidence": 96.0,
+          "bbox": [
+            442,
+            1094,
+            464,
+            1106
+          ]
+        },
+        {
+          "text": "exposure",
+          "confidence": 96.0,
+          "bbox": [
+            472,
+            1094,
+            563,
+            1110
+          ]
+        },
+        {
+          "text": "source.",
+          "confidence": 95.0,
+          "bbox": [
+            570,
+            1094,
+            642,
+            1106
+          ]
+        },
+        {
+          "text": "MOST",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            1122,
+            169,
+            1138
+          ]
+        },
+        {
+          "text": "IMPORTANT",
+          "confidence": 93.0,
+          "bbox": [
+            177,
+            1122,
+            304,
+            1138
+          ]
+        },
+        {
+          "text": "SYMPTOMS/EFFECTS,",
+          "confidence": 89.0,
+          "bbox": [
+            311,
+            1120,
+            534,
+            1142
+          ]
+        },
+        {
+          "text": "ACUTE",
+          "confidence": 96.0,
+          "bbox": [
+            541,
+            1122,
+            609,
+            1138
+          ]
+        },
+        {
+          "text": "AND",
+          "confidence": 96.0,
+          "bbox": [
+            616,
+            1122,
+            661,
+            1138
+          ]
+        },
+        {
+          "text": "CHRONIC:",
+          "confidence": 96.0,
+          "bbox": [
+            669,
+            1122,
+            770,
+            1138
+          ]
+        },
+        {
+          "text": "See",
+          "confidence": 96.0,
+          "bbox": [
+            783,
+            1122,
+            818,
+            1138
+          ]
+        },
+        {
+          "text": "Section",
+          "confidence": 96.0,
+          "bbox": [
+            825,
+            1122,
+            897,
+            1138
+          ]
+        },
+        {
+          "text": "Eleven",
+          "confidence": 96.0,
+          "bbox": [
+            907,
+            1121,
+            970,
+            1138
+          ]
+        },
+        {
+          "text": "for",
+          "confidence": 93.0,
+          "bbox": [
+            978,
+            1121,
+            1007,
+            1138
+          ]
+        },
+        {
+          "text": "Symptoms/Effects.",
+          "confidence": 92.0,
+          "bbox": [
+            1013,
+            1120,
+            1202,
+            1142
+          ]
+        },
+        {
+          "text": "FLASHPOINT:",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1186,
+            242,
+            1202
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 95.0,
+          "bbox": [
+            257,
+            1186,
+            292,
+            1202
+          ]
+        },
+        {
+          "text": "applicable;",
+          "confidence": 95.0,
+          "bbox": [
+            299,
+            1185,
+            406,
+            1206
+          ]
+        },
+        {
+          "text": "product",
+          "confidence": 96.0,
+          "bbox": [
+            415,
+            1185,
+            493,
+            1206
+          ]
+        },
+        {
+          "text": "is",
+          "confidence": 96.0,
+          "bbox": [
+            501,
+            1186,
+            514,
+            1202
+          ]
+        },
+        {
+          "text": "a",
+          "confidence": 96.0,
+          "bbox": [
+            522,
+            1190,
+            531,
+            1202
+          ]
+        },
+        {
+          "text": "solid.",
+          "confidence": 96.0,
+          "bbox": [
+            539,
+            1185,
+            590,
+            1202
+          ]
+        },
+        {
+          "text": "EXTINGUISHING",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1218,
+            271,
+            1234
+          ]
+        },
+        {
+          "text": "MEDIA:",
+          "confidence": 96.0,
+          "bbox": [
+            281,
+            1218,
+            356,
+            1234
+          ]
+        },
+        {
+          "text": "Water",
+          "confidence": 96.0,
+          "bbox": [
+            370,
+            1218,
+            432,
+            1234
+          ]
+        },
+        {
+          "text": "fog,",
+          "confidence": 96.0,
+          "bbox": [
+            439,
+            1217,
+            476,
+            1238
+          ]
+        },
+        {
+          "text": "foam,",
+          "confidence": 96.0,
+          "bbox": [
+            483,
+            1217,
+            541,
+            1238
+          ]
+        },
+        {
+          "text": "dry",
+          "confidence": 96.0,
+          "bbox": [
+            549,
+            1217,
+            580,
+            1238
+          ]
+        },
+        {
+          "text": "chemical.",
+          "confidence": 94.0,
+          "bbox": [
+            588,
+            1217,
+            681,
+            1234
+          ]
+        },
+        {
+          "text": "CHEMICAL/COMBUSTION",
+          "confidence": 89.0,
+          "bbox": [
+            107,
+            1248,
+            371,
+            1270
+          ]
+        },
+        {
+          "text": "HAZARDS:",
+          "confidence": 96.0,
+          "bbox": [
+            380,
+            1250,
+            483,
+            1266
+          ]
+        },
+        {
+          "text": "Oxides",
+          "confidence": 96.0,
+          "bbox": [
+            497,
+            1249,
+            563,
+            1266
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 96.0,
+          "bbox": [
+            571,
+            1249,
+            606,
+            1266
+          ]
+        },
+        {
+          "text": "compounds",
+          "confidence": 96.0,
+          "bbox": [
+            614,
+            1249,
+            731,
+            1270
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 93.0,
+          "bbox": [
+            739,
+            1249,
+            759,
+            1266
+          ]
+        },
+        {
+          "text": "nitrogen/sulfur.",
+          "confidence": 92.0,
+          "bbox": [
+            766,
+            1248,
+            922,
+            1270
+          ]
+        },
+        {
+          "text": "PRECAUTIONS/PERSONAL",
+          "confidence": 91.0,
+          "bbox": [
+            108,
+            1280,
+            375,
+            1302
+          ]
+        },
+        {
+          "text": "PROTECTIVE",
+          "confidence": 96.0,
+          "bbox": [
+            383,
+            1282,
+            509,
+            1298
+          ]
+        },
+        {
+          "text": "EQUIPMENT:",
+          "confidence": 96.0,
+          "bbox": [
+            517,
+            1282,
+            649,
+            1301
+          ]
+        },
+        {
+          "text": "Avoid",
+          "confidence": 96.0,
+          "bbox": [
+            663,
+            1281,
+            719,
+            1298
+          ]
+        },
+        {
+          "text": "smoke",
+          "confidence": 96.0,
+          "bbox": [
+            727,
+            1281,
+            792,
+            1298
+          ]
+        },
+        {
+          "text": "inhalation.",
+          "confidence": 96.0,
+          "bbox": [
+            800,
+            1281,
+            904,
+            1298
+          ]
+        },
+        {
+          "text": "Use",
+          "confidence": 96.0,
+          "bbox": [
+            920,
+            1282,
+            955,
+            1298
+          ]
+        },
+        {
+          "text": "appropriate",
+          "confidence": 96.0,
+          "bbox": [
+            963,
+            1282,
+            1080,
+            1302
+          ]
+        },
+        {
+          "text": "respiratory",
+          "confidence": 97.0,
+          "bbox": [
+            1089,
+            1282,
+            1198,
+            1302
+          ]
+        },
+        {
+          "text": "protection.",
+          "confidence": 96.0,
+          "bbox": [
+            1206,
+            1282,
+            1315,
+            1302
+          ]
+        },
+        {
+          "text": "SAFE",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            1410,
+            156,
+            1426
+          ]
+        },
+        {
+          "text": "HANDLING",
+          "confidence": 96.0,
+          "bbox": [
+            164,
+            1410,
+            273,
+            1426
+          ]
+        },
+        {
+          "text": "PROCEDURES:",
+          "confidence": 95.0,
+          "bbox": [
+            282,
+            1410,
+            426,
+            1426
+          ]
+        },
+        {
+          "text": "Avoid",
+          "confidence": 95.0,
+          "bbox": [
+            439,
+            1409,
+            495,
+            1426
+          ]
+        },
+        {
+          "text": "direct",
+          "confidence": 96.0,
+          "bbox": [
+            504,
+            1409,
+            560,
+            1426
+          ]
+        },
+        {
+          "text": "contact.",
+          "confidence": 96.0,
+          "bbox": [
+            568,
+            1411,
+            647,
+            1426
+          ]
+        },
+        {
+          "text": "OSHA",
+          "confidence": 96.0,
+          "bbox": [
+            665,
+            1506,
+            724,
+            1522
+          ]
+        },
+        {
+          "text": "ACGIH",
+          "confidence": 96.0,
+          "bbox": [
+            1264,
+            1506,
+            1329,
+            1522
+          ]
+        },
+        {
+          "text": "Chemical",
+          "confidence": 96.0,
+          "bbox": [
+            163,
+            1537,
+            255,
+            1554
+          ]
+        },
+        {
+          "text": "Name:",
+          "confidence": 95.0,
+          "bbox": [
+            264,
+            1538,
+            329,
+            1554
+          ]
+        },
+        {
+          "text": "PEL",
+          "confidence": 96.0,
+          "bbox": [
+            454,
+            1534,
+            497,
+            1564
+          ]
+        },
+        {
+          "text": "PEL/CEILING",
+          "confidence": 91.0,
+          "bbox": [
+            576,
+            1537,
+            701,
+            1560
+          ]
+        },
+        {
+          "text": "PEL/STEL",
+          "confidence": 92.0,
+          "bbox": [
+            750,
+            1537,
+            841,
+            1560
+          ]
+        },
+        {
+          "text": "SKIN",
+          "confidence": 96.0,
+          "bbox": [
+            909,
+            1534,
+            964,
+            1564
+          ]
+        },
+        {
+          "text": "TLV",
+          "confidence": 94.0,
+          "bbox": [
+            1037,
+            1534,
+            1082,
+            1564
+          ]
+        },
+        {
+          "text": "TLV/CEILING",
+          "confidence": 91.0,
+          "bbox": [
+            1159,
+            1536,
+            1288,
+            1558
+          ]
+        },
+        {
+          "text": "TLV/STEL",
+          "confidence": 91.0,
+          "bbox": [
+            1352,
+            1537,
+            1446,
+            1560
+          ]
+        },
+        {
+          "text": "SKIN",
+          "confidence": 95.0,
+          "bbox": [
+            1509,
+            1539,
+            1558,
+            1560
+          ]
+        },
+        {
+          "text": "1.",
+          "confidence": 92.0,
+          "bbox": [
+            109,
+            1570,
+            123,
+            1586
+          ]
+        },
+        {
+          "text": "Petroleum",
+          "confidence": 96.0,
+          "bbox": [
+            133,
+            1569,
+            236,
+            1586
+          ]
+        },
+        {
+          "text": "Asphalt",
+          "confidence": 96.0,
+          "bbox": [
+            244,
+            1569,
+            319,
+            1590
+          ]
+        },
+        {
+          "text": "5",
+          "confidence": 91.0,
+          "bbox": [
+            427,
+            1574,
+            437,
+            1590
+          ]
+        },
+        {
+          "text": "mg/m?*",
+          "confidence": 73.0,
+          "bbox": [
+            446,
+            1567,
+            524,
+            1594
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            621,
+            1569,
+            656,
+            1590
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            778,
+            1569,
+            812,
+            1590
+          ]
+        },
+        {
+          "text": "No",
+          "confidence": 96.0,
+          "bbox": [
+            924,
+            1571,
+            950,
+            1587
+          ]
+        },
+        {
+          "text": "0.5",
+          "confidence": 93.0,
+          "bbox": [
+            1001,
+            1574,
+            1030,
+            1590
+          ]
+        },
+        {
+          "text": "mg/m>*",
+          "confidence": 54.0,
+          "bbox": [
+            1039,
+            1567,
+            1117,
+            1594
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            1208,
+            1568,
+            1242,
+            1589
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            1382,
+            1569,
+            1417,
+            1590
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            1517,
+            1569,
+            1551,
+            1590
+          ]
+        },
+        {
+          "text": "N/E:",
+          "confidence": 96.0,
+          "bbox": [
+            590,
+            1600,
+            632,
+            1621
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            646,
+            1602,
+            682,
+            1618
+          ]
+        },
+        {
+          "text": "Established",
+          "confidence": 96.0,
+          "bbox": [
+            689,
+            1601,
+            803,
+            1618
+          ]
+        },
+        {
+          "text": "*:",
+          "confidence": 46.0,
+          "bbox": [
+            931,
+            1601,
+            946,
+            1618
+          ]
+        },
+        {
+          "text": "Asphalt",
+          "confidence": 96.0,
+          "bbox": [
+            957,
+            1601,
+            1035,
+            1622
+          ]
+        },
+        {
+          "text": "Fumes",
+          "confidence": 96.0,
+          "bbox": [
+            1042,
+            1602,
+            1106,
+            1618
+          ]
+        },
+        {
+          "text": "ENGINEERING",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1634,
+            250,
+            1650
+          ]
+        },
+        {
+          "text": "CONTROLS:",
+          "confidence": 96.0,
+          "bbox": [
+            258,
+            1634,
+            375,
+            1650
+          ]
+        },
+        {
+          "text": "None",
+          "confidence": 96.0,
+          "bbox": [
+            391,
+            1634,
+            442,
+            1650
+          ]
+        },
+        {
+          "text": "required",
+          "confidence": 96.0,
+          "bbox": [
+            450,
+            1633,
+            533,
+            1654
+          ]
+        },
+        {
+          "text": "under",
+          "confidence": 96.0,
+          "bbox": [
+            543,
+            1633,
+            600,
+            1650
+          ]
+        },
+        {
+          "text": "normal",
+          "confidence": 96.0,
+          "bbox": [
+            608,
+            1633,
+            677,
+            1650
+          ]
+        },
+        {
+          "text": "use",
+          "confidence": 96.0,
+          "bbox": [
+            687,
+            1638,
+            719,
+            1650
+          ]
+        },
+        {
+          "text": "conditions.",
+          "confidence": 96.0,
+          "bbox": [
+            727,
+            1633,
+            836,
+            1650
+          ]
+        },
+        {
+          "text": "PERSONAL",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1666,
+            216,
+            1682
+          ]
+        },
+        {
+          "text": "PROTECTIVE",
+          "confidence": 96.0,
+          "bbox": [
+            224,
+            1666,
+            350,
+            1682
+          ]
+        },
+        {
+          "text": "EQUIPMENT:",
+          "confidence": 96.0,
+          "bbox": [
+            358,
+            1666,
+            490,
+            1685
+          ]
+        },
+        {
+          "text": "Safety",
+          "confidence": 96.0,
+          "bbox": [
+            504,
+            1665,
+            566,
+            1686
+          ]
+        },
+        {
+          "text": "glasses,",
+          "confidence": 93.0,
+          "bbox": [
+            573,
+            1665,
+            648,
+            1686
+          ]
+        },
+        {
+          "text": "chemical-resistant",
+          "confidence": 92.0,
+          "bbox": [
+            656,
+            1665,
+            840,
+            1682
+          ]
+        },
+        {
+          "text": "gloves.",
+          "confidence": 96.0,
+          "bbox": [
+            847,
+            1665,
+            914,
+            1686
+          ]
+        }
+      ],
+      "image_width": 1700,
+      "image_height": 2200
+    },
+    {
+      "page_number": 2,
+      "words": [
+        {
+          "text": "SAFETY",
+          "confidence": 95.0,
+          "bbox": [
+            687,
+            176,
+            804,
+            201
+          ]
+        },
+        {
+          "text": "DATA",
+          "confidence": 95.0,
+          "bbox": [
+            816,
+            176,
+            904,
+            201
+          ]
+        },
+        {
+          "text": "SHEET",
+          "confidence": 96.0,
+          "bbox": [
+            914,
+            176,
+            1013,
+            201
+          ]
+        },
+        {
+          "text": "BOILING",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            280,
+            192,
+            296
+          ]
+        },
+        {
+          "text": "POINT:",
+          "confidence": 95.0,
+          "bbox": [
+            201,
+            280,
+            271,
+            296
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 95.0,
+          "bbox": [
+            286,
+            278,
+            323,
+            299
+          ]
+        },
+        {
+          "text": "VAPOR",
+          "confidence": 95.0,
+          "bbox": [
+            566,
+            280,
+            639,
+            296
+          ]
+        },
+        {
+          "text": "DENSITY:",
+          "confidence": 95.0,
+          "bbox": [
+            647,
+            280,
+            738,
+            296
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            754,
+            278,
+            791,
+            299
+          ]
+        },
+        {
+          "text": "%",
+          "confidence": 93.0,
+          "bbox": [
+            1126,
+            280,
+            1138,
+            296
+          ]
+        },
+        {
+          "text": "VOLATILE",
+          "confidence": 96.0,
+          "bbox": [
+            1149,
+            280,
+            1247,
+            296
+          ]
+        },
+        {
+          "text": "BY",
+          "confidence": 96.0,
+          "bbox": [
+            1256,
+            280,
+            1281,
+            296
+          ]
+        },
+        {
+          "text": "VOLUME:",
+          "confidence": 96.0,
+          "bbox": [
+            1287,
+            280,
+            1385,
+            296
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            1400,
+            278,
+            1437,
+            299
+          ]
+        },
+        {
+          "text": "EVAPORATION",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            312,
+            259,
+            328
+          ]
+        },
+        {
+          "text": "RATE:",
+          "confidence": 96.0,
+          "bbox": [
+            268,
+            312,
+            325,
+            328
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            340,
+            310,
+            377,
+            331
+          ]
+        },
+        {
+          "text": "pH",
+          "confidence": 92.0,
+          "bbox": [
+            567,
+            312,
+            593,
+            332
+          ]
+        },
+        {
+          "text": "LEVEL:",
+          "confidence": 92.0,
+          "bbox": [
+            602,
+            312,
+            666,
+            328
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            682,
+            310,
+            719,
+            331
+          ]
+        },
+        {
+          "text": "%",
+          "confidence": 93.0,
+          "bbox": [
+            1126,
+            312,
+            1138,
+            328
+          ]
+        },
+        {
+          "text": "VOLATILE",
+          "confidence": 95.0,
+          "bbox": [
+            1149,
+            312,
+            1247,
+            328
+          ]
+        },
+        {
+          "text": "BY",
+          "confidence": 96.0,
+          "bbox": [
+            1256,
+            312,
+            1281,
+            328
+          ]
+        },
+        {
+          "text": "WEIGHT:",
+          "confidence": 93.0,
+          "bbox": [
+            1287,
+            312,
+            1378,
+            328
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            1393,
+            310,
+            1430,
+            331
+          ]
+        },
+        {
+          "text": "WEIGHT",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            344,
+            192,
+            360
+          ]
+        },
+        {
+          "text": "PER",
+          "confidence": 96.0,
+          "bbox": [
+            200,
+            344,
+            237,
+            360
+          ]
+        },
+        {
+          "text": "GALLON:",
+          "confidence": 94.0,
+          "bbox": [
+            244,
+            344,
+            334,
+            360
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 94.0,
+          "bbox": [
+            350,
+            342,
+            387,
+            363
+          ]
+        },
+        {
+          "text": "PRODUCT",
+          "confidence": 96.0,
+          "bbox": [
+            567,
+            344,
+            667,
+            360
+          ]
+        },
+        {
+          "text": "APPEARANCE:",
+          "confidence": 96.0,
+          "bbox": [
+            673,
+            344,
+            818,
+            360
+          ]
+        },
+        {
+          "text": "Black",
+          "confidence": 96.0,
+          "bbox": [
+            834,
+            343,
+            884,
+            360
+          ]
+        },
+        {
+          "text": "Solid",
+          "confidence": 96.0,
+          "bbox": [
+            891,
+            343,
+            938,
+            360
+          ]
+        },
+        {
+          "text": "VOC",
+          "confidence": 93.0,
+          "bbox": [
+            1125,
+            344,
+            1169,
+            360
+          ]
+        },
+        {
+          "text": "CONTENT:",
+          "confidence": 93.0,
+          "bbox": [
+            1176,
+            344,
+            1281,
+            360
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            1296,
+            342,
+            1333,
+            363
+          ]
+        },
+        {
+          "text": "ODOR:",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            376,
+            175,
+            392
+          ]
+        },
+        {
+          "text": "Mild",
+          "confidence": 93.0,
+          "bbox": [
+            191,
+            375,
+            232,
+            392
+          ]
+        },
+        {
+          "text": "Asphaltic",
+          "confidence": 93.0,
+          "bbox": [
+            240,
+            375,
+            331,
+            396
+          ]
+        },
+        {
+          "text": "ODOR",
+          "confidence": 96.0,
+          "bbox": [
+            566,
+            376,
+            628,
+            392
+          ]
+        },
+        {
+          "text": "THRESHOLD:",
+          "confidence": 93.0,
+          "bbox": [
+            635,
+            376,
+            765,
+            392
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 93.0,
+          "bbox": [
+            781,
+            374,
+            818,
+            395
+          ]
+        },
+        {
+          "text": "MELTING/FREEZING",
+          "confidence": 91.0,
+          "bbox": [
+            1127,
+            374,
+            1331,
+            396
+          ]
+        },
+        {
+          "text": "POINT:",
+          "confidence": 93.0,
+          "bbox": [
+            1340,
+            376,
+            1409,
+            392
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 92.0,
+          "bbox": [
+            1425,
+            374,
+            1463,
+            395
+          ]
+        },
+        {
+          "text": "FLASH",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            408,
+            169,
+            424
+          ]
+        },
+        {
+          "text": "POINT:",
+          "confidence": 96.0,
+          "bbox": [
+            178,
+            408,
+            247,
+            424
+          ]
+        },
+        {
+          "text": "See",
+          "confidence": 96.0,
+          "bbox": [
+            261,
+            408,
+            295,
+            424
+          ]
+        },
+        {
+          "text": "Section",
+          "confidence": 95.0,
+          "bbox": [
+            303,
+            408,
+            375,
+            424
+          ]
+        },
+        {
+          "text": "5",
+          "confidence": 95.0,
+          "bbox": [
+            384,
+            408,
+            394,
+            424
+          ]
+        },
+        {
+          "text": "FLAMMABILITY:",
+          "confidence": 79.0,
+          "bbox": [
+            567,
+            408,
+            730,
+            424
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 92.0,
+          "bbox": [
+            745,
+            406,
+            783,
+            427
+          ]
+        },
+        {
+          "text": "UEL/LEL:",
+          "confidence": 91.0,
+          "bbox": [
+            1127,
+            406,
+            1214,
+            428
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 92.0,
+          "bbox": [
+            1229,
+            406,
+            1267,
+            427
+          ]
+        },
+        {
+          "text": "VAPOR",
+          "confidence": 94.0,
+          "bbox": [
+            107,
+            440,
+            180,
+            456
+          ]
+        },
+        {
+          "text": "PRESSURE:",
+          "confidence": 93.0,
+          "bbox": [
+            188,
+            440,
+            297,
+            456
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 92.0,
+          "bbox": [
+            313,
+            438,
+            350,
+            459
+          ]
+        },
+        {
+          "text": "RELATIVE",
+          "confidence": 96.0,
+          "bbox": [
+            567,
+            440,
+            662,
+            456
+          ]
+        },
+        {
+          "text": "DENSITY:",
+          "confidence": 92.0,
+          "bbox": [
+            671,
+            440,
+            762,
+            456
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 92.0,
+          "bbox": [
+            778,
+            438,
+            816,
+            459
+          ]
+        },
+        {
+          "text": "SOLUBILITY:",
+          "confidence": 93.0,
+          "bbox": [
+            1126,
+            440,
+            1249,
+            456
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 91.0,
+          "bbox": [
+            1265,
+            438,
+            1302,
+            459
+          ]
+        },
+        {
+          "text": "PARTITION",
+          "confidence": 91.0,
+          "bbox": [
+            108,
+            472,
+            219,
+            488
+          ]
+        },
+        {
+          "text": "COEFFICENT:",
+          "confidence": 91.0,
+          "bbox": [
+            227,
+            472,
+            357,
+            488
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 88.0,
+          "bbox": [
+            373,
+            470,
+            410,
+            491
+          ]
+        },
+        {
+          "text": "AUTOIGNITION",
+          "confidence": 92.0,
+          "bbox": [
+            566,
+            472,
+            723,
+            488
+          ]
+        },
+        {
+          "text": "TEMPERATURE:",
+          "confidence": 92.0,
+          "bbox": [
+            730,
+            472,
+            891,
+            488
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 92.0,
+          "bbox": [
+            907,
+            470,
+            944,
+            491
+          ]
+        },
+        {
+          "text": "DECOMPOSITION",
+          "confidence": 96.0,
+          "bbox": [
+            1127,
+            472,
+            1305,
+            488
+          ]
+        },
+        {
+          "text": "TEMPERATURE:",
+          "confidence": 93.0,
+          "bbox": [
+            1312,
+            472,
+            1473,
+            488
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 91.0,
+          "bbox": [
+            1489,
+            470,
+            1527,
+            491
+          ]
+        },
+        {
+          "text": "VISCOSITY:",
+          "confidence": 92.0,
+          "bbox": [
+            107,
+            504,
+            219,
+            520
+          ]
+        },
+        {
+          "text": "N/D",
+          "confidence": 91.0,
+          "bbox": [
+            234,
+            502,
+            272,
+            523
+          ]
+        },
+        {
+          "text": "N/A:",
+          "confidence": 96.0,
+          "bbox": [
+            827,
+            502,
+            872,
+            523
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            885,
+            498,
+            912,
+            528
+          ]
+        },
+        {
+          "text": "Applicable",
+          "confidence": 96.0,
+          "bbox": [
+            914,
+            503,
+            1032,
+            524
+          ]
+        },
+        {
+          "text": "N/D:",
+          "confidence": 92.0,
+          "bbox": [
+            1108,
+            502,
+            1153,
+            523
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            1167,
+            504,
+            1203,
+            520
+          ]
+        },
+        {
+          "text": "Determined",
+          "confidence": 96.0,
+          "bbox": [
+            1209,
+            503,
+            1328,
+            520
+          ]
+        },
+        {
+          "text": "STABILITY:",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            568,
+            214,
+            584
+          ]
+        },
+        {
+          "text": "Stable.",
+          "confidence": 96.0,
+          "bbox": [
+            228,
+            567,
+            294,
+            584
+          ]
+        },
+        {
+          "text": "HAZARDOUS",
+          "confidence": 96.0,
+          "bbox": [
+            567,
+            568,
+            697,
+            584
+          ]
+        },
+        {
+          "text": "POLYMERIZATION:",
+          "confidence": 96.0,
+          "bbox": [
+            705,
+            568,
+            897,
+            584
+          ]
+        },
+        {
+          "text": "Will",
+          "confidence": 96.0,
+          "bbox": [
+            911,
+            567,
+            948,
+            584
+          ]
+        },
+        {
+          "text": "not",
+          "confidence": 96.0,
+          "bbox": [
+            957,
+            569,
+            989,
+            584
+          ]
+        },
+        {
+          "text": "occur.",
+          "confidence": 96.0,
+          "bbox": [
+            997,
+            572,
+            1056,
+            584
+          ]
+        },
+        {
+          "text": "CONDITIONS",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            600,
+            239,
+            616
+          ]
+        },
+        {
+          "text": "AND",
+          "confidence": 96.0,
+          "bbox": [
+            245,
+            600,
+            291,
+            616
+          ]
+        },
+        {
+          "text": "MATERIALS",
+          "confidence": 96.0,
+          "bbox": [
+            300,
+            600,
+            417,
+            616
+          ]
+        },
+        {
+          "text": "TO",
+          "confidence": 96.0,
+          "bbox": [
+            424,
+            600,
+            451,
+            616
+          ]
+        },
+        {
+          "text": "AVOID:",
+          "confidence": 95.0,
+          "bbox": [
+            459,
+            600,
+            533,
+            616
+          ]
+        },
+        {
+          "text": "None",
+          "confidence": 96.0,
+          "bbox": [
+            548,
+            600,
+            599,
+            616
+          ]
+        },
+        {
+          "text": "recognized.",
+          "confidence": 96.0,
+          "bbox": [
+            608,
+            599,
+            721,
+            620
+          ]
+        },
+        {
+          "text": "HAZARDOUS",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            632,
+            238,
+            648
+          ]
+        },
+        {
+          "text": "DECOMPOSITION",
+          "confidence": 95.0,
+          "bbox": [
+            246,
+            632,
+            424,
+            648
+          ]
+        },
+        {
+          "text": "PRODUCTS:",
+          "confidence": 96.0,
+          "bbox": [
+            433,
+            632,
+            550,
+            648
+          ]
+        },
+        {
+          "text": "None",
+          "confidence": 96.0,
+          "bbox": [
+            566,
+            632,
+            617,
+            648
+          ]
+        },
+        {
+          "text": "recognized.",
+          "confidence": 96.0,
+          "bbox": [
+            626,
+            631,
+            739,
+            652
+          ]
+        },
+        {
+          "text": "EYE",
+          "confidence": 94.0,
+          "bbox": [
+            108,
+            696,
+            143,
+            712
+          ]
+        },
+        {
+          "text": "CONTACT:",
+          "confidence": 94.0,
+          "bbox": [
+            151,
+            696,
+            255,
+            712
+          ]
+        },
+        {
+          "text": "Direct",
+          "confidence": 96.0,
+          "bbox": [
+            270,
+            696,
+            328,
+            712
+          ]
+        },
+        {
+          "text": "contact",
+          "confidence": 96.0,
+          "bbox": [
+            336,
+            697,
+            410,
+            712
+          ]
+        },
+        {
+          "text": "may",
+          "confidence": 96.0,
+          "bbox": [
+            418,
+            700,
+            459,
+            716
+          ]
+        },
+        {
+          "text": "cause",
+          "confidence": 96.0,
+          "bbox": [
+            467,
+            700,
+            522,
+            712
+          ]
+        },
+        {
+          "text": "mild",
+          "confidence": 96.0,
+          "bbox": [
+            531,
+            695,
+            572,
+            712
+          ]
+        },
+        {
+          "text": "irritation.",
+          "confidence": 95.0,
+          "bbox": [
+            581,
+            696,
+            673,
+            712
+          ]
+        },
+        {
+          "text": "SKIN",
+          "confidence": 95.0,
+          "bbox": [
+            107,
+            728,
+            153,
+            744
+          ]
+        },
+        {
+          "text": "CONTACT:",
+          "confidence": 95.0,
+          "bbox": [
+            161,
+            728,
+            265,
+            744
+          ]
+        },
+        {
+          "text": "Direct",
+          "confidence": 96.0,
+          "bbox": [
+            281,
+            728,
+            339,
+            744
+          ]
+        },
+        {
+          "text": "contact",
+          "confidence": 96.0,
+          "bbox": [
+            346,
+            729,
+            421,
+            744
+          ]
+        },
+        {
+          "text": "may",
+          "confidence": 97.0,
+          "bbox": [
+            429,
+            732,
+            470,
+            748
+          ]
+        },
+        {
+          "text": "cause",
+          "confidence": 96.0,
+          "bbox": [
+            477,
+            732,
+            533,
+            744
+          ]
+        },
+        {
+          "text": "slight",
+          "confidence": 96.0,
+          "bbox": [
+            540,
+            727,
+            593,
+            748
+          ]
+        },
+        {
+          "text": "skin",
+          "confidence": 93.0,
+          "bbox": [
+            600,
+            727,
+            637,
+            744
+          ]
+        },
+        {
+          "text": "irritation.",
+          "confidence": 93.0,
+          "bbox": [
+            646,
+            728,
+            738,
+            744
+          ]
+        },
+        {
+          "text": "INHALATION:",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            760,
+            243,
+            776
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            259,
+            760,
+            294,
+            776
+          ]
+        },
+        {
+          "text": "anticipated",
+          "confidence": 96.0,
+          "bbox": [
+            301,
+            759,
+            412,
+            780
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 96.0,
+          "bbox": [
+            420,
+            761,
+            440,
+            776
+          ]
+        },
+        {
+          "text": "be",
+          "confidence": 96.0,
+          "bbox": [
+            449,
+            759,
+            471,
+            776
+          ]
+        },
+        {
+          "text": "an",
+          "confidence": 96.0,
+          "bbox": [
+            479,
+            764,
+            501,
+            776
+          ]
+        },
+        {
+          "text": "exposure",
+          "confidence": 96.0,
+          "bbox": [
+            510,
+            764,
+            601,
+            780
+          ]
+        },
+        {
+          "text": "route.",
+          "confidence": 96.0,
+          "bbox": [
+            609,
+            761,
+            667,
+            776
+          ]
+        },
+        {
+          "text": "INGESTION:",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            792,
+            227,
+            808
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            242,
+            792,
+            277,
+            808
+          ]
+        },
+        {
+          "text": "anticipated",
+          "confidence": 96.0,
+          "bbox": [
+            285,
+            791,
+            396,
+            812
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 96.0,
+          "bbox": [
+            404,
+            793,
+            424,
+            808
+          ]
+        },
+        {
+          "text": "be",
+          "confidence": 96.0,
+          "bbox": [
+            432,
+            791,
+            455,
+            808
+          ]
+        },
+        {
+          "text": "an",
+          "confidence": 96.0,
+          "bbox": [
+            463,
+            796,
+            485,
+            808
+          ]
+        },
+        {
+          "text": "exposure",
+          "confidence": 96.0,
+          "bbox": [
+            494,
+            796,
+            584,
+            812
+          ]
+        },
+        {
+          "text": "route.",
+          "confidence": 96.0,
+          "bbox": [
+            593,
+            793,
+            651,
+            808
+          ]
+        },
+        {
+          "text": "SIGNS",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            824,
+            168,
+            840
+          ]
+        },
+        {
+          "text": "AND",
+          "confidence": 95.0,
+          "bbox": [
+            175,
+            824,
+            221,
+            840
+          ]
+        },
+        {
+          "text": "SYMPTOMS:",
+          "confidence": 95.0,
+          "bbox": [
+            228,
+            824,
+            356,
+            840
+          ]
+        },
+        {
+          "text": "Symptoms",
+          "confidence": 95.0,
+          "bbox": [
+            369,
+            824,
+            475,
+            844
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            483,
+            823,
+            502,
+            840
+          ]
+        },
+        {
+          "text": "eye",
+          "confidence": 96.0,
+          "bbox": [
+            509,
+            828,
+            543,
+            844
+          ]
+        },
+        {
+          "text": "irritation",
+          "confidence": 96.0,
+          "bbox": [
+            551,
+            824,
+            637,
+            840
+          ]
+        },
+        {
+          "text": "include",
+          "confidence": 96.0,
+          "bbox": [
+            646,
+            823,
+            717,
+            840
+          ]
+        },
+        {
+          "text": "tearing,",
+          "confidence": 96.0,
+          "bbox": [
+            724,
+            824,
+            800,
+            844
+          ]
+        },
+        {
+          "text": "reddening,",
+          "confidence": 96.0,
+          "bbox": [
+            809,
+            823,
+            915,
+            844
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 96.0,
+          "bbox": [
+            923,
+            823,
+            958,
+            840
+          ]
+        },
+        {
+          "text": "swelling.",
+          "confidence": 96.0,
+          "bbox": [
+            966,
+            823,
+            1052,
+            844
+          ]
+        },
+        {
+          "text": "Symptoms",
+          "confidence": 96.0,
+          "bbox": [
+            1066,
+            824,
+            1171,
+            844
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            1179,
+            823,
+            1199,
+            840
+          ]
+        },
+        {
+          "text": "skin",
+          "confidence": 96.0,
+          "bbox": [
+            1205,
+            823,
+            1242,
+            840
+          ]
+        },
+        {
+          "text": "irritation",
+          "confidence": 95.0,
+          "bbox": [
+            1251,
+            824,
+            1337,
+            840
+          ]
+        },
+        {
+          "text": "include",
+          "confidence": 95.0,
+          "bbox": [
+            1346,
+            823,
+            1417,
+            840
+          ]
+        },
+        {
+          "text": "redness",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            855,
+            184,
+            872
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 95.0,
+          "bbox": [
+            192,
+            855,
+            227,
+            872
+          ]
+        },
+        {
+          "text": "swelling.",
+          "confidence": 96.0,
+          "bbox": [
+            235,
+            855,
+            320,
+            876
+          ]
+        },
+        {
+          "text": "Gastrointestinal",
+          "confidence": 96.0,
+          "bbox": [
+            335,
+            855,
+            493,
+            872
+          ]
+        },
+        {
+          "text": "irritation",
+          "confidence": 96.0,
+          "bbox": [
+            503,
+            856,
+            588,
+            872
+          ]
+        },
+        {
+          "text": "symptoms",
+          "confidence": 96.0,
+          "bbox": [
+            597,
+            857,
+            700,
+            876
+          ]
+        },
+        {
+          "text": "include",
+          "confidence": 96.0,
+          "bbox": [
+            709,
+            855,
+            779,
+            872
+          ]
+        },
+        {
+          "text": "nausea,",
+          "confidence": 96.0,
+          "bbox": [
+            788,
+            860,
+            863,
+            876
+          ]
+        },
+        {
+          "text": "vomiting,",
+          "confidence": 96.0,
+          "bbox": [
+            871,
+            856,
+            964,
+            876
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 96.0,
+          "bbox": [
+            972,
+            855,
+            1007,
+            872
+          ]
+        },
+        {
+          "text": "abdominal",
+          "confidence": 96.0,
+          "bbox": [
+            1016,
+            855,
+            1120,
+            872
+          ]
+        },
+        {
+          "text": "discomfort.",
+          "confidence": 96.0,
+          "bbox": [
+            1129,
+            855,
+            1243,
+            872
+          ]
+        },
+        {
+          "text": "AGGRAVATED",
+          "confidence": 95.0,
+          "bbox": [
+            107,
+            888,
+            252,
+            904
+          ]
+        },
+        {
+          "text": "MEDICAL",
+          "confidence": 96.0,
+          "bbox": [
+            260,
+            888,
+            353,
+            904
+          ]
+        },
+        {
+          "text": "CONDITIONS:",
+          "confidence": 96.0,
+          "bbox": [
+            360,
+            888,
+            498,
+            904
+          ]
+        },
+        {
+          "text": "None",
+          "confidence": 96.0,
+          "bbox": [
+            513,
+            888,
+            565,
+            904
+          ]
+        },
+        {
+          "text": "recognized.",
+          "confidence": 96.0,
+          "bbox": [
+            573,
+            887,
+            686,
+            908
+          ]
+        },
+        {
+          "text": "OTHER",
+          "confidence": 96.0,
+          "bbox": [
+            107,
+            920,
+            177,
+            936
+          ]
+        },
+        {
+          "text": "HEALTH",
+          "confidence": 96.0,
+          "bbox": [
+            185,
+            920,
+            264,
+            936
+          ]
+        },
+        {
+          "text": "EFFECTS:",
+          "confidence": 96.0,
+          "bbox": [
+            273,
+            920,
+            361,
+            936
+          ]
+        },
+        {
+          "text": "None",
+          "confidence": 95.0,
+          "bbox": [
+            376,
+            920,
+            428,
+            936
+          ]
+        },
+        {
+          "text": "recognized.",
+          "confidence": 96.0,
+          "bbox": [
+            436,
+            919,
+            549,
+            940
+          ]
+        },
+        {
+          "text": "ECOTOXICITY:",
+          "confidence": 91.0,
+          "bbox": [
+            241,
+            984,
+            382,
+            1000
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            395,
+            983,
+            430,
+            1004
+          ]
+        },
+        {
+          "text": "DEGRADABILITY:",
+          "confidence": 92.0,
+          "bbox": [
+            697,
+            984,
+            868,
+            1000
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            881,
+            983,
+            915,
+            1004
+          ]
+        },
+        {
+          "text": "BIOACCUMULATIVE",
+          "confidence": 90.0,
+          "bbox": [
+            1132,
+            984,
+            1335,
+            1000
+          ]
+        },
+        {
+          "text": "POTENTIAL:",
+          "confidence": 96.0,
+          "bbox": [
+            1344,
+            984,
+            1463,
+            1000
+          ]
+        },
+        {
+          "text": "N/E",
+          "confidence": 96.0,
+          "bbox": [
+            1476,
+            983,
+            1511,
+            1004
+          ]
+        },
+        {
+          "text": "HAZARDOUS/NON-HAZARDOUS",
+          "confidence": 91.0,
+          "bbox": [
+            108,
+            1142,
+            439,
+            1164
+          ]
+        },
+        {
+          "text": "MATERIAL:",
+          "confidence": 96.0,
+          "bbox": [
+            447,
+            1144,
+            558,
+            1160
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            574,
+            1144,
+            608,
+            1160
+          ]
+        },
+        {
+          "text": "regulated",
+          "confidence": 96.0,
+          "bbox": [
+            616,
+            1143,
+            710,
+            1164
+          ]
+        },
+        {
+          "text": "by",
+          "confidence": 96.0,
+          "bbox": [
+            719,
+            1143,
+            741,
+            1164
+          ]
+        },
+        {
+          "text": "DOT.",
+          "confidence": 96.0,
+          "bbox": [
+            750,
+            1144,
+            796,
+            1160
+          ]
+        },
+        {
+          "text": "UN",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1176,
+            138,
+            1192
+          ]
+        },
+        {
+          "text": "NUMBER:",
+          "confidence": 96.0,
+          "bbox": [
+            147,
+            1176,
+            245,
+            1192
+          ]
+        },
+        {
+          "text": "None",
+          "confidence": 96.0,
+          "bbox": [
+            261,
+            1176,
+            312,
+            1192
+          ]
+        },
+        {
+          "text": "HAZARD",
+          "confidence": 96.0,
+          "bbox": [
+            548,
+            1176,
+            633,
+            1192
+          ]
+        },
+        {
+          "text": "CLASS:",
+          "confidence": 96.0,
+          "bbox": [
+            640,
+            1176,
+            707,
+            1192
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            720,
+            1175,
+            757,
+            1196
+          ]
+        },
+        {
+          "text": "PACKING",
+          "confidence": 96.0,
+          "bbox": [
+            934,
+            1176,
+            1024,
+            1192
+          ]
+        },
+        {
+          "text": "GROUP:",
+          "confidence": 96.0,
+          "bbox": [
+            1033,
+            1176,
+            1114,
+            1192
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 95.0,
+          "bbox": [
+            1127,
+            1175,
+            1164,
+            1196
+          ]
+        },
+        {
+          "text": "UN",
+          "confidence": 95.0,
+          "bbox": [
+            108,
+            1208,
+            138,
+            1224
+          ]
+        },
+        {
+          "text": "PROPER",
+          "confidence": 95.0,
+          "bbox": [
+            147,
+            1208,
+            228,
+            1224
+          ]
+        },
+        {
+          "text": "SHIPPING",
+          "confidence": 95.0,
+          "bbox": [
+            235,
+            1208,
+            332,
+            1224
+          ]
+        },
+        {
+          "text": "NAME:",
+          "confidence": 96.0,
+          "bbox": [
+            342,
+            1208,
+            411,
+            1224
+          ]
+        },
+        {
+          "text": "N/A",
+          "confidence": 96.0,
+          "bbox": [
+            426,
+            1206,
+            463,
+            1227
+          ]
+        },
+        {
+          "text": "ENVIRONMENTAL",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1240,
+            292,
+            1256
+          ]
+        },
+        {
+          "text": "HAZARDS:",
+          "confidence": 96.0,
+          "bbox": [
+            300,
+            1240,
+            402,
+            1256
+          ]
+        },
+        {
+          "text": "None",
+          "confidence": 96.0,
+          "bbox": [
+            418,
+            1240,
+            469,
+            1256
+          ]
+        },
+        {
+          "text": "recognized.",
+          "confidence": 96.0,
+          "bbox": [
+            478,
+            1239,
+            591,
+            1260
+          ]
+        },
+        {
+          "text": "BULK",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1272,
+            161,
+            1288
+          ]
+        },
+        {
+          "text": "TRANSPORTATION",
+          "confidence": 96.0,
+          "bbox": [
+            167,
+            1272,
+            359,
+            1288
+          ]
+        },
+        {
+          "text": "INFORMATION:",
+          "confidence": 96.0,
+          "bbox": [
+            368,
+            1272,
+            526,
+            1288
+          ]
+        },
+        {
+          "text": "None.",
+          "confidence": 96.0,
+          "bbox": [
+            568,
+            1273,
+            624,
+            1289
+          ]
+        },
+        {
+          "text": "SPECIAL",
+          "confidence": 95.0,
+          "bbox": [
+            107,
+            1304,
+            189,
+            1320
+          ]
+        },
+        {
+          "text": "PRECAUTIONS:",
+          "confidence": 95.0,
+          "bbox": [
+            197,
+            1304,
+            349,
+            1320
+          ]
+        },
+        {
+          "text": "None.",
+          "confidence": 96.0,
+          "bbox": [
+            395,
+            1301,
+            452,
+            1329
+          ]
+        },
+        {
+          "text": "N/A:",
+          "confidence": 94.0,
+          "bbox": [
+            975,
+            1302,
+            1019,
+            1323
+          ]
+        },
+        {
+          "text": "Not",
+          "confidence": 96.0,
+          "bbox": [
+            1033,
+            1304,
+            1069,
+            1320
+          ]
+        },
+        {
+          "text": "Applicable",
+          "confidence": 96.0,
+          "bbox": [
+            1074,
+            1303,
+            1179,
+            1324
+          ]
+        },
+        {
+          "text": "PREPARATION",
+          "confidence": 96.0,
+          "bbox": [
+            108,
+            1432,
+            254,
+            1448
+          ]
+        },
+        {
+          "text": "DATE:",
+          "confidence": 96.0,
+          "bbox": [
+            263,
+            1432,
+            322,
+            1448
+          ]
+        },
+        {
+          "text": "1/17/2024",
+          "confidence": 96.0,
+          "bbox": [
+            395,
+            1430,
+            500,
+            1451
+          ]
+        },
+        {
+          "text": "The",
+          "confidence": 96.0,
+          "bbox": [
+            109,
+            1558,
+            147,
+            1577
+          ]
+        },
+        {
+          "text": "information",
+          "confidence": 96.0,
+          "bbox": [
+            155,
+            1558,
+            286,
+            1582
+          ]
+        },
+        {
+          "text": "contained",
+          "confidence": 96.0,
+          "bbox": [
+            295,
+            1558,
+            406,
+            1577
+          ]
+        },
+        {
+          "text": "herein",
+          "confidence": 96.0,
+          "bbox": [
+            413,
+            1558,
+            482,
+            1577
+          ]
+        },
+        {
+          "text": "is",
+          "confidence": 96.0,
+          "bbox": [
+            491,
+            1559,
+            506,
+            1577
+          ]
+        },
+        {
+          "text": "based",
+          "confidence": 96.0,
+          "bbox": [
+            514,
+            1558,
+            580,
+            1577
+          ]
+        },
+        {
+          "text": "on",
+          "confidence": 96.0,
+          "bbox": [
+            588,
+            1564,
+            614,
+            1577
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            623,
+            1558,
+            657,
+            1577
+          ]
+        },
+        {
+          "text": "data",
+          "confidence": 96.0,
+          "bbox": [
+            666,
+            1558,
+            716,
+            1577
+          ]
+        },
+        {
+          "text": "available",
+          "confidence": 96.0,
+          "bbox": [
+            725,
+            1558,
+            824,
+            1577
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 97.0,
+          "bbox": [
+            834,
+            1561,
+            854,
+            1577
+          ]
+        },
+        {
+          "text": "us",
+          "confidence": 96.0,
+          "bbox": [
+            864,
+            1564,
+            886,
+            1577
+          ]
+        },
+        {
+          "text": "and",
+          "confidence": 96.0,
+          "bbox": [
+            894,
+            1558,
+            936,
+            1577
+          ]
+        },
+        {
+          "text": "is",
+          "confidence": 96.0,
+          "bbox": [
+            943,
+            1559,
+            959,
+            1577
+          ]
+        },
+        {
+          "text": "believed",
+          "confidence": 96.0,
+          "bbox": [
+            967,
+            1558,
+            1059,
+            1577
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 96.0,
+          "bbox": [
+            1068,
+            1561,
+            1088,
+            1577
+          ]
+        },
+        {
+          "text": "be",
+          "confidence": 97.0,
+          "bbox": [
+            1097,
+            1558,
+            1122,
+            1577
+          ]
+        },
+        {
+          "text": "correct.",
+          "confidence": 96.0,
+          "bbox": [
+            1131,
+            1561,
+            1213,
+            1577
+          ]
+        },
+        {
+          "text": "However,",
+          "confidence": 96.0,
+          "bbox": [
+            1230,
+            1559,
+            1332,
+            1581
+          ]
+        },
+        {
+          "text": "we",
+          "confidence": 96.0,
+          "bbox": [
+            109,
+            1596,
+            139,
+            1609
+          ]
+        },
+        {
+          "text": "make",
+          "confidence": 96.0,
+          "bbox": [
+            147,
+            1590,
+            207,
+            1609
+          ]
+        },
+        {
+          "text": "no",
+          "confidence": 96.0,
+          "bbox": [
+            216,
+            1596,
+            242,
+            1609
+          ]
+        },
+        {
+          "text": "warranty,",
+          "confidence": 96.0,
+          "bbox": [
+            252,
+            1593,
+            357,
+            1614
+          ]
+        },
+        {
+          "text": "expressed",
+          "confidence": 96.0,
+          "bbox": [
+            367,
+            1590,
+            477,
+            1614
+          ]
+        },
+        {
+          "text": "or",
+          "confidence": 96.0,
+          "bbox": [
+            485,
+            1596,
+            508,
+            1609
+          ]
+        },
+        {
+          "text": "implied",
+          "confidence": 96.0,
+          "bbox": [
+            515,
+            1590,
+            597,
+            1614
+          ]
+        },
+        {
+          "text": "regarding",
+          "confidence": 96.0,
+          "bbox": [
+            604,
+            1590,
+            712,
+            1614
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            721,
+            1590,
+            755,
+            1609
+          ]
+        },
+        {
+          "text": "accuracy",
+          "confidence": 96.0,
+          "bbox": [
+            764,
+            1596,
+            862,
+            1614
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 97.0,
+          "bbox": [
+            870,
+            1590,
+            894,
+            1614
+          ]
+        },
+        {
+          "text": "this",
+          "confidence": 96.0,
+          "bbox": [
+            900,
+            1590,
+            938,
+            1609
+          ]
+        },
+        {
+          "text": "data",
+          "confidence": 96.0,
+          "bbox": [
+            946,
+            1590,
+            996,
+            1609
+          ]
+        },
+        {
+          "text": "or",
+          "confidence": 96.0,
+          "bbox": [
+            1005,
+            1596,
+            1028,
+            1609
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            1035,
+            1590,
+            1069,
+            1609
+          ]
+        },
+        {
+          "text": "results",
+          "confidence": 97.0,
+          "bbox": [
+            1078,
+            1590,
+            1150,
+            1609
+          ]
+        },
+        {
+          "text": "to",
+          "confidence": 96.0,
+          "bbox": [
+            1159,
+            1593,
+            1180,
+            1609
+          ]
+        },
+        {
+          "text": "be",
+          "confidence": 96.0,
+          "bbox": [
+            1188,
+            1590,
+            1214,
+            1609
+          ]
+        },
+        {
+          "text": "obtained",
+          "confidence": 96.0,
+          "bbox": [
+            1222,
+            1590,
+            1322,
+            1609
+          ]
+        },
+        {
+          "text": "from",
+          "confidence": 95.0,
+          "bbox": [
+            104,
+            1622,
+            159,
+            1646
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            169,
+            1622,
+            203,
+            1641
+          ]
+        },
+        {
+          "text": "use",
+          "confidence": 96.0,
+          "bbox": [
+            212,
+            1628,
+            248,
+            1641
+          ]
+        },
+        {
+          "text": "thereof.",
+          "confidence": 95.0,
+          "bbox": [
+            257,
+            1622,
+            342,
+            1646
+          ]
+        },
+        {
+          "text": "We",
+          "confidence": 95.0,
+          "bbox": [
+            360,
+            1623,
+            394,
+            1641
+          ]
+        },
+        {
+          "text": "assume",
+          "confidence": 95.0,
+          "bbox": [
+            403,
+            1628,
+            486,
+            1641
+          ]
+        },
+        {
+          "text": "no",
+          "confidence": 96.0,
+          "bbox": [
+            494,
+            1628,
+            521,
+            1641
+          ]
+        },
+        {
+          "text": "responsibility",
+          "confidence": 96.0,
+          "bbox": [
+            529,
+            1622,
+            716,
+            1646
+          ]
+        },
+        {
+          "text": "for",
+          "confidence": 96.0,
+          "bbox": [
+            684,
+            1618,
+            714,
+            1650
+          ]
+        },
+        {
+          "text": "injury",
+          "confidence": 96.0,
+          "bbox": [
+            724,
+            1623,
+            783,
+            1646
+          ]
+        },
+        {
+          "text": "from",
+          "confidence": 96.0,
+          "bbox": [
+            793,
+            1622,
+            836,
+            1646
+          ]
+        },
+        {
+          "text": "the",
+          "confidence": 96.0,
+          "bbox": [
+            853,
+            1622,
+            887,
+            1641
+          ]
+        },
+        {
+          "text": "use",
+          "confidence": 95.0,
+          "bbox": [
+            896,
+            1628,
+            932,
+            1641
+          ]
+        },
+        {
+          "text": "of",
+          "confidence": 96.0,
+          "bbox": [
+            940,
+            1622,
+            964,
+            1646
+          ]
+        },
+        {
+          "text": "this",
+          "confidence": 96.0,
+          "bbox": [
+            970,
+            1622,
+            1008,
+            1641
+          ]
+        },
+        {
+          "text": "product",
+          "confidence": 96.0,
+          "bbox": [
+            1015,
+            1622,
+            1103,
+            1646
+          ]
+        },
+        {
+          "text": "described",
+          "confidence": 96.0,
+          "bbox": [
+            1110,
+            1622,
+            1217,
+            1641
+          ]
+        },
+        {
+          "text": "herein.",
+          "confidence": 96.0,
+          "bbox": [
+            1224,
+            1622,
+            1298,
+            1641
+          ]
+        }
+      ],
+      "image_width": 1700,
+      "image_height": 2200
+    }
+  ]
+}

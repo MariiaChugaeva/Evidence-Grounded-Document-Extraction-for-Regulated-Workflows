@@ -1,0 +1,119 @@
+{
+  "document": "sds_08.pdf",
+  "split": "dev",
+  "note": "Agricultural fungicide. Section 1.3 names BASF SE as the company and BASF plc as the contact address, so the supplier is ambiguous and both are accepted.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Revygold",
+      "accepted_values": ["Revygold\u00ae"],
+      "evidence": [{ "page": 1, "text": "1.1. Product identifier Revygold" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "BASF SE",
+      "accepted_values": ["BASF plc"],
+      "ambiguous": true,
+      "evidence": [
+        { "page": 1, "text": "Company: BASF SE" },
+        { "page": 1, "text": "Contact address: BASF plc" }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 3, "text": "3.1. Substances Not applicable" },
+        {
+          "page": 4,
+          "text": "3.2. Mixtures Chemical nature crop protection product, fungicide"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 3, "text": "3.1. Substances Not applicable" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 4,
+          "text": "3.2. Mixtures Chemical nature crop protection product, fungicide"
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 4,
+          "text": "3.2. Mixtures Chemical nature crop protection product, fungicide"
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "120 \u00b0C",
+      "evidence": [{ "page": 9, "text": "Flash point: 120 \u00b0C" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 4, "text": "Hazardous ingredients (GHS)" }],
+    "items": [
+      {
+        "name": "mefentrifluconazole",
+        "cas_number": "1417782-03-6",
+        "cas_state": "PRESENT",
+        "concentration": "6.99 %",
+        "evidence": [{ "page": 4, "text": "CAS Number: 1417782-03-6" }]
+      },
+      {
+        "name": "Fluxapyroxad (ISO)",
+        "cas_number": "907204-31-3",
+        "cas_state": "PRESENT",
+        "concentration": "6.66 %",
+        "evidence": [{ "page": 4, "text": "CAS Number: 907204-31-3" }]
+      },
+      {
+        "name": "N,N-Dimethyldecan-1-amide",
+        "cas_number": "14433-76-2",
+        "cas_state": "PRESENT",
+        "concentration": "< 55 %",
+        "evidence": [{ "page": 4, "text": "CAS Number: 14433-76-2" }]
+      },
+      {
+        "name": "methyl methacrylate",
+        "cas_number": "80-62-6",
+        "cas_state": "PRESENT",
+        "concentration": "< 3 %",
+        "evidence": [{ "page": 5, "text": "CAS Number: 80-62-6" }]
+      },
+      {
+        "name": "Dodecyl acrylate",
+        "cas_number": "2156-97-0",
+        "cas_state": "PRESENT",
+        "concentration": "< 0.5 %",
+        "evidence": [{ "page": 5, "text": "CAS Number: 2156-97-0" }]
+      },
+      {
+        "name": "Tetradecyl acrylate",
+        "cas_number": "21643-42-5",
+        "cas_state": "PRESENT",
+        "concentration": "< 0.5 %",
+        "evidence": [{ "page": 5, "text": "CAS Number: 21643-42-5" }]
+      }
+    ]
+  }
+}

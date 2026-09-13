@@ -1,0 +1,103 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "CIP Composites",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Product Name: CIP Composites"
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Columbia Industrial Products",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Company: Columbia Industrial Products"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "ARTICLE",
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "The following information is being provided in SDS format as a customer courtesy."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "The following information is being provided in SDS format as a customer courtesy."
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "The following information is being provided in SDS format as a customer courtesy."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "Flash point: No applicable data available"
+        }
+      ]
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": []
+  },
+  "usage": {
+    "input_tokens": 2048,
+    "output_tokens": 551,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 11.552617799985455,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

@@ -1,0 +1,112 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Petrochemical Stillage Residue KON-92 (heavy petroleum resin)",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "1.1.1 Product name Petrochemical Stillage Residue KON-92 (heavy petroleum resin)."
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "JSC 'Sibur-Khimprom'",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "1.2.1 Full official company name JSC 'Sibur-Khimprom'"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 3,
+          "quote": "3.1.1 Chemical name No. [l]. (as per IUPAC)"
+        },
+        {
+          "page": 3,
+          "quote": "3.1.2 Chemical formula No. [l]."
+        },
+        {
+          "page": 3,
+          "quote": "3.1.3 General description of the composition Petrochemical Stillage Residue KON-92 produced from residuals of production process) [l]."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "value": "Closed-cup flash point - more than 61 °C",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 4,
+          "quote": "5.2 Specific hazards Closed-cup flash point - more than 61 °C;"
+        }
+      ]
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "2-ethylhexanol+",
+        "cas_number": "104-76-7",
+        "cas_state": "PRESENT",
+        "concentration": "NMT 100%",
+        "citation": {
+          "page": 4,
+          "quote": "Table 1 [1,2,5,9,27] Ingredients Weight Hygienic regulations (name) content,% MACw.a., In the work Hazard area air class CAS No. EC No. mg/m3 Petrochemical Stillage Residues, including 100 none none none none 2-ethylhexanol+, + -compounds which %, NMT require skin and eye special protection JO while I 0 handling; (a) a - aerosol 3 104-76-7 203-234-3"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 11234,
+    "output_tokens": 846,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 28.29197399999248,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

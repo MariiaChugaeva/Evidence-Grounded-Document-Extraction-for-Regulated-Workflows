@@ -1,0 +1,157 @@
+{
+  "document": "sds_02.pdf",
+  "split": "dev",
+  "note": "Lithium-ion cell. The old ground truth recorded the positive-electrode CAS number 12190-79-3 and its formula Li[M]m[O]n as product-level values; both are ingredient-level and the product declares itself a preparation. No flash point appears anywhere in the document.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Lithium ion rechargeable battery cell",
+      "evidence": [
+        { "page": 3, "text": "Product name: Lithium ion rechargeable battery cell" }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Panasonic Energy Co., Ltd.",
+      "evidence": [{ "page": 3, "text": "Company name: Panasonic Energy Co., Ltd." }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [{ "page": 4, "text": "Substance or preparation: Preparation" }],
+      "note": "\"Preparation\" is the pre-CLP term for a mixture."
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 4, "text": "Substance or preparation: Preparation" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 4, "text": "Substance or preparation: Preparation" }],
+      "note": "Li[M]m[O]n in Section 3 is the formula of the positive-electrode material, not of the cell."
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 5, "text": "Molecular Weight : N/A" }]
+    },
+    "flash_point": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "Neither Section 5 nor Section 9 mentions a flash point; the string \"flash\" does not occur in the document."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "note": "Section 3 groups several CAS numbers under one material row. Each distinct declared CAS number is annotated once, at its first occurrence in the table.",
+    "evidence": [{ "page": 4, "text": "Portion Material name CAS No." }],
+    "items": [
+      {
+        "name": "Lithium transition metal oxidate",
+        "cas_number": "12190-79-3",
+        "cas_state": "PRESENT",
+        "concentration": "20~60",
+        "evidence": [{ "page": 4, "text": "12190-79-3" }]
+      },
+      {
+        "name": "Lithium transition metal oxidate",
+        "cas_number": "12031-65-1",
+        "cas_state": "PRESENT",
+        "concentration": "20~60",
+        "evidence": [{ "page": 4, "text": "12031-65-1" }]
+      },
+      {
+        "name": "Lithium transition metal oxidate",
+        "cas_number": "12057-17-9",
+        "cas_state": "PRESENT",
+        "concentration": "20~60",
+        "evidence": [{ "page": 4, "text": "12057-17-9" }]
+      },
+      {
+        "name": "Lithium transition metal oxidate",
+        "cas_number": "182442-95-1",
+        "cas_state": "PRESENT",
+        "concentration": "20~60",
+        "evidence": [{ "page": 4, "text": "182442-95-1" }]
+      },
+      {
+        "name": "Lithium transition metal oxidate",
+        "cas_number": "207803-51-8",
+        "cas_state": "PRESENT",
+        "concentration": "20~60",
+        "evidence": [{ "page": 4, "text": "207803-51-8" }]
+      },
+      {
+        "name": "Aluminum",
+        "cas_number": "7429-90-5",
+        "cas_state": "PRESENT",
+        "concentration": "1~10",
+        "evidence": [{ "page": 4, "text": "7429-90-5" }]
+      },
+      {
+        "name": "Carbon",
+        "cas_number": "7782-42-5",
+        "cas_state": "PRESENT",
+        "concentration": "10~30",
+        "evidence": [{ "page": 4, "text": "7782-42-5" }]
+      },
+      {
+        "name": "Carbon",
+        "cas_number": "7440-44-0",
+        "cas_state": "PRESENT",
+        "concentration": "10~30",
+        "evidence": [{ "page": 4, "text": "7440-44-0" }]
+      },
+      {
+        "name": "Copper",
+        "cas_number": "7440-50-8",
+        "cas_state": "PRESENT",
+        "concentration": "1~15",
+        "evidence": [{ "page": 4, "text": "7440-50-8" }]
+      },
+      {
+        "name": "Ethyl methyl carbonate",
+        "cas_number": "623-53-0",
+        "cas_state": "PRESENT",
+        "concentration": "5~25",
+        "evidence": [{ "page": 4, "text": "623-53-0" }]
+      },
+      {
+        "name": "Diethyl carbonate",
+        "cas_number": "105-58-8",
+        "cas_state": "PRESENT",
+        "concentration": "5~25",
+        "evidence": [{ "page": 4, "text": "105-58-8" }]
+      },
+      {
+        "name": "Ethylene carbonate",
+        "cas_number": "96-49-1",
+        "cas_state": "PRESENT",
+        "concentration": "5~25",
+        "evidence": [{ "page": 4, "text": "96-49-1" }]
+      },
+      {
+        "name": "Lithium hexafluorophosphate",
+        "cas_number": "21324-40-3",
+        "cas_state": "PRESENT",
+        "concentration": "5~25",
+        "evidence": [{ "page": 4, "text": "21324-40-3" }]
+      },
+      {
+        "name": "Iron",
+        "cas_number": "7439-89-6",
+        "cas_state": "PRESENT",
+        "concentration": "1~30",
+        "evidence": [{ "page": 4, "text": "7439-89-6" }]
+      }
+    ]
+  }
+}

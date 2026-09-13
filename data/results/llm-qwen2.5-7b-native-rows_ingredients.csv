@@ -1,0 +1,50 @@
+document,gold_index,predicted_index,key,gold_name,predicted_name,gold_concentration,predicted_concentration,name_ok,cas_ok,concentration_ok,evidence_ok,verbatim,record_ok,record_with_evidence_ok
+sds_02.pdf,3,0,cas,Lithium transition metal oxidate,Positive electrode,20~60,20~60,False,True,True,False,False,False,False
+sds_02.pdf,5,1,cas,Aluminum,Positive electrode’s base,1~10,1~10,False,True,True,True,True,False,False
+sds_02.pdf,6,2,cas,Carbon,Negative electrode,10~30,10~30,False,True,True,True,True,False,False
+sds_02.pdf,8,3,cas,Copper,Negative electrode’s base,1~15,1~15,False,True,True,True,True,False,False
+sds_02.pdf,9,4,cas,Ethyl methyl carbonate,Ethyl methyl carbonate,5~25,5~25,True,True,True,True,True,True,True
+sds_02.pdf,10,5,cas,Diethyl carbonate,Electrolyte,5~25,5~25,False,True,True,False,False,False,False
+sds_03.pdf,0,0,cas,"Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated","Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated",1 - <2.5 %,<2.5 %,True,True,False,True,True,False,False
+sds_03.pdf,1,1,cas,m-phenylenebis(methylamine),m-phenylenebis(methylamine),<1 %,<1 %,True,True,True,False,True,True,False
+sds_03.pdf,2,2,cas,"1,2-benzisothiazol-3(2H)-one","1,2-benzisothiazol-3(2H)-one",<1 %,<1 %,True,True,True,True,True,True,True
+sds_03.pdf,3,3,cas,Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1),Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1),<1 %,<1 %,True,True,True,False,True,True,False
+sds_04.pdf,0,0,cas,"1,1,1,2-Tetrafluoroethane","1,1,1,2-Tetrafluoroethane",100,100,True,True,True,False,False,True,False
+sds_07.pdf,1,1,cas,Iron oxide(Fe2O3),Iron oxide(Fe2O3),10% ~ 20%,10% ~ 20%,True,True,True,False,True,True,False
+sds_07.pdf,4,4,cas,Carbon black,Carbon black,1% ~ 10%,~ 1%,True,True,False,False,True,False,False
+sds_07.pdf,5,5,cas,Titanium dioxide,Titanium dioxide,~ 1%,~ 1%,True,True,True,False,True,True,False
+sds_07.pdf,0,0,name,Styrene / acrylate resin,Styrene / acrylate resin,60% ~ 70%,60% ~ 70%,True,True,True,True,True,True,True
+sds_07.pdf,2,2,name,Polyethylene,Polyethylene,1% ~ 10%,1% ~ 10%,True,True,True,True,True,True,True
+sds_07.pdf,3,3,name,Amorphous silica,Amorphous silica,1% ~ 10%,1% ~ 10%,True,False,True,False,False,False,False
+sds_08.pdf,0,0,cas,mefentrifluconazole,mefentrifluconazole,6.99 %,6.99 %,True,True,True,False,True,True,False
+sds_08.pdf,1,1,cas,Fluxapyroxad (ISO),Fluxapyroxad (ISO),6.66 %,6.66 %,True,True,True,False,True,True,False
+sds_08.pdf,2,2,cas,"N,N-Dimethyldecan-1-amide","N,N-Dimethyldecan-1-amide",< 55 %,< 55 %,True,True,True,False,True,True,False
+sds_08.pdf,3,3,cas,methyl methacrylate,methyl methacrylate,< 3 %,< 3 %,True,True,True,False,False,True,False
+sds_08.pdf,4,4,cas,Dodecyl acrylate,Dodecyl acrylate,< 0.5 %,< 0.5 %,True,True,True,False,True,True,False
+sds_08.pdf,5,5,cas,Tetradecyl acrylate,Tetradecyl acrylate,< 0.5 %,< 0.5 %,True,True,True,False,True,True,False
+sds_09.pdf,0,0,cas,sodium chloride,sodium chloride,80 - <100 %,80 - <100 %,True,True,True,False,True,True,False
+sds_09.pdf,1,1,cas,sulfanilamide,sulfanilamide,1 - <10 %,1 - <10 %,True,True,True,False,True,True,False
+sds_09.pdf,2,2,cas,o-phosphoric acid,o-phosphoric acid,1 - <10 %,1 - <10 %,True,True,True,False,True,True,False
+sds_11.pdf,0,0,cas,"5-Bromo-5-Nitro-1,3-Dioxane","5-Bromo-5-Nitro-1,3-Dioxane",≤ 0.01 %,≤ 0.01 %,True,True,True,False,False,True,False
+sds_11.pdf,1,1,cas,Nitrozellulose,Nitrozellulose,≤ 0.1 %,≤ 0.1 %,True,True,True,False,False,True,False
+sds_11.pdf,2,2,cas,Boric acid,Boric acid,< 0.004 %,< 0.004 %,True,True,True,False,False,True,False
+sds_12.pdf,0,0,name,Silicone dioxide,Silicone dioxide,45 – 55 %,45 – 55 %W/W,True,False,True,True,True,False,False
+sds_13.pdf,0,0,cas,Argon,Argon,100,100,True,True,True,True,True,True,True
+sds_14.pdf,0,0,cas,Acetatocobalamin,Acetatocobalamin,≤ 0.2,≤ 0.2,True,True,True,False,False,True,False
+sds_14.pdf,7,7,cas,Thimerosal,Thimerosal,≤ 0.015,≤ 0.015,True,True,True,False,False,True,False
+sds_14.pdf,1,1,name,Clostridium septicum toxoid,Clostridium septicum toxoid,≤ 0.1,≤ 0.1,True,False,True,False,False,False,False
+sds_14.pdf,2,2,name,Clostridium novyl Type B toxoid,Clostridium novyl Type B toxoid,≤ 0.1,≤ 0.1,True,False,True,False,False,False,False
+sds_14.pdf,3,3,name,Clostridium tetani toxoid,Clostridium tetani toxoid,≤ 0.1,≤ 0.1,True,False,True,False,False,False,False
+sds_14.pdf,4,4,name,"Clostridium perfringens Type D, toxoid","Clostridium perfringens Type D, toxoid",≤ 0.1,≤ 0.1,True,False,True,False,False,False,False
+sds_14.pdf,5,5,name,Clostridium chauvoei bacterin,Clostridium chauvoei bacterin,≤ 0.1,≤ 0.1,True,False,True,False,False,False,False
+sds_14.pdf,6,6,name,Corynebacterium Pseudotuberculosis bacterin,Corynebacterium Pseudotuber- culosis bacterin,≤ 0.1,≤ 0.1,True,False,True,False,False,False,False
+sds_18.pdf,0,0,cas,"Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyanatobenzene]","Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]",30 - 60,30 - 60,False,True,True,False,False,False,False
+sds_18.pdf,1,1,cas,"P,P'-Methylenebis(phenyl isocyanate)","P,P'-Methylenebis(phenyl isocyanate)",30 - 60,30 - 60,True,True,True,False,False,True,False
+sds_18.pdf,2,2,cas,"4,4'-Diisocyanatodiphenylmethane polymer","4,4'-Diisocyanatodiphenylmethane polymer",< 20,< 20,True,True,True,False,False,True,False
+sds_18.pdf,3,3,cas,"Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Propanetriol (3:1), Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]","Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Propanetriol (3:1), Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]",1 - 5,1 - 5,True,True,True,False,False,True,False
+sds_18.pdf,4,4,cas,Carbon Black,Carbon Black,0.1 - 1,0.1 - 1,True,True,True,False,False,True,False
+sds_18.pdf,5,5,cas,Chromium Compound 1,Chromium Compound 1,0.01 - 0.3,0.01 - 0.3,True,True,True,False,False,True,False
+sds_18.pdf,6,6,cas,Chromium Compound 2,Chromium Compound 2,0.01 - 0.1,0.01 - 0.1,True,True,True,False,False,True,False
+sds_18.pdf,7,7,cas,Chromium Compound 3,Chromium Compound 3,0.01 - 0.1,0.01 - 0.1,True,True,True,False,False,True,False
+sds_18.pdf,8,8,cas,Chromium,Chromium,< 0.02,< 0.02,True,True,True,False,False,True,False
+sds_20.pdf,0,0,cas,2-ethylhexanol,2-ethylhexanol+,NMT 10,NMT 100%,False,True,False,False,True,False,False

@@ -1,0 +1,68 @@
+{
+  "document": "sds_23.pdf",
+  "split": "locked",
+  "note": "Locked split. Research chemical (S)-AL 8810 from Cayman Chemical, a single substance in the DR-software OSHA template. Section 1 gives the CAS number, Section 3 is headed \"Chemical characterization: Substances\" with one row and no percentage, Section 9 gives a structural formula, a molecular weight and \"Flash point: Not applicable.\". Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "(S)-AL 8810",
+      "evidence": [{ "page": 1, "text": "Trade name: (S)-AL 8810" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Cayman Chemical Co.",
+      "evidence": [{ "page": 1, "text": "Manufacturer/Supplier: Cayman Chemical Co." }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SUBSTANCE",
+      "evidence": [{ "page": 2, "text": "Chemical characterization: Substances" }]
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "1224444-55-6",
+      "evidence": [
+        { "page": 1, "text": "CAS Number: 1224444-55-6" },
+        { "page": 2, "text": "1224444-55-6 (S)-AL 8810" }
+      ]
+    },
+    "chemical_formula": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "C24H31O4F",
+      "evidence": [{ "page": 4, "text": "Structural Formula C24H31O4F" }],
+      "note": "Labelled \"Structural Formula\" but printed as a molecular formula."
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "402.5 g/mol",
+      "accepted_values": ["402.5"],
+      "evidence": [{ "page": 4, "text": "Molecular Weight 402.5 g/mol" }]
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 4, "text": "Flash point: Not applicable." }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 2, "text": "CAS No. Description" }],
+    "items": [
+      {
+        "name": "(S)-AL 8810",
+        "cas_number": "1224444-55-6",
+        "cas_state": "PRESENT",
+        "concentration": null,
+        "evidence": [{ "page": 2, "text": "1224444-55-6 (S)-AL 8810" }],
+        "note": "The single-substance row carries no percentage."
+      }
+    ]
+  }
+}

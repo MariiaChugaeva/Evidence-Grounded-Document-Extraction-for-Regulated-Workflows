@@ -1,0 +1,81 @@
+{
+  "document": "sds_17.pdf",
+  "split": "dev",
+  "note": "Waterproofing membrane, explicitly declared an OSHA article. Two corrections to the old ground truth. The molecular weight was annotated as \"MOLECULAR WEIGHT: N/A\" on page 2, but that string does not occur anywhere in the document and Section 9 has no molecular-weight row at all; the correct state is NOT_STATED. The product CAS was annotated as 8052-42-4, which is the CAS of the petroleum asphalt ingredient.",
+  "product_form": "ARTICLE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MEL-ROL",
+      "accepted_values": ["MEL-ROL\u00ae"],
+      "evidence": [{ "page": 1, "text": "MEL-ROL\u00ae" }],
+      "note": "The label \"Product:\" and its value sit in different blocks in reading order, so the span is the value alone."
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "W. R. MEADOWS, INC.",
+      "evidence": [{ "page": 1, "text": "W. R. MEADOWS, INC." }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "ARTICLE",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mel-Rol is defined by OSHA as an \"article.\""
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mel-Rol is defined by OSHA as an \"article.\""
+        }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mel-Rol is defined by OSHA as an \"article.\""
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "The string \"molecular\" does not occur in this document."
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [
+        { "page": 1, "text": "FLASHPOINT: Not applicable; product is a solid." }
+      ],
+      "note": "Section 9 defers with \"FLASH POINT: See Section 5\", so the Section 5 statement is the one that carries the assertion."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 1, "text": "8052-42-4" }],
+    "items": [
+      {
+        "name": "Petroleum Asphalt",
+        "cas_number": "8052-42-4",
+        "cas_state": "PRESENT",
+        "concentration": "55-60",
+        "evidence": [{ "page": 1, "text": "8052-42-4" }]
+      }
+    ]
+  }
+}

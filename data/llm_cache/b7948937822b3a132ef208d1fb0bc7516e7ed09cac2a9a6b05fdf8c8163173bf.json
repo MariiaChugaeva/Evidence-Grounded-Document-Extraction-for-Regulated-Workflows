@@ -1,0 +1,141 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "VISOCOLOR HE Nitrite, refill pack",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "MACHEREY-NAGEL GmbH & Co. KG",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "3.1 Substances or 3.2 Mixtures\n23 g NO 2 -2\n3.3 Remarks\nWhen not listed, mixtures are added with water [CAS No. 7732-18-5] to 100%."
+        },
+        {
+          "page": 6,
+          "quote": "9.1 Information on basic physical and chemical properties\n23 g NO 2 -2\na) State of aggregation: solid\nb) Colour:\nc) Odor:\nd) Melting point: no data available\ne) Boiling point: no data available\nf) Flammability: no data available\ng) Explosive limits (lower / upper): no data available\nh) Flash point: no data available\ni) Flashing temperature: no data available\nj) Decomposition temperature: no data available\nk) pH value: no data available\nl) Kinematic viscosity: no data available\nm) Solubility in water: no data available\nn) Dispersion coefficient (K o/w ): no data available\no) Vapour pressure (20°C): no data available\np) Specific gravity: no data available\nq) Relative vapour density (air=1) : no data available\nr) Particle size: no data available"
+        },
+        {
+          "page": 6,
+          "quote": "100 mL NO 2 -1\na) State of aggregation: liquid\nb) Colour: colourless\nc) Odor: odorless\nd) Melting point: no data available\ne) Boiling point: no data available\nf) Flammability: no data available\ng) Explosive limits (lower / upper): no data available\nh) Flash point: no data available\ni) Flashing temperature: no data available\nj) Decomposition temperature: no data available\nk) pH value: 1-2\nl) Kinematic viscosity: no data available\nm) Solubility in water: 0-100 %\nn) Dispersion coefficient (K o/w ): no data available\no) Vapour pressure (20°C): no data available\np) Specific gravity: 1.05 g/cm³\nq) Relative vapour density (air=1) : no data available\nr) Particle size: no data available"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "A registration number for the substance(s) does not exist because the annual tonnage does not require registration or the substance or its use is excluded from registration."
+        }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "A registration number for the substance(s) does not exist because the annual tonnage does not require registration or the substance or its use is excluded from registration."
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "A registration number for the substance(s) does not exist because the annual tonnage does not require registration or the substance or its use is excluded from registration."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NO_DATA",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 6,
+          "quote": "h) Flash point: no data available"
+        },
+        {
+          "page": 6,
+          "quote": "h) Flash point: no data available"
+        }
+      ]
+    },
+    "ingredients_state": "PRESENT",
+    "ingredients": [
+      {
+        "name": "sodium chloride",
+        "cas_number": "7647-14-5",
+        "cas_state": "PRESENT",
+        "concentration": "80 - <100 %",
+        "citation": {
+          "page": 3,
+          "quote": "Substance name: sodium chloride\nCAS No.: 7647-14-5\nSubstance rating: No criteria for classification or naming of chemical not required.\nFormula: NaCl\nPseudonym (de): Kochsalz\nREACH Reg. No.: exempt, Annex V\nEC No.: 231-598-3\nConcentration: 80 - <100 %\nacc. CLP (GHS): The criteria for classification are not fulfilled."
+        }
+      },
+      {
+        "name": "sulfanilamide",
+        "cas_number": "63-74-1",
+        "cas_state": "PRESENT",
+        "concentration": "1 - <10 %",
+        "citation": {
+          "page": 3,
+          "quote": "Substance name: sulfanilamide\nCAS No.: 63-74-1\nSubstance rating: No criteria for classification or naming of chemical not required.\nFormula: C 6 H 8 N 2 O 2 S\nPseudonym (de): 4-Aminobenzolsulfonamid\nEC No.: 200-563-4\nConcentration: 1 - <10 %\nacc. CLP (GHS): The criteria for classification are not fulfilled."
+        }
+      },
+      {
+        "name": "o-phosphoric acid",
+        "cas_number": "7664-38-2",
+        "cas_state": "PRESENT",
+        "concentration": "1 - <10 %",
+        "citation": {
+          "page": 3,
+          "quote": "Substance name: o-phosphoric acid\nCAS No.: 7664-38-2\nSubstance rating: H290, Met. Corr. 1, H302, Acute Tox. 4 oral, H314, Skin Corr. 1 B\nFormula: H 3 PO 4 •H 2 O\nPseudonym (de): Orthophosphorsäure, E338\nREACH Reg. No.: 01-2119485924-24-xxxx\nEC No.: 231-633-2 Indice No.: 015-011-00-6\nConcentration: 1 - <10 %\nacc. CLP (GHS): H290, Met. Corr. 1"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 8120,
+    "output_tokens": 1768,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 38.83078319998458,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

@@ -1,0 +1,31 @@
+document,split,supplier,template_family,regime,language,scan,pages,product_form,note
+sds_01.pdf,dev,SECILTEK SA,chemeter,REACH-EU,en,no,9,MIXTURE,"Chemeter generator; same template family as sds_03"
+sds_02.pdf,dev,"Panasonic Energy Co., Ltd.",panasonic-transport,JP-transport,en,no,7,MIXTURE,"transport safety sheet, non-GHS section layout"
+sds_03.pdf,dev,F. Ball and Co. Ltd.,chemeter,REACH-UK,en,no,11,MIXTURE,"Chemeter generator; same template family as sds_01"
+sds_04.pdf,dev,"National Refrigerants, Inc.",word-inhouse,OSHA-HCS,en,no,7,SUBSTANCE,"in-house Word layout"
+sds_05.pdf,dev,ExxonMobil Petroleum & Chemical BV,exxonmobil,REACH-EU,en,no,13,MIXTURE,
+sds_06.pdf,dev,Weyerhaeuser,word-inhouse,OSHA-HCS,en,no,10,UNDETERMINED,"in-house Word layout"
+sds_07.pdf,dev,EPSON Australia Pty Limited,epson,AU-WHS,en,no,7,MIXTURE,
+sds_08.pdf,dev,BASF SE,basf,REACH-UK,en,no,20,MIXTURE,
+sds_09.pdf,dev,MACHEREY-NAGEL GmbH & Co. KG,m2-generator,REACH-EU,en,no,10,MIXTURE,"generator M2 V6 (PDFsharp)"
+sds_10.pdf,dev,Columbia Industrial Products,word-inhouse,OSHA-HCS,en,no,4,UNDETERMINED,"article documentation in lieu of an SDS"
+sds_11.pdf,dev,Lionex GmbH,word-inhouse,REACH-EU,en,no,10,MIXTURE,"German MSDS form with English content"
+sds_12.pdf,dev,Westland Horticulture Ltd,word-inhouse,REACH-UK,en,no,10,MIXTURE,
+sds_13.pdf,dev,"Airgas USA, LLC",wercs-two-column,OSHA-HCS,en,no,11,SUBSTANCE,"two-column label/value layout (DynaPDF); same family as sds_25"
+sds_14.pdf,dev,Nutrien Ag Solutions Limited,chemdox,AU-WHS,en,no,6,MIXTURE,"CHEMDOX generator"
+sds_15.pdf,dev,EUCLID CHEMICAL COMPANY,word-inhouse,OSHA-HCS,en,no,11,MIXTURE,
+sds_16.pdf,dev,Fisher Scientific UK,subsystems,REACH-UK,en,no,10,SUBSTANCE,"Sub Systems generator; same family as sds_21"
+sds_17.pdf,dev,"W. R. MEADOWS, INC.",excel-form,OSHA-HCS,en,no,2,ARTICLE,"single-page Excel form"
+sds_18.pdf,dev,3M,3m,OSHA-HCS,en,no,24,MIXTURE,"cover page plus two embedded sheets (Part A, Part B)"
+sds_19.pdf,dev,Buddy Rhodes Concrete Products,word-inhouse,OSHA-HCS,en,no,7,UNDETERMINED,
+sds_20.pdf,dev,"JSC ""Sibur-Khimprom""",gost-scan,GOST,en,yes,12,MIXTURE,"scanned English translation with an OCR text layer"
+sds_21.pdf,locked,Spectrum Chemical Mfg. Corp.,subsystems,OSHA-HCS,en,no,10,,"Sub Systems generator; same family as sds_16; not annotated"
+sds_22.pdf,locked,MEDALKAN,dr-software,REACH-EU,en,no,14,,"DR-software/ChemGes layout; not annotated"
+sds_23.pdf,locked,Cayman Chemical Co.,dr-software,OSHA-HCS,en,no,7,,"DR-software/ChemGes layout; not annotated"
+sds_24.pdf,locked,MG Chemicals,dr-software,WHMIS,en,no,12,,"DR-software/ChemGes layout; WHMIS 2023 and HCS 2024; not annotated"
+sds_25.pdf,locked,Rust-Oleum,wercs-two-column,REACH-EU,en,no,21,,"two-column label/value layout (DynaPDF); same family as sds_13; supplier entity to confirm; not annotated"
+sds_26.pdf,locked,AppliChem GmbH,dr-software,REACH-EU,en,no,7,,"DR-software/ChemGes layout; not annotated"
+sds_27.pdf,locked,Schülke & Mayr UK Ltd.,schuelke,REACH-UK,en,no,31,,"not annotated"
+sds_28.pdf,locked,Merck Life Science LLC (Sigma-Aldrich),sigma-aldrich,REACH-EU,en,no,29,,"not annotated"
+sds_29.pdf,locked,PETROFER ENDÜSTRİYEL YAĞLAR SAN. VE TİC. A.Ş.,petrofer,REACH-EU,en,no,7,,"Turkish supplier, English sheet; not annotated"
+sds_30.pdf,locked,Carl Roth GmbH + Co KG,carl-roth-scan,REACH-EU,en,yes,8,,"mostly image-only pages, 2 kB of native text; excluded from locked annotation until an OCR-layer annotation path exists (G-C7)"

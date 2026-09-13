@@ -1,0 +1,3365 @@
+{
+  "system": "rules-ocr-linear",
+  "configuration": {
+    "layer": "ocr",
+    "layout": "linear",
+    "extractor": "rules-v3",
+    "commit": "0b51068",
+    "split": "dev"
+  },
+  "documents": [
+    {
+      "document": "sds_01.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "REDUR AD 04 Other means of identification: UFI: MY90-10UT-4008-K1J7 1.2 Relevant identified",
+          "evidence": {
+            "page": 1,
+            "text": "Product identifier: REDUR AD 04 Other means of identification: UFI: MY90-10UT-4008-K1J7 1.2 Relevant identified",
+            "bbox": [
+              0.08045977011494253,
+              0.1470713980333476,
+              0.5178463399879008,
+              0.20521590423257802
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9025,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "SECILTEK SA",
+          "evidence": {
+            "page": 1,
+            "text": "Details of the supplier of the safety data sheet: SECILTEK SA",
+            "bbox": [
+              0.12341197822141561,
+              0.2479692176143651,
+              0.4494857834240774,
+              0.27233860624198375
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8905,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 1,
+            "text": "Chemical description: Mixture of substances",
+            "bbox": [
+              0.12401693889897157,
+              0.6532706284737068,
+              0.4162129461584997,
+              0.6631038905515177
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Chemical description: Mixture of substances",
+              "bbox": [
+                0.12401693889897157,
+                0.6532706284737068,
+                0.4162129461584997,
+                0.6631038905515177
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Chemical description: Mixture of substances",
+              "bbox": [
+                0.12401693889897157,
+                0.6532706284737068,
+                0.4162129461584997,
+                0.6631038905515177
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 4,
+            "text": "Average molecular weight: Not relevant SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES 9.1 Information on basic",
+            "bbox": [
+              0.08045977011494253,
+              0.542967079948696,
+              0.4603750756200847,
+              0.6122274476271911
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.908,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 5,
+            "text": "Flash Point: Non Flammable (>60 °C) Flammability (solid, gas): Not relevant * Autoignition temperature:",
+            "bbox": [
+              0.12341197822141561,
+              0.3155194527575887,
+              0.6231094978826376,
+              0.3587002992731937
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9214,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_02.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Lithium ion rechargeable battery (including lithium polymer battery)",
+          "evidence": {
+            "page": 1,
+            "text": "Product name: Lithium ion rechargeable battery (including lithium polymer battery)",
+            "bbox": [
+              0.12031438935912939,
+              0.15818725951261223,
+              0.8270858524788391,
+              0.16973065412569474
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.93,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Panasonic Energy Co.., Ltd",
+          "evidence": {
+            "page": 1,
+            "text": "Manufacturer: Panasonic Energy Co.., Ltd.",
+            "bbox": [
+              0.12031438935912939,
+              0.1851218469431381,
+              0.5223700120918985,
+              0.20008550662676358
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.856,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 4,
+            "text": "+ Substance or preparation: Preparation",
+            "bbox": [
+              0.09673518742442563,
+              0.09277469003847798,
+              0.40507859733978235,
+              0.10431808465156049
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 4,
+              "text": "+ Substance or preparation: Preparation",
+              "bbox": [
+                0.09673518742442563,
+                0.09277469003847798,
+                0.40507859733978235,
+                0.10431808465156049
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 4,
+              "text": "+ Substance or preparation: Preparation",
+              "bbox": [
+                0.09673518742442563,
+                0.09277469003847798,
+                0.40507859733978235,
+                0.10431808465156049
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 4,
+              "text": "+ Substance or preparation: Preparation",
+              "bbox": [
+                0.09673518742442563,
+                0.09277469003847798,
+                0.40507859733978235,
+                0.10431808465156049
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_03.pdf",
+      "fields": {
+        "product_name": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 1,
+            "text": "Product identifier: STYCCOBOND F49 BASE Other means of identification: Not relevant 1.2 Relevant identified",
+            "bbox": [
+              0.08045977011494253,
+              0.1470713980333476,
+              0.5269207501512402,
+              0.20521590423257802
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8982,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "F. Ball and Co. Ltd. Churnetside Business Park",
+          "evidence": {
+            "page": 1,
+            "text": "Details of the supplier of the safety data sheet: F. Ball and Co. Ltd. Churnetside Business Park,",
+            "bbox": [
+              0.12341197822141561,
+              0.2479692176143651,
+              0.4494857834240774,
+              0.2860196665241556
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8924,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 2,
+            "text": "Chemical description: Mixture of polymers, dispersants and organic compounds",
+            "bbox": [
+              0.12401693889897157,
+              0.1470713980333476,
+              0.632183908045977,
+              0.1569046601111586
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "Chemical description: Mixture of polymers, dispersants and organic compounds",
+              "bbox": [
+                0.12401693889897157,
+                0.1470713980333476,
+                0.632183908045977,
+                0.1569046601111586
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "Chemical description: Mixture of polymers, dispersants and organic compounds",
+              "bbox": [
+                0.12401693889897157,
+                0.1470713980333476,
+                0.632183908045977,
+                0.1569046601111586
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "Chemical description: Mixture of polymers, dispersants and organic compounds",
+              "bbox": [
+                0.12401693889897157,
+                0.1470713980333476,
+                0.632183908045977,
+                0.1569046601111586
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 6,
+            "text": "Flash Point: Non Flammable (>60 °C) Flammability (solid, gas): Not relevant * Autoignition temperature:",
+            "bbox": [
+              0.12341197822141561,
+              0.6182129115006413,
+              0.6231094978826376,
+              0.6618212911500642
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9229,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "‘Acute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 Danger & ® &",
+            "cas_number": "1219458-07-7",
+            "cas_state": "PRESENT",
+            "concentration": "1-<2.5%",
+            "evidence": {
+              "page": 2,
+              "text": "CAS: 1219458-07-7 ‘Acute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 - Danger & ® & 1-<2.5%",
+              "bbox": [
+                0.12643678160919541,
+                0.22274476271911073,
+                0.9128856624319419,
+                0.2377084224027362
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "ICAS: Acute EUHO71 Tox. Danger 4: H302+H332; Aquatic Chronic 3: H412; Eye Dam. 1: H318; Skin Corr. 1B: H314; Skin Sens. 1B: H317; & &",
+            "cas_number": "1477-55-0",
+            "cas_state": "PRESENT",
+            "concentration": "<1%",
+            "evidence": {
+              "page": 2,
+              "text": "ICAS: 1477-55-0 Acute EUHO71 Tox. - Danger 4: H302+H332; Aquatic Chronic 3: H412; Eye Dam. 1: H318; Skin Corr. 1B: H314; Skin Sens. 1B: H317; & & <1%",
+              "bbox": [
+                0.12643678160919541,
+                0.25224454895254383,
+                0.8977616454930429,
+                0.2702009405728944
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "1,2-benzisothiazol-3(2H)-one",
+            "cas_number": "2634-33-5",
+            "cas_state": "PRESENT",
+            "concentration": "<1% 1%",
+            "evidence": {
+              "page": 2,
+              "text": "CAS: 2634-33-5 1,2-benzisothiazol-3(2H)-one <1% 1%",
+              "bbox": [
+                0.12643678160919541,
+                0.2744762719110731,
+                0.8977616454930429,
+                0.28986746472851643
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 2,
+          "text": "CAS: 1219458-07-7 ‘Acute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 - Danger & ® & 1-<2.5%",
+          "bbox": [
+            0.12643678160919541,
+            0.22274476271911073,
+            0.9128856624319419,
+            0.2377084224027362
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_04.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "R-134a OTHER NAME: 1,1,1,2-Tetrafluoroethane USE: Refrigerant Gas DISTRIBUTOR: National Refrigerants, Inc. 661",
+          "evidence": {
+            "page": 1,
+            "text": "PRODUCT NAME: R-134a OTHER NAME: 1,1,1,2-Tetrafluoroethane USE: Refrigerant Gas DISTRIBUTOR: National Refrigerants, Inc. 661",
+            "bbox": [
+              0.05941176470588235,
+              0.3054545454545455,
+              0.4076470588235294,
+              0.37227272727272726
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9271,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "National Refrigerants, Inc",
+          "evidence": {
+            "page": 1,
+            "text": "DISTRIBUTOR: National Refrigerants, Inc.",
+            "bbox": [
+              0.05941176470588235,
+              0.3472727272727273,
+              0.4076470588235294,
+              0.3613636363636364
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.905,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "SUBSTANCE",
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "composition_implies_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "1,1,1,2-Tetrafluoroethane 811-97-2 100",
+              "bbox": [
+                0.0611764705882353,
+                0.24681818181818183,
+                0.73,
+                0.26136363636363635
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.5,
+          "rationale": "composition table"
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "PRESENT",
+          "value": "102 CHEMICAL FORMULA: F3;CCH, F ODOR: Faint ethereal odor SPECIFIC GRAVITY (water",
+          "evidence": {
+            "page": 4,
+            "text": "MOLECULAR WEIGHT: 102 CHEMICAL FORMULA: F3;CCH, F ODOR: Faint ethereal odor SPECIFIC GRAVITY (water",
+            "bbox": [
+              0.058823529411764705,
+              0.6990909090909091,
+              0.4764705882352941,
+              0.7563636363636363
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9046,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 2,
+            "text": "FLASH POINT: Gas, not applicable per DOT regulations",
+            "bbox": [
+              0.11823529411764706,
+              0.725909090909091,
+              0.6758823529411765,
+              0.7372727272727273
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9294,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "1,1,1,2-Tetrafluoroethane",
+            "cas_number": "811-97-2",
+            "cas_state": "PRESENT",
+            "concentration": "100",
+            "evidence": {
+              "page": 2,
+              "text": "1,1,1,2-Tetrafluoroethane 811-97-2 100",
+              "bbox": [
+                0.0611764705882353,
+                0.24681818181818183,
+                0.73,
+                0.26136363636363635
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 2,
+          "text": "INGREDIENT NAME CAS NUMBER WEIGHT %",
+          "bbox": [
+            0.05941176470588235,
+            0.23454545454545456,
+            0.76,
+            0.24363636363636362
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_05.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "MOBIL SHC PM 220 Revision Date: 24 Feb 2021 Revision Number: 1.11",
+          "evidence": {
+            "page": 1,
+            "text": "Product Name: MOBIL SHC PM 220 Revision Date: 24 Feb 2021 Revision Number: 1.11",
+            "bbox": [
+              0.08176470588235295,
+              0.08272727272727273,
+              0.3947058823529412,
+              0.1190909090909091
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9079,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "ExxonMobil Petroleum & Chemical BV POLDERDIJKWEG B-2030 Antwerpen",
+          "evidence": {
+            "page": 1,
+            "text": "Supplier: ExxonMobil Petroleum & Chemical BV POLDERDIJKWEG B-2030 Antwerpen",
+            "bbox": [
+              0.13294117647058823,
+              0.4759090909090909,
+              0.5758823529411765,
+              0.5154545454545455
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.89,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 2,
+            "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "bbox": [
+              0.07411764705882352,
+              0.524090909090909,
+              0.6276470588235294,
+              0.5359090909090909
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07411764705882352,
+                0.524090909090909,
+                0.6276470588235294,
+                0.5359090909090909
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07411764705882352,
+                0.524090909090909,
+                0.6276470588235294,
+                0.5359090909090909
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07411764705882352,
+                0.524090909090909,
+                0.6276470588235294,
+                0.5359090909090909
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "PRESENT",
+          "value": ">225°C (437°F) [ASTM D-92] Upper/Lower Flammable Limits (Approximate volume % in air)",
+          "evidence": {
+            "page": 3,
+            "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92] Upper/Lower Flammable Limits (Approximate volume % in air):",
+            "bbox": [
+              0.13352941176470587,
+              0.860909090909091,
+              0.6182352941176471,
+              0.8872727272727273
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9043,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "ITRIS (METHYLPHENYL) PHOSPHATE 01-2119531335-46 0.1-<1% Aquatic Acute H400 (M",
+            "cas_number": "1330-78-5",
+            "cas_state": "PRESENT",
+            "concentration": "1",
+            "evidence": {
+              "page": 2,
+              "text": "ITRIS (METHYLPHENYL) PHOSPHATE 1330-78-5 215-548-8 | 01-2119531335-46 | 0.1-<1% Aquatic Acute 1 H400 (M",
+              "bbox": [
+                0.07470588235294118,
+                0.7240909090909091,
+                0.9458823529411765,
+                0.74
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_06.pdf",
+      "fields": {
+        "product_name": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Weyerhaeuser",
+          "evidence": {
+            "page": 1,
+            "text": "MANUFACTURER'S NAME: Weyerhaeuser",
+            "bbox": [
+              0.13647058823529412,
+              0.5136363636363637,
+              0.5076470588235295,
+              0.5259090909090909
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.905,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": {
+          "page": 3,
+          "text": "Ingredient(s)s CAS#",
+          "bbox": [
+            0.2723529411764706,
+            0.3331818181818182,
+            0.6335294117647059,
+            0.34545454545454546
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_07.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Mixture identification",
+          "evidence": {
+            "page": 1,
+            "text": "Product identifier Mixture identification:",
+            "bbox": [
+              0.15366001209921354,
+              0.13039760581445062,
+              0.3569267997580157,
+              0.15305686190679776
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9287,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 1,
+            "text": "Mixture identification:",
+            "bbox": [
+              0.20084694494857835,
+              0.14407866609662248,
+              0.3569267997580157,
+              0.15305686190679776
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Mixture identification:",
+              "bbox": [
+                0.20084694494857835,
+                0.14407866609662248,
+                0.3569267997580157,
+                0.15305686190679776
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Mixture identification:",
+              "bbox": [
+                0.20084694494857835,
+                0.14407866609662248,
+                0.3569267997580157,
+                0.15305686190679776
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Mixture identification:",
+              "bbox": [
+                0.20084694494857835,
+                0.14407866609662248,
+                0.3569267997580157,
+                0.15305686190679776
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NO_DATA",
+          "value": null,
+          "evidence": {
+            "page": 4,
+            "text": "Flash point: Not Relevant Evaporation rate: No data available Vapour pressure: No data available",
+            "bbox": [
+              0.1530550514216576,
+              0.34886703719538265,
+              0.6152450090744102,
+              0.387345019238991
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.93,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "EC",
+            "cas_number": "1309-37-1",
+            "cas_state": "PRESENT",
+            "concentration": null,
+            "evidence": {
+              "page": 1,
+              "text": "CAS: 1309-37-1, EC: 215-168-2",
+              "bbox": [
+                0.20084694494857835,
+                0.781530568619068,
+                0.43859649122807015,
+                0.7922188969645148
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "EC",
+            "cas_number": "7631-86-9",
+            "cas_state": "PRESENT",
+            "concentration": null,
+            "evidence": {
+              "page": 2,
+              "text": "CAS: 7631-86-9, EC: 231-545-4",
+              "bbox": [
+                0.20084694494857835,
+                0.1115861479264643,
+                0.43859649122807015,
+                0.12227447627191107
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "EC",
+            "cas_number": "1333-86-4",
+            "cas_state": "PRESENT",
+            "concentration": null,
+            "evidence": {
+              "page": 2,
+              "text": "CAS: 1333-86-4, EC: 215-609-9",
+              "bbox": [
+                0.20084694494857835,
+                0.16631038905515177,
+                0.43859649122807015,
+                0.17699871740059855
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "EC",
+            "cas_number": "13463-67-7",
+            "cas_state": "PRESENT",
+            "concentration": null,
+            "evidence": {
+              "page": 2,
+              "text": "CAS: 13463-67-7, EC: 236-675-5",
+              "bbox": [
+                0.20084694494857835,
+                0.22103463018383926,
+                0.4476709013914096,
+                0.231722958529286
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 1,
+          "text": "CAS: 1309-37-1, EC: 215-168-2",
+          "bbox": [
+            0.20084694494857835,
+            0.781530568619068,
+            0.43859649122807015,
+            0.7922188969645148
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_08.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Revygold® (ID no. 30703727/SDS_CPA_GB/EN) Date of print 03.02.2026 SECTION 1: Identification of",
+          "evidence": {
+            "page": 1,
+            "text": "Product: Revygold® (ID no. 30703727/SDS_CPA_GB/EN) Date of print 03.02.2026 SECTION 1: Identification of",
+            "bbox": [
+              0.11970979443772672,
+              0.2821718683197948,
+              0.903869407496977,
+              0.3847798204360838
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9223,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 4,
+            "text": "3.2. Mixtures",
+            "bbox": [
+              0.15538089480048367,
+              0.2394185549380077,
+              0.2660217654171705,
+              0.24925181701581872
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 4,
+              "text": "3.2. Mixtures",
+              "bbox": [
+                0.15538089480048367,
+                0.2394185549380077,
+                0.2660217654171705,
+                0.24925181701581872
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 4,
+              "text": "3.2. Mixtures",
+              "bbox": [
+                0.15538089480048367,
+                0.2394185549380077,
+                0.2660217654171705,
+                0.24925181701581872
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 4,
+              "text": "3.2. Mixtures",
+              "bbox": [
+                0.15538089480048367,
+                0.2394185549380077,
+                0.2660217654171705,
+                0.24925181701581872
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 9,
+            "text": "Flash point: 120°C Evaporation rate: not applicable Flammability: not applicable Lower explosion limit: As",
+            "bbox": [
+              0.15598548972188633,
+              0.5870029927319367,
+              0.4480048367593712,
+              0.6648140230867893
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9279,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "Aquatic Acute",
+            "cas_number": "1417782-03-6",
+            "cas_state": "PRESENT",
+            "concentration": "1",
+            "evidence": {
+              "page": 4,
+              "text": "CAS Number: 1417782-03-6 Aquatic Acute 1",
+              "bbox": [
+                0.23881499395405079,
+                0.4112868747327918,
+                0.626360338573156,
+                0.4228302693458743
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Aquatic Acute",
+            "cas_number": "907204-31-3",
+            "cas_state": "PRESENT",
+            "concentration": "1",
+            "evidence": {
+              "page": 4,
+              "text": "CAS Number: 907204-31-3 Aquatic Acute 1",
+              "bbox": [
+                0.23881499395405079,
+                0.5480974775545104,
+                0.626360338573156,
+                0.559640872167593
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "AS Eye Irrit.",
+            "cas_number": "14433-76-2",
+            "cas_state": "PRESENT",
+            "concentration": "2",
+            "evidence": {
+              "page": 4,
+              "text": "AS Number: 14433-76-2 Eye Irrit. 2",
+              "bbox": [
+                0.250906892382104,
+                0.6707994869602394,
+                0.5876662636033857,
+                0.6823428815733219
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "AS Skin Sens.",
+            "cas_number": "80-62-6",
+            "cas_state": "PRESENT",
+            "concentration": "1",
+            "evidence": {
+              "page": 5,
+              "text": "AS Number: 80-62-6 Skin Sens. 1",
+              "bbox": [
+                0.250906892382104,
+                0.23899102180418982,
+                0.6027811366384522,
+                0.248396750748183
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "AS Eye Irrit.",
+            "cas_number": "2156-97-0",
+            "cas_state": "PRESENT",
+            "concentration": "2",
+            "evidence": {
+              "page": 5,
+              "text": "AS Number: 2156-97-0 Eye Irrit. 2",
+              "bbox": [
+                0.250906892382104,
+                0.49850363403163744,
+                0.5876662636033857,
+                0.51004702864472
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "AS Eye Irrit.",
+            "cas_number": "21643-42-5",
+            "cas_state": "PRESENT",
+            "concentration": "2",
+            "evidence": {
+              "page": 5,
+              "text": "AS Number: 21643-42-5 Eye Irrit. 2",
+              "bbox": [
+                0.250906892382104,
+                0.662248824283882,
+                0.5876662636033857,
+                0.6737922188969645
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 4,
+          "text": "CAS Number: 1417782-03-6 Aquatic Acute 1",
+          "bbox": [
+            0.23881499395405079,
+            0.4112868747327918,
+            0.626360338573156,
+            0.4228302693458743
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_09.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "REF 920163",
+          "evidence": {
+            "page": 1,
+            "text": "Product identifier REF 920163",
+            "bbox": [
+              0.1542649727767695,
+              0.20094057289439932,
+              0.4452510586811857,
+              0.22274476271911073
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9263,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "MACHEREY-NAGEL GmbH & Co. KG Valencienner",
+          "evidence": {
+            "page": 1,
+            "text": "Manufactured by: MACHEREY-NAGEL GmbH & Co. KG Valencienner",
+            "bbox": [
+              0.1808832425892317,
+              0.42539546814878154,
+              0.4089534180278282,
+              0.45361265498076103
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8925,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 2,
+            "text": "3.1 Substances or 3.2 Mixtures",
+            "bbox": [
+              0.08469449485783424,
+              0.7969217614365113,
+              0.36963097398669087,
+              0.8054724241128688
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1 Substances or 3.2 Mixtures",
+              "bbox": [
+                0.08469449485783424,
+                0.7969217614365113,
+                0.36963097398669087,
+                0.8054724241128688
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1 Substances or 3.2 Mixtures",
+              "bbox": [
+                0.08469449485783424,
+                0.7969217614365113,
+                0.36963097398669087,
+                0.8054724241128688
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1 Substances or 3.2 Mixtures",
+              "bbox": [
+                0.08469449485783424,
+                0.7969217614365113,
+                0.36963097398669087,
+                0.8054724241128688
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": null,
+            "cas_number": "7647-14-5",
+            "cas_state": "PRESENT",
+            "concentration": null,
+            "evidence": {
+              "page": 3,
+              "text": "CAS No.: 7647-14-5",
+              "bbox": [
+                0.2365396249243799,
+                0.17443351859769132,
+                0.42891712038717483,
+                0.18127404873877725
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": null,
+            "cas_number": "63-74-1",
+            "cas_state": "PRESENT",
+            "concentration": null,
+            "evidence": {
+              "page": 3,
+              "text": "CAS No.: 63-74-1",
+              "bbox": [
+                0.2365396249243799,
+                0.3180846515604959,
+                0.41197822141560797,
+                0.32492518170158186
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": null,
+            "cas_number": "7664-38-2",
+            "cas_state": "PRESENT",
+            "concentration": null,
+            "evidence": {
+              "page": 3,
+              "text": "CAS No.: 7664-38-2",
+              "bbox": [
+                0.2365396249243799,
+                0.4348011970927747,
+                0.42891712038717483,
+                0.44164172723386064
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 3,
+          "text": "CAS No.: 7647-14-5",
+          "bbox": [
+            0.2365396249243799,
+            0.17443351859769132,
+            0.42891712038717483,
+            0.18127404873877725
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_10.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "CIP Composites Company: Columbia Industrial Products 29538 Airport Rd., Unit A Eugene",
+          "evidence": {
+            "page": 1,
+            "text": "Product Name: CIP Composites Company: Columbia Industrial Products 29538 Airport Rd., Unit A Eugene,",
+            "bbox": [
+              0.11823529411764706,
+              0.5986363636363636,
+              0.7452941176470588,
+              0.6604545454545454
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9261,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Columbia Industrial Products",
+          "evidence": {
+            "page": 1,
+            "text": "Company: Columbia Industrial Products",
+            "bbox": [
+              0.11823529411764706,
+              0.6131818181818182,
+              0.7452941176470588,
+              0.6304545454545455
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9012,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NO_DATA",
+          "value": null,
+          "evidence": {
+            "page": 2,
+            "text": "Flash point: No applicable data available Flammable limits: No applicable data available Auto ignition",
+            "bbox": [
+              0.11823529411764706,
+              0.27,
+              0.7105882352941176,
+              0.31545454545454543
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9289,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_11.pdf",
+      "fields": {
+        "product_name": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Lionex GmbH Salzdahlumer",
+          "evidence": {
+            "page": 1,
+            "text": "Details of the supplier of the safety data sheet Lionex GmbH Salzdahlumer",
+            "bbox": [
+              0.11970979443772672,
+              0.38520735356990166,
+              0.4709794437726723,
+              0.4258230012825994
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9017,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 2,
+            "text": "3.2. Mixtures",
+            "bbox": [
+              0.11970979443772672,
+              0.38991021804189824,
+              0.21039903264812576,
+              0.39760581445061993
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.2. Mixtures",
+              "bbox": [
+                0.11970979443772672,
+                0.38991021804189824,
+                0.21039903264812576,
+                0.39760581445061993
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.2. Mixtures",
+              "bbox": [
+                0.11970979443772672,
+                0.38991021804189824,
+                0.21039903264812576,
+                0.39760581445061993
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.2. Mixtures",
+              "bbox": [
+                0.11970979443772672,
+                0.38991021804189824,
+                0.21039903264812576,
+                0.39760581445061993
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NO_DATA",
+          "value": null,
+          "evidence": {
+            "page": 5,
+            "text": "flashpoint: not specified, solid rate of vaporization: not specified, solid inflammability (solid, gaseous):",
+            "bbox": [
+              0.11910519951632406,
+              0.40145361265498075,
+              0.45828295042321643,
+              0.4343736639589568
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9281,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "Test cassette 5-Bromo-5-Nitro-1,3-Dioxane H302 P280",
+            "cas_number": "30007-47-7",
+            "cas_state": "PRESENT",
+            "concentration": "< 0.01%",
+            "evidence": {
+              "page": 2,
+              "text": "Test cassette 5-Bromo-5-Nitro-1,3-Dioxane 30007-47-7 250-001-7 < 0.01% H302 P280",
+              "bbox": [
+                0.11910519951632406,
+                0.45874305258657544,
+                0.8935912938331319,
+                0.4698589140658401
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Boric acid H360 P201",
+            "cas_number": "10043-35-3",
+            "cas_state": "PRESENT",
+            "concentration": "<0.004%",
+            "evidence": {
+              "page": 2,
+              "text": "Boric acid 10043-35-3 | 233-139-2 | <0.004% H360 P201",
+              "bbox": [
+                0.31983071342200725,
+                0.49294570329200516,
+                0.8929866989117291,
+                0.5070542967079948
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_12.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Westland Bone Meal Version:2.0 Revision date: 07.01.2021 Print date: 07.01.2021 1. IDENTIFICATION",
+          "evidence": {
+            "page": 1,
+            "text": "Trade name: Westland Bone Meal Version:2.0 Revision date: 07.01.2021 Print date: 07.01.2021 1. IDENTIFICATION",
+            "bbox": [
+              0.05941176470588235,
+              0.12772727272727272,
+              0.8088235294117647,
+              0.19772727272727272
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.925,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Westland Horticulture Ltd",
+          "evidence": {
+            "page": 1,
+            "text": "Details of the supplier of the data sheet Westland Horticulture Ltd",
+            "bbox": [
+              0.09058823529411765,
+              0.29,
+              0.49470588235294116,
+              0.31772727272727275
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.905,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 1,
+            "text": "3.1 N/A",
+            "bbox": [
+              0.05941176470588235,
+              0.7045454545454546,
+              0.11941176470588236,
+              0.715
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "3.1 N/A",
+              "bbox": [
+                0.05941176470588235,
+                0.7045454545454546,
+                0.11941176470588236,
+                0.715
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "3.1 N/A",
+              "bbox": [
+                0.05941176470588235,
+                0.7045454545454546,
+                0.11941176470588236,
+                0.715
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "3.1 N/A",
+              "bbox": [
+                0.05941176470588235,
+                0.7045454545454546,
+                0.11941176470588236,
+                0.715
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "Silicone a dioxide _ EC: 931.545-4 ° % Substance Exposure Limit with Workplace",
+            "cas_number": "7631-89-9",
+            "cas_state": "PRESENT",
+            "concentration": "45 — 55",
+            "evidence": {
+              "page": 1,
+              "text": "Silicone a dioxide _ | CAS EC: 931.545-4 7631-89-9 45 — 55 ° % | | Substance Exposure Limit with Workplace",
+              "bbox": [
+                0.07352941176470588,
+                0.8436363636363636,
+                0.8923529411764706,
+                0.894090909090909
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 1,
+          "text": "Silicone a dioxide _ | CAS EC: 931.545-4 7631-89-9 45 — 55 ° % | | Substance Exposure Limit with Workplace",
+          "bbox": [
+            0.07352941176470588,
+            0.8436363636363636,
+            0.8923529411764706,
+            0.894090909090909
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_13.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Argon Chemical name : argon Other means of : ARGON, COMPRESSED identification",
+          "evidence": {
+            "page": 1,
+            "text": "GHS product identifier Argon Chemical name : argon Other means of : ARGON, COMPRESSED identification",
+            "bbox": [
+              0.04295220810647308,
+              0.14578879863189398,
+              0.48759830611010285,
+              0.2039333048311244
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9213,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Airgas USA, LLC and its affiliates",
+          "evidence": {
+            "page": 1,
+            "text": "Supplier's details Airgas USA, LLC and its affiliates",
+            "bbox": [
+              0.04295220810647308,
+              0.2791791363830697,
+              0.5450695704779189,
+              0.2902949978623343
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8956,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "SUBSTANCE",
+          "evidence": {
+            "page": 2,
+            "text": "Substance/mixture : Substance",
+            "bbox": [
+              0.04295220810647308,
+              0.09662248824283882,
+              0.37749546279491836,
+              0.1115861479264643
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "PRESENT",
+          "value": "39.95 g/mole Section 10. Stability and reactivity Reactivity : No specific test",
+          "evidence": {
+            "page": 5,
+            "text": "Molecular weight 39.95 g/mole Section 10. Stability and reactivity Reactivity : No specific test",
+            "bbox": [
+              0.04295220810647308,
+              0.5865754595981189,
+              0.47126436781609193,
+              0.6498503634031637
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9246,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 5,
+            "text": "Flash point [Product does not sustain combustion.] Evaporation rate : Not available. Flammability (solid,",
+            "bbox": [
+              0.04295220810647308,
+              0.31209918768704575,
+              0.5910465819721719,
+              0.3591278324070115
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9204,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": {
+          "page": 2,
+          "text": "Ingredient name CAS number",
+          "bbox": [
+            0.04779189352692075,
+            0.20051303976058144,
+            0.8898971566848155,
+            0.2116289012398461
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_14.pdf",
+      "fields": {
+        "product_name": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Nutrien Ag Solutions Limited Level 5, Building A",
+          "evidence": {
+            "page": 1,
+            "text": "Details of the supplier of the safety data sheet Nutrien Ag Solutions Limited Level 5, Building A;",
+            "bbox": [
+              0.12462189957652753,
+              0.27704147071398033,
+              0.5111917725347852,
+              0.3223599828986746
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8976,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 1,
+            "text": "Mixture of substances as listed below.",
+            "bbox": [
+              0.12462189957652753,
+              0.595981188542112,
+              0.44162129461585,
+              0.6053869174861052
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Mixture of substances as listed below.",
+              "bbox": [
+                0.12462189957652753,
+                0.595981188542112,
+                0.44162129461585,
+                0.6053869174861052
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Mixture of substances as listed below.",
+              "bbox": [
+                0.12462189957652753,
+                0.595981188542112,
+                0.44162129461585,
+                0.6053869174861052
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Mixture of substances as listed below.",
+              "bbox": [
+                0.12462189957652753,
+                0.595981188542112,
+                0.44162129461585,
+                0.6053869174861052
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "Thimerosal <0.015 Acute Tox. / H300",
+            "cas_number": "54-64-8",
+            "cas_state": "PRESENT",
+            "concentration": "2",
+            "evidence": {
+              "page": 1,
+              "text": "Thimerosal 54-64-8 <0.015 Acute Tox. 2 / H300",
+              "bbox": [
+                0.20205686630369027,
+                0.8366823428815733,
+                0.8578342407743497,
+                0.8499358700299273
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 1,
+          "text": "Name of substance CAS No Wt% Classification acc. to GHS",
+          "bbox": [
+            0.17422867513611615,
+            0.6626763574176999,
+            0.8808227465214761,
+            0.6699444206926036
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    },
+    {
+      "document": "sds_15.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "TAMMSWELD - 55 GALLON DRUM - MTO Material: THHWD55 Recommended use and",
+          "evidence": {
+            "page": 1,
+            "text": "Material name: TAMMSWELD - 55 GALLON DRUM - MTO Material: THHWD55 Recommended use and",
+            "bbox": [
+              0.08887545344619105,
+              0.21770744225834046,
+              0.532043530834341,
+              0.26732249786142004
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9125,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "EUCLID CHEMICAL",
+          "evidence": {
+            "page": 1,
+            "text": "Manufacturer/Importer/Supplier/Distributor Information EUCLID CHEMICAL",
+            "bbox": [
+              0.08887545344619105,
+              0.3169375534644996,
+              0.524788391777509,
+              0.3391787852865697
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8938,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NO_DATA",
+          "value": null,
+          "evidence": {
+            "page": 4,
+            "text": "Flash Point: No data available. Auto-ignition temperature: No data available. Decomposition Temperature: No data",
+            "bbox": [
+              0.13301088270858524,
+              0.6077844311377245,
+              0.5894800483675937,
+              0.6599657827202737
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9271,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_16.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Sand, Ottawa Cat No. : $/0365/63, S/0365/60 Synonyms Quartz; Silicon dioxide CAS",
+          "evidence": {
+            "page": 1,
+            "text": "Product Description: Sand, Ottawa Cat No. : $/0365/63, S/0365/60 Synonyms Quartz; Silicon dioxide CAS",
+            "bbox": [
+              0.0888235294117647,
+              0.2586363636363636,
+              0.4888235294117647,
+              0.3068181818181818
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9114,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "UK",
+          "evidence": {
+            "page": 1,
+            "text": "Company UK",
+            "bbox": [
+              0.0888235294117647,
+              0.4577272727272727,
+              0.36470588235294116,
+              0.47954545454545455
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.895,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_17.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "MEL-ROL. Part Number: 5110060 Manufacturer: W. R. MEADOWS, INC. Address: — 300",
+          "evidence": {
+            "page": 1,
+            "text": "Product: MEL-ROL. Part Number: 5110060 Manufacturer: W. R. MEADOWS, INC. Address: — 300",
+            "bbox": [
+              0.06352941176470588,
+              0.15772727272727272,
+              0.7311764705882353,
+              0.18772727272727271
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8831,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "W. R. MEADOWS, INC",
+          "evidence": {
+            "page": 1,
+            "text": "Manufacturer: W. R. MEADOWS, INC.",
+            "bbox": [
+              0.06352941176470588,
+              0.17181818181818181,
+              0.3988235294117647,
+              0.18727272727272729
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.897,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "ARTICLE",
+          "evidence": {
+            "page": 1,
+            "text": "| Flammability | |1] defined by OSHA as an \"article.\" A manufactured item that is formed to a specific",
+            "bbox": [
+              0.06529411764705882,
+              0.28909090909090907,
+              0.8147058823529412,
+              0.30363636363636365
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "| Flammability | |1] defined by OSHA as an \"article.\" A manufactured item that is formed to a specific",
+              "bbox": [
+                0.06529411764705882,
+                0.28909090909090907,
+                0.8147058823529412,
+                0.30363636363636365
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for ARTICLE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "| Flammability | |1] defined by OSHA as an \"article.\" A manufactured item that is formed to a specific",
+              "bbox": [
+                0.06529411764705882,
+                0.28909090909090907,
+                0.8147058823529412,
+                0.30363636363636365
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for ARTICLE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "| Flammability | |1] defined by OSHA as an \"article.\" A manufactured item that is formed to a specific",
+              "bbox": [
+                0.06529411764705882,
+                0.28909090909090907,
+                0.8147058823529412,
+                0.30363636363636365
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for ARTICLE"
+        },
+        "flash_point": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": {
+            "page": 1,
+            "text": "FLASHPOINT: Not applicable; product is a solid. EXTINGUISHING MEDIA: Water fog, foam, dry",
+            "bbox": [
+              0.06352941176470588,
+              0.5386363636363637,
+              0.34705882352941175,
+              0.5627272727272727
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9292,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_18.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "3M™ Semi-Rigid Plastic Repair PN 04240 ID Number UPC ID Number UPC",
+          "evidence": {
+            "page": 1,
+            "text": "Product identifier 3M™ Semi-Rigid Plastic Repair PN 04240 ID Number UPC ID Number UPC",
+            "bbox": [
+              0.05941176470588235,
+              0.3009090909090909,
+              0.8470588235294118,
+              0.3518181818181818
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.925,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "3M DIVISION: Automotive Aftermarket",
+          "evidence": {
+            "page": 1,
+            "text": "MANUFACTURER: 3M DIVISION: Automotive Aftermarket",
+            "bbox": [
+              0.061764705882352944,
+              0.53,
+              0.42411764705882354,
+              0.555
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.886,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "composition_implies_form",
+          "premises": [
+            {
+              "page": 5,
+              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2240909090909091,
+                0.7588235294117647,
+                0.23545454545454544
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 5,
+              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2540909090909091,
+                0.7588235294117647,
+                0.265
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.5,
+          "rationale": "composition table"
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 5,
+              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2240909090909091,
+                0.7588235294117647,
+                0.23545454545454544
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 5,
+              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2540909090909091,
+                0.7588235294117647,
+                0.265
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.5,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 5,
+              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2240909090909091,
+                0.7588235294117647,
+                0.23545454545454544
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 5,
+              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2540909090909091,
+                0.7588235294117647,
+                0.265
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.5,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 5,
+              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2240909090909091,
+                0.7588235294117647,
+                0.23545454545454544
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 5,
+              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2540909090909091,
+                0.7588235294117647,
+                0.265
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.5,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 30- Trade Secret *",
+            "cas_number": "68424-09-9",
+            "cas_state": "PRESENT",
+            "concentration": "60",
+            "evidence": {
+              "page": 5,
+              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2240909090909091,
+                0.7588235294117647,
+                0.23545454545454544
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "P,P'-Methylenebis(pheny] isocyanate) 30- Trade Secret *",
+            "cas_number": "101-68-8",
+            "cas_state": "PRESENT",
+            "concentration": "60",
+            "evidence": {
+              "page": 5,
+              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.2540909090909091,
+                0.7588235294117647,
+                0.265
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "'4,4'-Diisocyanatodiphenylmethane polymer Trade Secret *",
+            "cas_number": "25686-28-6",
+            "cas_state": "PRESENT",
+            "concentration": "< 20",
+            "evidence": {
+              "page": 5,
+              "text": "'4,4'-Diisocyanatodiphenylmethane polymer 25686-28-6 < 20 Trade Secret *",
+              "bbox": [
+                0.0611764705882353,
+                0.26954545454545453,
+                0.721764705882353,
+                0.28
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Oxirane, Methyl-, Polymer With Oxirane, Ether With 1- Trade Secret *",
+            "cas_number": "59675-67-1",
+            "cas_state": "PRESENT",
+            "concentration": "5",
+            "evidence": {
+              "page": 5,
+              "text": "Oxirane, Methyl-, Polymer With Oxirane, Ether With 59675-67-1 1- 5 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.285,
+                0.7429411764705882,
+                0.2963636363636364
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Carbon Black 0.1- Trade Secret *",
+            "cas_number": "1333-86-4",
+            "cas_state": "PRESENT",
+            "concentration": "1",
+            "evidence": {
+              "page": 5,
+              "text": "Carbon Black 1333-86-4 0.1- 1 Trade Secret *",
+              "bbox": [
+                0.061764705882352944,
+                0.32954545454545453,
+                0.7547058823529412,
+                0.3381818181818182
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Chromium Compound 1 0.01- Trade Secret",
+            "cas_number": "71701-12-7",
+            "cas_state": "PRESENT",
+            "concentration": "0.3",
+            "evidence": {
+              "page": 5,
+              "text": "Chromium Compound 1 71701-12-7 0.01- 0.3 Trade Secret",
+              "bbox": [
+                0.061764705882352944,
+                0.345,
+                0.7641176470588236,
+                0.3563636363636364
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Chromium Compound 2 0.01- Trade Secret",
+            "cas_number": "74421-71-9",
+            "cas_state": "PRESENT",
+            "concentration": "0.1",
+            "evidence": {
+              "page": 5,
+              "text": "Chromium Compound 2 74421-71-9 0.01- 0.1 Trade Secret",
+              "bbox": [
+                0.061764705882352944,
+                0.375,
+                0.7641176470588236,
+                0.38636363636363635
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Chromium Compound 3 0.01- Trade Secret",
+            "cas_number": "71839-90-2",
+            "cas_state": "PRESENT",
+            "concentration": "0.1",
+            "evidence": {
+              "page": 5,
+              "text": "Chromium Compound 3 71839-90-2 0.01- 0.1 Trade Secret",
+              "bbox": [
+                0.061764705882352944,
+                0.405,
+                0.7641176470588236,
+                0.4163636363636364
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "Trade Secret *",
+            "cas_number": "7440-47-3",
+            "cas_state": "PRESENT",
+            "concentration": "<0,02",
+            "evidence": {
+              "page": 5,
+              "text": "7440-47-3 <0,02 Trade Secret *",
+              "bbox": [
+                0.4441176470588235,
+                0.435,
+                0.7341176470588235,
+                0.44363636363636366
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_19.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Water Reducer 310 1.2 Relevant identified uses of the substance or mixture",
+          "evidence": {
+            "page": 1,
+            "text": "Trade Name: Water Reducer 310 1.2 Relevant identified uses of the substance or mixture",
+            "bbox": [
+              0.07470588235294118,
+              0.16,
+              0.5705882352941176,
+              0.20272727272727273
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9204,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "Buddy Rhodes Concrete Products",
+          "evidence": {
+            "page": 1,
+            "text": "Company: Buddy Rhodes Concrete Products",
+            "bbox": [
+              0.12529411764705883,
+              0.26954545454545453,
+              0.6317647058823529,
+              0.2868181818181818
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.905,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_STATED",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    },
+    {
+      "document": "sds_20.pdf",
+      "fields": {
+        "product_name": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "2-ethylhexanol’, %, (a)",
+            "cas_number": "104-76-7",
+            "cas_state": "PRESENT",
+            "concentration": "NMT 10",
+            "evidence": {
+              "page": 4,
+              "text": "2-ethylhexanol’, %, NMT 10 (a) 104-76-7 203-234-3",
+              "bbox": [
+                0.06106408706166868,
+                0.21129170230966637,
+                0.8579201934703748,
+                0.22412318220701455
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 4,
+          "text": "(name, CAS No. and EC No., weight content (total should equal 100%), MAC w.a. or self-reference level of impact",
+          "bbox": [
+            0.06106408706166868,
+            0.10136869118905047,
+            0.8385731559854898,
+            0.11291702309666382
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    }
+  ]
+}

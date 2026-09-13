@@ -1,0 +1,108 @@
+{
+  "document": "sds_03.pdf",
+  "split": "dev",
+  "note": "Adhesive base. Same template as sds_01; Section 3.1 declares the substance entry non-applicable.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "STYCCOBOND F49 BASE",
+      "evidence": [{ "page": 1, "text": "Product identifier: STYCCOBOND F49 BASE" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "F. Ball and Co. Ltd.",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Details of the supplier of the safety data sheet: F. Ball and Co. Ltd."
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "Chemical description: Mixture of polymers, dispersants and organic compounds"
+        },
+        { "page": 1, "text": "Substance: Non-applicable" }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 1, "text": "Substance: Non-applicable" }]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "Chemical description: Mixture of polymers, dispersants and organic compounds"
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "Chemical description: Mixture of polymers, dispersants and organic compounds"
+        }
+      ],
+      "note": "The document never mentions molecular weight; the ontology rules it out for a mixture."
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Non Flammable (>60 \u00baC)",
+      "accepted_values": [">60 \u00b0C"],
+      "evidence": [{ "page": 6, "text": "Flash Point: Non Flammable (>60 \u00baC)" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [
+      { "page": 2, "text": "Identification Chemical name/Classification Concentration" }
+    ],
+    "items": [
+      {
+        "name": "Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated",
+        "cas_number": "1219458-07-7",
+        "cas_state": "PRESENT",
+        "concentration": "1 - <2.5 %",
+        "evidence": [{ "page": 2, "text": "CAS: 1219458-07-7" }]
+      },
+      {
+        "name": "m-phenylenebis(methylamine)",
+        "cas_number": "1477-55-0",
+        "cas_state": "PRESENT",
+        "concentration": "<1 %",
+        "evidence": [{ "page": 2, "text": "CAS: 1477-55-0" }]
+      },
+      {
+        "name": "1,2-benzisothiazol-3(2H)-one",
+        "cas_number": "2634-33-5",
+        "cas_state": "PRESENT",
+        "concentration": "<1 %",
+        "evidence": [{ "page": 2, "text": "CAS: 2634-33-5" }]
+      },
+      {
+        "name": "Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1)",
+        "cas_number": "55965-84-9",
+        "cas_state": "PRESENT",
+        "concentration": "<1 %",
+        "evidence": [{ "page": 2, "text": "CAS: 55965-84-9" }]
+      }
+    ]
+  }
+}

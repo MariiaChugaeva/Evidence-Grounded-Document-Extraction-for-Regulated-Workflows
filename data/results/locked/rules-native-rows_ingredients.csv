@@ -1,0 +1,20 @@
+document,gold_index,predicted_index,key,gold_name,predicted_name,gold_concentration,predicted_concentration,name_ok,cas_ok,concentration_ok,evidence_ok,verbatim,record_ok,record_with_evidence_ok
+sds_21.pdf,0,0,cas,Hydroquinone,Hydroquinone *,100,100,False,True,True,True,True,False,False
+sds_22.pdf,0,0,cas,"N-(3-aminopropyl)-N-dodecylpropane-1,3-diamine","N-(3-aminopropyl)-N-dodecylpropane-1,3-diamine ≥5-<10%",≥5-<10%,,False,True,False,False,True,False,False
+sds_22.pdf,1,1,cas,didecyldimethylammonium chloride,didecyldimethylammonium chloride ≥3-<5%,≥3-<5%,,False,True,False,False,True,False,False
+sds_22.pdf,2,2,cas,"Isotridecanol, ethoxylated","Isotridecanol, ethoxylated ≥3-<5%",≥3-<5%,,False,True,False,False,True,False,False
+sds_22.pdf,3,3,cas,propan-2-ol,propan-2-ol ≥1-<2.5%,≥1-<2.5%,,False,True,False,False,True,False,False
+sds_22.pdf,4,4,cas,Eucalyptus globulus oil,Eucalyptus globulus oil ≥0.1-<0.25%,≥0.1-<0.25%,,False,True,False,False,True,False,False
+sds_23.pdf,0,0,cas,(S)-AL 8810,(S)-AL,,8810,False,True,False,True,True,False,False
+sds_24.pdf,0,0,cas,Propan-2-ol,Propan-2-ol,99.7% w/w,,True,True,False,False,True,False,False
+sds_26.pdf,0,0,cas,Bis-Tris,Bis-Tris,,,True,True,True,True,True,True,True
+sds_27.pdf,0,0,cas,pentapotassium bis(peroxymonosulphate) bis(sulphate),pentapotassium Acute Tox. 4; H302,>= 30 - < 50,>= 30 - < 50,False,True,True,False,True,False,False
+sds_27.pdf,1,1,cas,sodium benzoate,sodium benzoate Eye Irrit. 2; H319,>= 10 - < 20,>= 10 - < 20,False,True,True,False,True,False,False
+sds_27.pdf,2,2,cas,(+)-tartaric acid,(+)-tartaric acid Eye Dam. 1; H318,>= 10 - < 20,>= 10 - < 20,False,True,True,False,True,False,False
+sds_27.pdf,3,3,cas,sodium dodecyl sulphate,sodium dodecyl sulphate Flam. Sol. 2; H228,>= 3 - < 10,>= 3 - < 10,False,True,True,False,True,False,False
+sds_27.pdf,4,4,cas,"Alcohols, C9-11-iso-, C10-rich, ethoxylated","Alcohols, C9-11-iso-, C10-rich, eth- Acute Tox. 4; H302",>= 3 - < 10,>= 3 - < 10,False,True,True,False,True,False,False
+sds_27.pdf,6,5,cas,sodium carbonate,sodium carbonate Eye Irrit. 2; H319,>= 1 - < 10,>= 1 - < 10,False,True,True,False,True,False,False
+sds_27.pdf,7,6,cas,dipotassium peroxodisulphate,dipotassium peroxodisulphate Ox. Sol. 3; H272,>= 0.1 - < 1,>= 0.1 - < 1,False,True,True,False,True,False,False
+sds_28.pdf,0,0,cas,Diethyl ether,Diethyl ether specific,>= 90 - <= 100,>= 90 - <= 100,False,True,True,False,True,False,False
+sds_28.pdf,1,1,cas,butyl hydroxytoluene,butyl hydroxytoluene,">= 1 - < 2,5",">= 1 - < 2,5",True,True,True,True,True,True,True
+sds_29.pdf,0,0,cas,"Zinc bis[O,O –bis(2-ethylhexyl)]bis dithiophosphate","Zinc bis[O,O –bis(2-ethylhexyl)]bis dithiophosphate %0,3-0,6","%0,3-0,6",,False,True,False,False,True,False,False

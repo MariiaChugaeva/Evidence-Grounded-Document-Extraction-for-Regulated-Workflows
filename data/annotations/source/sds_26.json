@@ -1,0 +1,64 @@
+{
+  "document": "sds_26.pdf",
+  "split": "locked",
+  "note": "Locked split. Bis-Tris laboratory chemical from AppliChem, a single substance in the DR-software EU template. Section 1 gives the CAS number, Section 3 is headed \"3.1 Substances\" with one row and no percentage, Section 9 says \"Flash point: Not applicable.\". No formula or molecular weight is mentioned. Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Bis-Tris",
+      "evidence": [{ "page": 1, "text": "Trade name: Bis-Tris" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "AppliChem GmbH",
+      "evidence": [{ "page": 1, "text": "Manufacturer/Supplier: AppliChem GmbH" }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SUBSTANCE",
+      "evidence": [{ "page": 1, "text": "3.1 Substances" }]
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "6976-37-0",
+      "evidence": [
+        { "page": 1, "text": "CAS Number: 6976-37-0" },
+        { "page": 1, "text": "6976-37-0 Bis-Tris" }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "No formula anywhere in the sheet."
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "No molecular weight anywhere in the sheet."
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 4, "text": "Flash point: Not applicable." }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 1, "text": "CAS No. Description" }],
+    "items": [
+      {
+        "name": "Bis-Tris",
+        "cas_number": "6976-37-0",
+        "cas_state": "PRESENT",
+        "concentration": null,
+        "evidence": [{ "page": 1, "text": "6976-37-0 Bis-Tris" }],
+        "note": "The single-substance row carries no percentage."
+      }
+    ]
+  }
+}

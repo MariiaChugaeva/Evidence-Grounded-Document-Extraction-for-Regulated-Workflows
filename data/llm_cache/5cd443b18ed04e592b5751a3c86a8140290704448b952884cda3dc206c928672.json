@@ -1,0 +1,88 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "TAMMSWELD - 55 GALLON DRUM - MTO",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "EUCLID CHEMICAL COMPANY",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Mixtures\nComposition Comments: The components are not hazardous or are below required disclosure limits."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Mixtures\nComposition Comments: The components are not hazardous or are below required disclosure limits."
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Mixtures\nComposition Comments: The components are not hazardous or are below required disclosure limits."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NO_DATA",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": []
+  },
+  "usage": {
+    "input_tokens": 4096,
+    "output_tokens": 532,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 16.43904750002548,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

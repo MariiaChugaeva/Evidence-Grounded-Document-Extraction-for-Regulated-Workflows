@@ -1,0 +1,99 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Westland Bone Meal",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Westland Horticulture Ltd",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3.1 N/A\n3.2 Description Garden fertiliser NPK 3 – 9 - 0\nHazardous Ingredients"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3.1 N/A\n3.2 Description Garden fertiliser NPK 3 – 9 - 0\nHazardous Ingredients"
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3.1 N/A\n3.2 Description Garden fertiliser NPK 3 – 9 - 0\nHazardous Ingredients"
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "Silicone dioxide",
+        "cas_number": "231-545-4",
+        "cas_state": "PRESENT",
+        "concentration": "45 – 55 %W/W",
+        "citation": {
+          "page": 1,
+          "quote": "Silicone dioxide CAS EC: 231-545-4 7631-89-9 45 – 55 % Substance Exposure Limit with Workplace"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 4584,
+    "output_tokens": 666,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 15.700657799985493,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

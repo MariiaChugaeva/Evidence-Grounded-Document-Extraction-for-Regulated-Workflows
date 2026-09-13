@@ -1,0 +1,67 @@
+{
+  "document": "sds_06.pdf",
+  "split": "dev",
+  "note": "Untreated wood products. The sheet never says whether the product is a substance or a mixture, so the product form is UNDETERMINED and the conditional identifier fields stay NOT_STATED rather than being ruled out by the ontology. Section 9 uses the abbreviations NAP (not applicable) and NAV (not available), which the state cue table has to distinguish.",
+  "product_form": "UNDETERMINED",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Wood and Wood Dust (without chemical treatments or resins/additives), including Untreated Lumber (all species and grades), Logs, Chips, and Sawdust",
+      "accepted_values": ["Wood and Wood Dust"],
+      "evidence": [
+        {
+          "page": 1,
+          "text": "TRADE NAME(S): Wood and Wood Dust (without chemical treatments or resins/additives), including Untreated Lumber (all species and grades), Logs, Chips, and Sawdust"
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Weyerhaeuser",
+      "evidence": [{ "page": 1, "text": "MANUFACTURER'S NAME: Weyerhaeuser" }]
+    },
+    "substance_or_mixture": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "Section 3 lists a single ingredient at 85-100 weight percent, which is neither a 100 percent single substance nor an explicit mixture declaration."
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "The only CAS entry in the document is the ingredient row, which reads \"None\"."
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "\"CHEMICAL NAME/CLASS: Wood Products\" is a class name, not a molecular formula. The old ground truth cited this line as formula evidence."
+    },
+    "molecular_weight": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 5, "text": "Flash Point: NAP" }],
+      "note": "NAP is defined in this sheet as not applicable, as opposed to NAV for not available."
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 3, "text": "Ingredient(s)s CAS# Wt.%" }],
+    "items": [
+      {
+        "name": "Wood (wood dust, softwood or hardwood, logs, wood chips)",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "85-100",
+        "evidence": [
+          {
+            "page": 3,
+            "text": "Wood (wood dust, softwood or hardwood, logs, wood chips) None 85-100"
+          }
+        ],
+        "note": "The CAS column reads \"None\": wood dust has no CAS Registry Number."
+      }
+    ]
+  }
+}

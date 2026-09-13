@@ -1,0 +1,183 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Dalgety 6 in 1 B12 Vaccine",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Trade name Dalgety 6 in 1 B12 Vaccine"
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Nutrien Ag Solutions Limited",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "Details of the supplier of the safety data sheet\nNutrien Ag Solutions Limited"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 3,
+          "quote": "Mixture of substances as listed below."
+        },
+        {
+          "page": 3,
+          "quote": "Name of substance CAS No Wt% Classification acc. to GHS"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "Mixture of substances as listed below."
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "Mixture of substances as listed below."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "PRESENT",
+    "ingredients": [
+      {
+        "name": "Acetatocobalamin",
+        "cas_number": "22465-48-1",
+        "cas_state": "PRESENT",
+        "concentration": "≤ 0.2",
+        "citation": {
+          "page": 2,
+          "quote": "Acetatocobalamin 22465-48-1 ≤ 0.2 Carc. 2 / H351"
+        }
+      },
+      {
+        "name": "Clostridium septicum toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "≤ 0.1",
+        "citation": {
+          "page": 2,
+          "quote": "Clostridium septicum toxoid ≤ 0.1"
+        }
+      },
+      {
+        "name": "Clostridium novyl Type B toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "≤ 0.1",
+        "citation": {
+          "page": 2,
+          "quote": "Clostridium novyl Type B toxoid ≤ 0.1"
+        }
+      },
+      {
+        "name": "Clostridium tetani toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "≤ 0.1",
+        "citation": {
+          "page": 2,
+          "quote": "Clostridium tetani toxoid ≤ 0.1"
+        }
+      },
+      {
+        "name": "Clostridium perfringens Type D, toxoid",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "≤ 0.1",
+        "citation": {
+          "page": 2,
+          "quote": "Clostridium perfringens Type D, ≤ 0.1\n  toxoid"
+        }
+      },
+      {
+        "name": "Clostridium chauvoei bacterin",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "≤ 0.1",
+        "citation": {
+          "page": 2,
+          "quote": "Clostridium chauvoei bacterin ≤ 0.1"
+        }
+      },
+      {
+        "name": "Corynebacterium Pseudotuber- culosis bacterin",
+        "cas_number": null,
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "≤ 0.1",
+        "citation": {
+          "page": 2,
+          "quote": "Corynebacterium Pseudotuber- culosis bacterin ≤ 0.1"
+        }
+      },
+      {
+        "name": "Thimerosal",
+        "cas_number": "54-64-8",
+        "cas_state": "PRESENT",
+        "concentration": "≤ 0.015",
+        "citation": {
+          "page": 2,
+          "quote": "Thimerosal 54-64-8 ≤ 0.015 Acute Tox. 2 / H300\nAcute Tox. 1 / H310\nAcute Tox. 2 / H330\nSkin Sens. 1 / H317\nSTOT RE 2 / H373"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 3935,
+    "output_tokens": 1380,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 34.444278299983125,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

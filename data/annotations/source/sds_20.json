@@ -1,0 +1,92 @@
+{
+  "document": "sds_20.pdf",
+  "split": "dev",
+  "note": "Russian GOST-format sheet supplied as a scanned English translation. The text layer is noisy, the section numbering is non-standard, and translator stamps are interleaved with the content, which makes it the hardest document in the set. Section 3.1.2 explicitly answers the chemical-formula question with \"No.\", so that field is NOT_APPLICABLE by an explicit statement rather than by the ontology.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Petrochemical Stillage Residue KON-92",
+      "accepted_values": [
+        "Petrochemical Stillage Residue KON-92 (heavy petroleum resin)"
+      ],
+      "evidence": [
+        {
+          "page": 3,
+          "text": "Petrochemical Stillage Residue KON-92 (heavy petroleum resin)."
+        }
+      ],
+      "note": "The label \"1.1.1 Product name\" sits in the left column and is not adjacent to the value in reading order."
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "JSC \"Sibur-Khimprom\"",
+      "evidence": [{ "page": 3, "text": "JSC \" Sibur-Khimprom\"" }],
+      "note": "The text layer contains a stray space inside the opening quotation mark."
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "COMPOSITION_IMPLIED",
+      "rule": "composition_implies_form",
+      "value": "MIXTURE",
+      "ambiguous": true,
+      "evidence": [
+        {
+          "page": 3,
+          "text": "Petrochemical Stillage Residue KON-92 produced from residuals of butyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid, ethylene-propylene copolymer and ethyl benzene [l]."
+        }
+      ],
+      "note": "The sheet never uses the words substance or mixture for the product, but describes it as produced from several named residuals and lists a sub-component in the ingredient table."
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 3,
+          "text": "Petrochemical Stillage Residue KON-92 produced from residuals of butyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid, ethylene-propylene copolymer and ethyl benzene [l]."
+        }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 3, "text": "3.1.2 Chemical formula No. [l] ." }],
+      "note": "The value column for the chemical-formula row reads \"No.\", i.e. none."
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 3,
+          "text": "Petrochemical Stillage Residue KON-92 produced from residuals of butyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid, ethylene-propylene copolymer and ethyl benzene [l]."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "more than 61 \u00b0C",
+      "accepted_values": [">61 \u00b0C"],
+      "evidence": [{ "page": 4, "text": "Closed-cup flash point - more than 61 \u00b0C;" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 4, "text": "Ingredients Weight Hygienic regulations" }],
+    "items": [
+      {
+        "name": "2-ethylhexanol",
+        "cas_number": "104-76-7",
+        "cas_state": "PRESENT",
+        "concentration": "NMT 10",
+        "evidence": [{ "page": 4, "text": "104-76-7" }]
+      }
+    ]
+  }
+}

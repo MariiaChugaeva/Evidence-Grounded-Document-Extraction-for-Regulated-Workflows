@@ -1,0 +1,78 @@
+{
+  "document": "sds_12.pdf",
+  "split": "dev",
+  "note": "Garden fertiliser. The Section 9 flash-point row has a label with a bare dash in the value slot. That is an empty value slot rather than a statement, so it is annotated NO_DATA and flagged ambiguous against NOT_STATED; the evaluator reports strict and lenient state agreement separately.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Bone Meal",
+      "accepted_values": ["Westland Bone Meal"],
+      "evidence": [{ "page": 1, "text": "1.1 Product identifier Bone Meal" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Westland Horticulture Ltd",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "1.3 Details of the supplier of the data sheet Westland Horticulture Ltd"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 1, "text": "3.2 Description Garden fertiliser NPK 3 \u2013 9 - 0" },
+        { "page": 1, "text": "3.1 N/A" }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 1, "text": "3.1 N/A" }],
+      "note": "Section 3.1, the substances entry, is marked N/A."
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        { "page": 1, "text": "3.2 Description Garden fertiliser NPK 3 \u2013 9 - 0" }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        { "page": 1, "text": "3.2 Description Garden fertiliser NPK 3 \u2013 9 - 0" }
+      ]
+    },
+    "flash_point": {
+      "state": "NO_DATA",
+      "derivation": "EXPLICIT",
+      "ambiguous": true,
+      "alternative_state": "NOT_STATED",
+      "evidence": [{ "page": 5, "text": "Flash point -" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 1, "text": "Hazardous Ingredients" }],
+    "items": [
+      {
+        "name": "Silicone dioxide",
+        "cas_number": "7631-89-9",
+        "cas_state": "PRESENT",
+        "concentration": "45 \u2013 55 %",
+        "evidence": [{ "page": 1, "text": "CAS 7631-89-9" }],
+        "note": "The printed CAS number fails its own check digit and does not correspond to silicon dioxide. It is annotated as printed; the schema-validity axis is what flags it."
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "document": "sds_01.pdf",
+  "split": "dev",
+  "note": "Waterborne paint additive. Section 3.1 explicitly declares the substance entry non-applicable, so every product-level identifier is ontology-NOT_APPLICABLE.",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "REDUR AD 04",
+      "evidence": [{ "page": 1, "text": "Product identifier: REDUR AD 04" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SECILTEK SA",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Details of the supplier of the safety data sheet: SECILTEK SA"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [
+        { "page": 1, "text": "Chemical description: Mixture of substances" },
+        { "page": 1, "text": "Substance: Non-applicable" }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 1, "text": "Substance: Non-applicable" }],
+      "note": "Section 3.1 declares the substance entry non-applicable; the product is a mixture and carries no CAS number."
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "Chemical description: Mixture of substances" }],
+      "note": "No formula is stated anywhere; a mixture has none. Evidence is the span establishing the product form."
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 4, "text": "Average molecular weight: Not relevant" }]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Non Flammable (>60 \u00baC)",
+      "accepted_values": [">60 \u00b0C"],
+      "evidence": [{ "page": 5, "text": "Flash Point: Non Flammable (>60 \u00baC)" }],
+      "note": "Qualitative wording carrying an explicit lower bound; normalizes to > 60 C."
+    }
+  },
+  "ingredients": {
+    "state": "NOT_APPLICABLE",
+    "note": "The sheet declares that no contained substance exceeds the Annex II disclosure limits, so no ingredient rows exist.",
+    "evidence": [
+      {
+        "page": 1,
+        "text": "None of the substances contained in the mixture are above the limits specified in Annex II of Regulation (EC) No 1907/2006"
+      }
+    ],
+    "items": []
+  }
+}

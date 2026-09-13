@@ -1,0 +1,81 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "R-134a",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "National Refrigerants, Inc.",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "SUBSTANCE",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "PRESENT",
+      "value": "F3CCH2F",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "value": "{102}",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "flash_point": {
+      "state": "NOT_APPLICABLE",
+      "value": "Not applicable",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_APPLICABLE",
+    "ingredients": [
+      {
+        "name": "1,1,1,2-Tetrafluoroethane",
+        "cas_number": "811-97-2",
+        "cas_state": "NOT_APPLICABLE",
+        "concentration": "100",
+        "citation": null
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 4816,
+    "output_tokens": 468,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 10.478860399976838,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

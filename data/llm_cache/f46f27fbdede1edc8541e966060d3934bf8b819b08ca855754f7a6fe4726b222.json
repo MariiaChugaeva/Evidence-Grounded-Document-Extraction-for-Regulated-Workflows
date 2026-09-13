@@ -1,0 +1,136 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "STYCCOBOND F49 BASE",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "F. Ball and Co. Ltd.",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": "MIXTURE",
+      "derivation": "DERIVED",
+      "rule": "composition_implies_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3.1 Substance:\nNon-applicable"
+        },
+        {
+          "page": 2,
+          "quote": "3.2 Mixture:\n- CONTINUED ON NEXT PAGE -"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "3.2 Mixture:\n- CONTINUED ON NEXT PAGE -"
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 2,
+          "quote": "3.2 Mixture:\n- CONTINUED ON NEXT PAGE -"
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "value": "Non Flammable (>60 ºC)",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": {
+        "page": 6,
+        "quote": "Flammability:\nFlash Point: Non Flammable (>60 ºC)"
+      },
+      "premises": []
+    },
+    "ingredients_state": "NOT_APPLICABLE",
+    "ingredients": [
+      {
+        "name": "Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated",
+        "cas_number": "1219458-07-7",
+        "cas_state": "PRESENT",
+        "concentration": "<2.5 %",
+        "citation": {
+          "page": 2,
+          "quote": "Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated\nCAS: 1219458-07-7 Acute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 - Danger 1 - <2.5 %"
+        }
+      },
+      {
+        "name": "m-phenylenebis(methylamine)",
+        "cas_number": "1477-55-0",
+        "cas_state": "PRESENT",
+        "concentration": "<1 %",
+        "citation": {
+          "page": 2,
+          "quote": "m-phenylenebis(methylamine)\nCAS: 1477-55-0 Acute Tox. 4: H302+H332; Aquatic Chronic 3: H412; Eye Dam. 1: H318; Skin Corr. 1B: H314; Skin Sens. 1B: H317; <1 % EUH071 - Danger"
+        }
+      },
+      {
+        "name": "1,2-benzisothiazol-3(2H)-one",
+        "cas_number": "2634-33-5",
+        "cas_state": "PRESENT",
+        "concentration": "<1 %",
+        "citation": {
+          "page": 2,
+          "quote": "1,2-benzisothiazol-3(2H)-one\nCAS: 2634-33-5 Acute Tox. 4: H302; Aquatic Acute 1: H400; Eye Dam. 1: H318; Skin Irrit. 2: H315; Skin Sens. 1: H317 - Danger <1 %"
+        }
+      },
+      {
+        "name": "Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1)",
+        "cas_number": "55965-84-9",
+        "cas_state": "PRESENT",
+        "concentration": "<1 %",
+        "citation": {
+          "page": 2,
+          "quote": "Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1)\nCAS: 55965-84-9 Acute Tox. 2: H310+H330; Acute Tox. 3: H301; Aquatic Acute 1: H400; Aquatic Chronic 1: H410; Eye Dam. 1: <1 % H318; Skin Corr. 1C: H314; Skin Sens. 1A: H317; EUH071 - Danger"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 10068,
+    "output_tokens": 1375,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 27.094780799990986,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

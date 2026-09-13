@@ -1,0 +1,170 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "Lithium ion rechargeable battery cell (including lithium polymer battery)",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "Panasonic Energy Co., Ltd.",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "value": "PREPARATION",
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "This product is an "
+        },
+        {
+          "page": 1,
+          "quote": "article"
+        },
+        {
+          "page": 1,
+          "quote": "used with the contents sealed. Therefore, issuing and providing SDS is not },{"
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "This product is an "
+        },
+        {
+          "page": 1,
+          "quote": "article"
+        },
+        {
+          "page": 1,
+          "quote": "used with the contents sealed. Therefore, issuing and providing SDS is not },{"
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "Positive electrode",
+        "cas_number": "182442-95-1",
+        "cas_state": "PRESENT",
+        "concentration": "20~60",
+        "citation": {
+          "page": 4,
+          "quote": "Positive electrode 182442-95-1 20~60"
+        }
+      },
+      {
+        "name": "Positive electrode’s base",
+        "cas_number": "7429-90-5",
+        "cas_state": "PRESENT",
+        "concentration": "1~10",
+        "citation": {
+          "page": 4,
+          "quote": "Positive electrode’s base Aluminum 7429-90-5 1~10"
+        }
+      },
+      {
+        "name": "Negative electrode",
+        "cas_number": "7782-42-5",
+        "cas_state": "PRESENT",
+        "concentration": "10~30",
+        "citation": {
+          "page": 4,
+          "quote": "Negative electrode Carbon 7782-42-5 7440-44-0 10~30"
+        }
+      },
+      {
+        "name": "Negative electrode’s base",
+        "cas_number": "7440-50-8",
+        "cas_state": "PRESENT",
+        "concentration": "1~15",
+        "citation": {
+          "page": 4,
+          "quote": "Negative electrode’s base Copper 7440-50-8 1~15"
+        }
+      },
+      {
+        "name": "Ethyl methyl carbonate",
+        "cas_number": "623-53-0",
+        "cas_state": "PRESENT",
+        "concentration": "5~25",
+        "citation": {
+          "page": 4,
+          "quote": "Ethyl methyl carbonate 623-53-0"
+        }
+      },
+      {
+        "name": "Electrolyte",
+        "cas_number": "105-58-8",
+        "cas_state": "PRESENT",
+        "concentration": "5~25",
+        "citation": {
+          "page": 4,
+          "quote": "Lithium hexafluorophosphate 21324-40-3 105-58-8 96-49-1 5~25"
+        }
+      },
+      {
+        "name": "Outer case",
+        "cas_number": "7429-90-5",
+        "cas_state": "PRESENT",
+        "concentration": "1~30",
+        "citation": {
+          "page": 4,
+          "quote": "Outer case Aluminum, plastic iron, aluminum laminated 7429-90-5 7439-89-6 1~30"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 4467,
+    "output_tokens": 1195,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 20.277392499992857,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

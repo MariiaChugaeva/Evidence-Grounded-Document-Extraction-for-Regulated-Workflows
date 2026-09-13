@@ -1,0 +1,39 @@
+{
+  "document": "sds_19.pdf",
+  "split": "dev",
+  "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Nothing determines the product form, so it stays UNDETERMINED and the conditional identifier fields are NOT_STATED.",
+  "product_form": "UNDETERMINED",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Water Reducer 310",
+      "evidence": [{ "page": 1, "text": "Trade Name: Water Reducer 310" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Buddy Rhodes Concrete Products",
+      "evidence": [{ "page": 1, "text": "Company: Buddy Rhodes Concrete Products" }]
+    },
+    "substance_or_mixture": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "product_cas_number": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "chemical_formula": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "molecular_weight": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "flash_point": {
+      "state": "NO_DATA",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 4, "text": "Flash Point: No data" }]
+    }
+  },
+  "ingredients": {
+    "state": "NOT_APPLICABLE",
+    "evidence": [
+      {
+        "page": 1,
+        "text": "No ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication Standard 29 CFR 1910.1200 criteria."
+      }
+    ],
+    "items": []
+  }
+}

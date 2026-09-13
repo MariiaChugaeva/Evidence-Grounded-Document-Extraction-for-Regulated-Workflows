@@ -1,0 +1,13 @@
+# Direct dependencies of sdsbench/, scripts/, tests/ and ocr.py, pinned to the
+# versions the committed results in data/ were produced with. Python 3.12.
+#
+# Gold bounding boxes in data/annotations/gold.json are derived from PyMuPDF's
+# word segmentation, so do not bump pymupdf without rebuilding and diffing gold.
+pymupdf==1.28.2
+pydantic==2.13.4
+rapidfuzz==3.14.5
+
+# Only needed to regenerate data/ocr/ with ocr.py. Also requires a Tesseract
+# installation; the binary path is set at the top of ocr.py.
+pytesseract==0.3.13
+Pillow==12.3.0

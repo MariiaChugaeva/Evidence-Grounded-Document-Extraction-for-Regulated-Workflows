@@ -1,0 +1,193 @@
+{
+  "model": "qwen2.5:7b",
+  "stop_reason": "stop",
+  "output": {
+    "product_name": {
+      "state": "PRESENT",
+      "value": "3M™ Semi-Rigid Plastic Repair PN 04240",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "3M™ Semi-Rigid Plastic Repair PN 04240 07/21/20"
+        },
+        {
+          "page": 3,
+          "quote": "3M™ Plastic Repair, Semi-Rigid PNs 04240 (Part A) 07/15/20"
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "value": "3M",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 1,
+          "quote": "MANUFACTURER: 3M"
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 3,
+          "quote": "This product is a kit or a multipart product which consists of multiple, independently packaged components."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": []
+    },
+    "molecular_weight": {
+      "state": "NOT_STATED",
+      "value": null,
+      "derivation": "DERIVED",
+      "rule": "identifier_undefined_for_form",
+      "evidence": null,
+      "premises": [
+        {
+          "page": 3,
+          "quote": "This product is a kit or a multipart product which consists of multiple, independently packaged components."
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "value": ">=290 ºF [Test Method:Tagliabue Closed Cup]",
+      "derivation": "DIRECT",
+      "rule": null,
+      "evidence": null,
+      "premises": [
+        {
+          "page": 9,
+          "quote": "Flash Point: >=290 ºF [Test Method:Tagliabue Closed Cup]"
+        }
+      ]
+    },
+    "ingredients_state": "NOT_STATED",
+    "ingredients": [
+      {
+        "name": "Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]",
+        "cas_number": "68424-09-9",
+        "cas_state": "PRESENT",
+        "concentration": "30 - 60",
+        "citation": {
+          "page": 3,
+          "quote": "Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyantobenzene] 68424-09-9 30 - 60 Trade Secret *"
+        }
+      },
+      {
+        "name": "P,P'-Methylenebis(phenyl isocyanate)",
+        "cas_number": "101-68-8",
+        "cas_state": "PRESENT",
+        "concentration": "30 - 60",
+        "citation": {
+          "page": 3,
+          "quote": "P,P'-Methylenebis(phenyl isocyanate) 101-68-8 30 - 60 Trade Secret *"
+        }
+      },
+      {
+        "name": "4,4'-Diisocyanatodiphenylmethane polymer",
+        "cas_number": "25686-28-6",
+        "cas_state": "PRESENT",
+        "concentration": "< 20",
+        "citation": {
+          "page": 3,
+          "quote": "4,4'-Diisocyanatodiphenylmethane polymer 25686-28-6 < 20 Trade Secret *"
+        }
+      },
+      {
+        "name": "Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Propanetriol (3:1), Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]",
+        "cas_number": "59675-67-1",
+        "cas_state": "PRESENT",
+        "concentration": "1 - 5",
+        "citation": {
+          "page": 3,
+          "quote": "Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Propanetriol (3:1), Polymer With 1,1'-Methylenebis[4-Isocyantobenzene] 59675-67-1 1 - 5 Trade Secret *"
+        }
+      },
+      {
+        "name": "Carbon Black",
+        "cas_number": "1333-86-4",
+        "cas_state": "PRESENT",
+        "concentration": "0.1 - 1",
+        "citation": {
+          "page": 3,
+          "quote": "Carbon Black 1333-86-4 0.1 - 1 Trade Secret *"
+        }
+      },
+      {
+        "name": "Chromium Compound 1",
+        "cas_number": "71701-12-7",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.3",
+        "citation": {
+          "page": 3,
+          "quote": "Chromium Compound 1 71701-12-7 0.01 - 0.3 Trade Secret *"
+        }
+      },
+      {
+        "name": "Chromium Compound 2",
+        "cas_number": "74421-71-9",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.1",
+        "citation": {
+          "page": 3,
+          "quote": "Chromium Compound 2 74421-71-9 0.01 - 0.1 Trade Secret *"
+        }
+      },
+      {
+        "name": "Chromium Compound 3",
+        "cas_number": "71839-90-2",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.1",
+        "citation": {
+          "page": 3,
+          "quote": "Chromium Compound 3 71839-90-2 0.01 - 0.1 Trade Secret *"
+        }
+      },
+      {
+        "name": "Chromium",
+        "cas_number": "7440-47-3",
+        "cas_state": "PRESENT",
+        "concentration": "< 0.02",
+        "citation": {
+          "page": 3,
+          "quote": "Chromium 7440-47-3 < 0.02 Trade Secret *"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 15029,
+    "output_tokens": 1698,
+    "cache_read_input_tokens": 0
+  },
+  "latency_seconds": 49.46536289999494,
+  "request_id": null,
+  "backend": "ollama",
+  "num_ctx": 24576
+}

@@ -1,0 +1,76 @@
+{
+  "document": "sds_28.pdf",
+  "split": "locked",
+  "note": "Locked split. Diethyl ether from Sigma-Aldrich / Merck Life Science, a single substance in the Sigma-Aldrich label/colon/value template. Section 1 gives the CAS number, Section 3 is headed \"3.1 Substances\" and lists the substance at >= 90 - <= 100 % together with a stabiliser (butyl hydroxytoluene), so a composition rule that reads two CAS rows as a mixture would be wrong here. Section 9 gives the flash point and the molecular weight; no formula is printed. Annotated 2026-09-13 by the reviewer's assistant from the native text layer following the dev policies; the rules-v3 extractor was not run on this sheet before annotation. Needs a second blind reading.",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Diethyl ether",
+      "evidence": [{ "page": 1, "text": "Product name : Diethyl ether" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Merck Life Science LLC",
+      "evidence": [{ "page": 1, "text": "Company : Merck Life Science LLC" }]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SUBSTANCE",
+      "evidence": [{ "page": 3, "text": "3.1 Substances" }]
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "60-29-7",
+      "evidence": [
+        { "page": 1, "text": "CAS-No. : 60-29-7" },
+        { "page": 3, "text": "Diethyl ether 60-29-7 200-467-2 >= 90 - <= 100" }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_STATED",
+      "derivation": "ABSENT",
+      "note": "No formula anywhere in the sheet."
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "74,12 g/mol",
+      "accepted_values": ["74.12 g/mol", "74.12"],
+      "evidence": [{ "page": 9, "text": "Molecular weight : 74,12 g/mol" }],
+      "note": "Decimal comma as printed."
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "-40 °C",
+      "evidence": [{ "page": 8, "text": "Flash point : -40 °C" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 3, "text": "Chemical name CAS-No. EC-No. Concentration (% w/w) M-Factor, SCL, ATE" }],
+    "note": "Rows are annotated as name, CAS, EC number and concentration; the M-factor / SCL / ATE column that follows the first row is left out.",
+    "items": [
+      {
+        "name": "Diethyl ether",
+        "cas_number": "60-29-7",
+        "cas_state": "PRESENT",
+        "concentration": ">= 90 - <= 100",
+        "evidence": [{ "page": 3, "text": "Diethyl ether 60-29-7 200-467-2 >= 90 - <= 100" }]
+      },
+      {
+        "name": "butyl hydroxytoluene",
+        "cas_number": "128-37-0",
+        "cas_state": "PRESENT",
+        "concentration": ">= 1 - < 2,5",
+        "evidence": [{ "page": 3, "text": "butyl hydroxytoluene 128-37-0 >= 1 - < 2,5" }],
+        "note": "The row continues at the top of page 4 with \"(BHT)\" and the EC number 204-881-4."
+      }
+    ]
+  }
+}

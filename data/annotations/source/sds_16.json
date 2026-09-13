@@ -1,0 +1,79 @@
+{
+  "document": "sds_16.pdf",
+  "split": "dev",
+  "note": "Laboratory sand, a single substance and the richest document in the set: product CAS, formula and molecular weight are all genuinely stated. Section 1.3 names a UK entity and an EU entity, so the supplier is ambiguous and both are accepted.",
+  "product_form": "SUBSTANCE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Sand, Ottawa",
+      "evidence": [{ "page": 1, "text": "Product Description: Sand, Ottawa" }]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "Fisher Scientific UK",
+      "accepted_values": ["Thermo Fisher Scientific"],
+      "ambiguous": true,
+      "evidence": [
+        { "page": 1, "text": "UK entity/business name Fisher Scientific UK" },
+        { "page": 1, "text": "EU entity/business name Thermo Fisher Scientific" }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "SUBSTANCE",
+      "evidence": [
+        { "page": 2, "text": "3.1. Substances" },
+        { "page": 2, "text": "Sand 14808-60-7 EEC No. 238-878-4 >95" }
+      ]
+    },
+    "product_cas_number": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "14808-60-7",
+      "evidence": [
+        { "page": 1, "text": "CAS No 14808-60-7" },
+        { "page": 2, "text": "Sand 14808-60-7 EEC No. 238-878-4 >95" }
+      ]
+    },
+    "chemical_formula": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "O2 Si",
+      "accepted_values": ["O2Si", "SiO2"],
+      "evidence": [
+        { "page": 1, "text": "Molecular Formula O2 Si" },
+        { "page": 5, "text": "Molecular Formula O2 Si" }
+      ],
+      "note": "The sheet writes the formula in Hill-like reverse order with a space. SiO2 is accepted as the conventional equivalent."
+    },
+    "molecular_weight": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "60.08",
+      "accepted_values": ["60.08 g/mol"],
+      "evidence": [{ "page": 5, "text": "Molecular Weight 60.08" }]
+    },
+    "flash_point": {
+      "state": "NO_DATA",
+      "derivation": "EXPLICIT",
+      "evidence": [{ "page": 5, "text": "Flash Point No information available" }]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "evidence": [{ "page": 2, "text": "Component CAS No EC No Weight %" }],
+    "items": [
+      {
+        "name": "Sand",
+        "cas_number": "14808-60-7",
+        "cas_state": "PRESENT",
+        "concentration": ">95",
+        "evidence": [{ "page": 2, "text": "Sand 14808-60-7 EEC No. 238-878-4 >95" }]
+      }
+    ]
+  }
+}
