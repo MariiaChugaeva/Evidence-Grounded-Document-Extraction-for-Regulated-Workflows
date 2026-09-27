@@ -10,6 +10,7 @@ direct evidence.
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 from typing import Literal
@@ -108,6 +109,33 @@ class PredictionSet(BaseModel):
 
     def by_document(self) -> dict[str, DocumentPrediction]:
         return {item.document: item for item in self.documents}
+
+    @property
+    def split(self) -> str | None:
+        """The split the extractor was run on, as recorded by the run script."""
+        return self.configuration.get("split")
+
+    @property
+    def document_names(self) -> tuple[str, ...]:
+        return tuple(sorted(item.document for item in self.documents))
+
+    @property
+    def prediction_id(self) -> str:
+        """Content hash over system, configuration and document set.
+
+        Computed, not stored, so it cannot drift from the file it describes.
+        Two runs sharing an id scored the same documents with the same
+        extractor configuration, which is what a locked-split run has to be
+        traceable to; the evaluator refuses a file whose recorded split or
+        document set does not match the gold it is about to be scored against.
+        """
+        digest = hashlib.sha256()
+        digest.update(self.system.encode("utf-8"))
+        for key in sorted(self.configuration):
+            digest.update(f"\0{key}={self.configuration[key]}".encode("utf-8"))
+        for name in self.document_names:
+            digest.update(f"\0{name}".encode("utf-8"))
+        return digest.hexdigest()[:16]
 
     def save(self, path: Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)

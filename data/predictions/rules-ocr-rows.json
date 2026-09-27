@@ -3,8 +3,8 @@
   "configuration": {
     "layer": "ocr",
     "layout": "rows",
-    "extractor": "rules-v3",
-    "commit": "0b51068",
+    "extractor": "rules-v4",
+    "commit": "5e8f927",
     "split": "dev"
   },
   "documents": [
@@ -585,6 +585,17 @@
                 0.24681818181818183,
                 0.73,
                 0.26136363636363635
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 2,
+              "text": "There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2",
+              "bbox": [
+                0.058823529411764705,
+                0.32136363636363635,
+                0.7764705882352941,
+                0.3327272727272727
               ],
               "bbox_provenance": "system"
             }
@@ -1504,90 +1515,64 @@
           "rationale": null
         },
         "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
           "state": "PRESENT",
-          "value": "MIXTURE",
+          "value": "7647-14-5",
           "evidence": {
-            "page": 2,
-            "text": "3.1 Substances or 3.2 Mixtures",
+            "page": 3,
+            "text": "CAS No.: 7647-14-5",
             "bbox": [
-              0.08469449485783424,
-              0.7969217614365113,
-              0.36963097398669087,
-              0.8054724241128688
+              0.2365396249243799,
+              0.17443351859769132,
+              0.42891712038717483,
+              0.18127404873877725
             ],
             "bbox_provenance": "system"
           },
           "derivation": "DIRECT",
           "rule": null,
           "premises": [],
-          "confidence": 0.8,
+          "confidence": 0.905,
           "rationale": null
         },
-        "product_cas_number": {
-          "state": "NOT_APPLICABLE",
-          "value": null,
-          "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 2,
-              "text": "3.1 Substances or 3.2 Mixtures",
-              "bbox": [
-                0.08469449485783424,
-                0.7969217614365113,
-                0.36963097398669087,
-                0.8054724241128688
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.8,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
-        },
         "chemical_formula": {
-          "state": "NOT_APPLICABLE",
-          "value": null,
-          "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 2,
-              "text": "3.1 Substances or 3.2 Mixtures",
-              "bbox": [
-                0.08469449485783424,
-                0.7969217614365113,
-                0.36963097398669087,
-                0.8054724241128688
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.8,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
+          "state": "PRESENT",
+          "value": "CeHsN202S8",
+          "evidence": {
+            "page": 3,
+            "text": "Formula: CeHsN202S8",
+            "bbox": [
+              0.2365396249243799,
+              0.3463018383924754,
+              0.4664246823956443,
+              0.36083796494228304
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.7075,
+          "rationale": null
         },
         "molecular_weight": {
-          "state": "NOT_APPLICABLE",
+          "state": "NOT_STATED",
           "value": null,
           "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 2,
-              "text": "3.1 Substances or 3.2 Mixtures",
-              "bbox": [
-                0.08469449485783424,
-                0.7969217614365113,
-                0.36963097398669087,
-                0.8054724241128688
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.8,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
         },
         "flash_point": {
           "state": "NOT_STATED",
@@ -2926,136 +2911,44 @@
           "rationale": null
         },
         "substance_or_mixture": {
-          "state": "PRESENT",
-          "value": "MIXTURE",
+          "state": "NOT_STATED",
+          "value": null,
           "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "composition_implies_form",
-          "premises": [
-            {
-              "page": 5,
-              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2240909090909091,
-                0.7588235294117647,
-                0.23545454545454544
-              ],
-              "bbox_provenance": "system"
-            },
-            {
-              "page": 5,
-              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2540909090909091,
-                0.7588235294117647,
-                0.265
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.5,
-          "rationale": "composition table"
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
         },
         "product_cas_number": {
-          "state": "NOT_APPLICABLE",
+          "state": "NOT_STATED",
           "value": null,
           "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 5,
-              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2240909090909091,
-                0.7588235294117647,
-                0.23545454545454544
-              ],
-              "bbox_provenance": "system"
-            },
-            {
-              "page": 5,
-              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2540909090909091,
-                0.7588235294117647,
-                0.265
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.5,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
         },
         "chemical_formula": {
-          "state": "NOT_APPLICABLE",
+          "state": "NOT_STATED",
           "value": null,
           "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 5,
-              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2240909090909091,
-                0.7588235294117647,
-                0.23545454545454544
-              ],
-              "bbox_provenance": "system"
-            },
-            {
-              "page": 5,
-              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2540909090909091,
-                0.7588235294117647,
-                0.265
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.5,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
         },
         "molecular_weight": {
-          "state": "NOT_APPLICABLE",
+          "state": "NOT_STATED",
           "value": null,
           "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 5,
-              "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2240909090909091,
-                0.7588235294117647,
-                0.23545454545454544
-              ],
-              "bbox_provenance": "system"
-            },
-            {
-              "page": 5,
-              "text": "P,P'-Methylenebis(pheny] isocyanate) 101-68-8 30- 60 Trade Secret *",
-              "bbox": [
-                0.061764705882352944,
-                0.2540909090909091,
-                0.7588235294117647,
-                0.265
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.5,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
         },
         "flash_point": {
           "state": "PRESENT",

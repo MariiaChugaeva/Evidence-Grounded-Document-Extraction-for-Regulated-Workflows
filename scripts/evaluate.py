@@ -2,15 +2,22 @@
 
 Usage: python -m scripts.evaluate data/predictions/*.json [--split dev] [--by-field]
        [--confusion] [--ingredients] [--by-template] [--allow-locked]
+       [--expect-id ID]
 
-The locked split is refused without --allow-locked; every run against it
-should be recorded (date, commit, prediction file) in docs/.
+A prediction file is only scored against the gold it was produced on: the
+split it records has to be the split being requested and its document set has
+to be exactly the gold document set, so a locked-split run cannot be reported
+as a development number by passing the wrong flag. The locked split is refused
+without --allow-locked, and every run against it is appended to
+docs/locked-runs.csv with its date, commit and prediction id.
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
+import subprocess
+from datetime import date
 from pathlib import Path
 
 from sdsbench import annotations, manifest
@@ -18,6 +25,7 @@ from sdsbench.annotations import SPLIT_LOCKED, DocumentAnnotation
 from sdsbench.evaluator import (
     AXES,
     NOT_APPLICABLE,
+    PASSING,
     UNDECIDABLE,
     IngredientSummary,
     Summary,
@@ -28,6 +36,17 @@ from sdsbench.ontology import PRODUCT_FIELD_NAMES, FieldState
 from sdsbench.schema import PredictionSet
 
 OUTPUT_DIR = Path("data/results")
+LOCKED_RUN_LOG = Path("docs/locked-runs.csv")
+LOCKED_RUN_COLUMNS = (
+    "date",
+    "split",
+    "system",
+    "extractor",
+    "commit",
+    "prediction_id",
+    "documents",
+    "prediction_file",
+)
 
 STAGES: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("state", ("state",)),
@@ -44,6 +63,10 @@ class LockedSplitError(RuntimeError):
     pass
 
 
+class PredictionSetError(RuntimeError):
+    """The prediction file does not describe the gold it is about to be scored on."""
+
+
 def guard_split(documents: list[DocumentAnnotation], allow_locked: bool) -> None:
     locked = [item.document for item in documents if item.split == SPLIT_LOCKED]
     if locked and not allow_locked:
@@ -53,18 +76,124 @@ def guard_split(documents: list[DocumentAnnotation], allow_locked: bool) -> None
         )
 
 
+def guard_predictions(
+    documents: list[DocumentAnnotation],
+    predictions: PredictionSet,
+    requested_split: str,
+    allow_locked: bool,
+    expect_id: str | None = None,
+) -> None:
+    """Refuse to score a prediction file against gold it was not produced on."""
+    guard_split(documents, allow_locked)
+
+    if expect_id is not None and predictions.prediction_id != expect_id:
+        raise PredictionSetError(
+            f"{predictions.system}: prediction id is {predictions.prediction_id}, "
+            f"expected {expect_id}"
+        )
+
+    if requested_split == "all":
+        print(
+            f"note: --split all scores {predictions.system} against every annotated "
+            "document; the split and document-set checks do not apply"
+        )
+        return
+
+    declared = predictions.split
+    if declared is None:
+        raise PredictionSetError(
+            f"{predictions.system}: the file records no split in its configuration; "
+            "re-run the extractor so the run can be traced"
+        )
+    if declared != requested_split:
+        raise PredictionSetError(
+            f"{predictions.system}: predictions were produced on split {declared!r} "
+            f"but the gold requested is {requested_split!r}"
+        )
+
+    expected = tuple(sorted(item.document for item in documents))
+    actual = predictions.document_names
+    if actual != expected:
+        missing = [item for item in expected if item not in set(actual)]
+        extra = [item for item in actual if item not in set(expected)]
+        raise PredictionSetError(
+            f"{predictions.system}: document set does not match split {requested_split!r} "
+            f"({len(actual)} predicted, {len(expected)} in gold); "
+            f"missing {missing or '-'}, unexpected {extra or '-'}"
+        )
+
+
+def git_commit() -> str:
+    try:
+        return subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return "unknown"
+
+
+def record_locked_run(
+    predictions: PredictionSet, path: Path, log: Path = LOCKED_RUN_LOG
+) -> None:
+    """Append one locked-split evaluation to the run log."""
+    log.parent.mkdir(parents=True, exist_ok=True)
+    exists = log.exists()
+    with open(log, "a", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle)
+        if not exists:
+            writer.writerow(LOCKED_RUN_COLUMNS)
+        writer.writerow(
+            [
+                date.today().isoformat(),
+                predictions.split or "",
+                predictions.system,
+                predictions.configuration.get("extractor", ""),
+                predictions.configuration.get("commit") or git_commit(),
+                predictions.prediction_id,
+                len(predictions.documents),
+                path.as_posix(),
+            ]
+        )
+    print(f"recorded locked run {predictions.prediction_id} in {log}")
+
+
 def _format(rate: float | None) -> str:
     return "  n/a" if rate is None else f"{rate:5.1%}"
 
 
-def print_summary(summary: Summary) -> None:
+def print_summary(summary: Summary, predictions: PredictionSet | None = None) -> None:
     total = len(summary.instances)
     evidence_bearing = summary.evidence_bearing
 
     print("=" * 78)
     print(f"SYSTEM: {summary.system}")
     print("=" * 78)
+    if predictions is not None:
+        print(
+            f"split: {predictions.split}   prediction id: {predictions.prediction_id}   "
+            f"extractor: {predictions.configuration.get('extractor', '?')}"
+        )
     print(f"instances: {total}   with gold evidence or premises to locate: {len(evidence_bearing)}")
+    multi_role = [item for item in summary.evidence_bearing if item.target_groups > 1]
+    if multi_role:
+        complete = sum(item.axes["span"] in PASSING for item in multi_role)
+        print(
+            f"instances whose gold premise set needs more than one role: {len(multi_role)}   "
+            f"fully located: {complete}"
+        )
+    undescribed = [
+        item
+        for item in summary.instances
+        if item.gold_requires_evidence and not item.premise_roles_described
+    ]
+    if undescribed:
+        print(
+            f"derived instances whose gold premises the registry cannot group by role: "
+            f"{len(undescribed)} (scored as one group, listed for annotation review)"
+        )
     print()
 
     print(f"{'axis':<12}{'rate':>8}{'satisfied':>12}{'undecidable':>13}{'applicable':>12}")
@@ -210,6 +339,9 @@ def write_instances(summary: Summary, path: Path) -> None:
                 "gold_requires_evidence",
                 "gold_ambiguous",
                 "bbox_provenance",
+                "target_groups",
+                "groups_located",
+                "premise_roles_described",
                 "support_note",
                 "note",
             ]
@@ -246,6 +378,9 @@ def write_instances(summary: Summary, path: Path) -> None:
                     item.gold_requires_evidence,
                     item.gold_ambiguous,
                     item.bbox_provenance,
+                    item.target_groups,
+                    item.groups_located,
+                    item.premise_roles_described,
                     item.support_note,
                     item.note,
                 ]
@@ -302,6 +437,7 @@ def main() -> None:
     parser.add_argument("predictions", nargs="+", type=Path)
     parser.add_argument("--split", default="dev", help="dev (default), locked, or all")
     parser.add_argument("--allow-locked", action="store_true")
+    parser.add_argument("--expect-id", default=None, help="refuse a prediction file with another id")
     parser.add_argument("--by-field", action="store_true")
     parser.add_argument("--confusion", action="store_true")
     parser.add_argument("--ingredients", action="store_true")
@@ -315,8 +451,11 @@ def main() -> None:
 
     for path in args.predictions:
         prediction_set = PredictionSet.load(path)
+        guard_predictions(gold, prediction_set, args.split, args.allow_locked, args.expect_id)
+        if prediction_set.split == SPLIT_LOCKED:
+            record_locked_run(prediction_set, path)
         summary = evaluate(gold, prediction_set)
-        print_summary(summary)
+        print_summary(summary, prediction_set)
         if args.by_field:
             print_by_field(summary)
         if args.confusion:

@@ -8,11 +8,19 @@ names still use the Anthropic SDK and ANTHROPIC_API_KEY. With --dry-run DIR
 no request is made; the prompts are written to DIR for inspection. Every
 real call is cached under data/llm_cache, so a second run costs nothing and
 reproduces the same predictions.
+
+The run reports twice. The prediction file holds the *repaired* output that
+the evaluator scores, and data/results/<system>_raw_contract.csv plus the
+printed table hold every contract breach the *raw* output committed - invalid
+schema, a derived claim without its rule, an incomplete premise set, a quote
+that is not on its page. A headline joint score is only meaningful next to
+that table.
 """
 
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 from dataclasses import asdict
 from pathlib import Path
@@ -22,6 +30,42 @@ from sdsbench.extractors import llm
 from sdsbench.schema import PredictionSet
 
 OUTPUT_DIR = Path("data/predictions")
+RESULTS_DIR = Path("data/results")
+
+
+def write_contract_report(run: llm.LlmRun, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["document", "field", "code", "description", "detail"])
+        for violation in run.violations:
+            writer.writerow(
+                [
+                    violation.document,
+                    violation.field,
+                    violation.code,
+                    llm.CONTRACT_DESCRIPTIONS.get(violation.code, ""),
+                    violation.detail,
+                ]
+            )
+
+
+def print_contract_report(run: llm.LlmRun, path: Path) -> None:
+    counts = run.violation_counts()
+    total = sum(counts.values())
+    print()
+    print("raw output vs the prediction contract (counted before repair)")
+    print(f"{'code':34}{'claims':>8}  description")
+    print("-" * 78)
+    for code, count in counts.items():
+        if count:
+            print(f"{code:34}{count:>8}  {llm.CONTRACT_DESCRIPTIONS.get(code, '')}")
+    print("-" * 78)
+    print(
+        f"{'total':34}{total:>8}  in {run.documents_with_violations()} of "
+        f"{len(run.calls)} documents"
+    )
+    print(f"per-claim detail -> {path}")
 
 
 def main() -> None:
@@ -97,7 +141,18 @@ def main() -> None:
                 "model": args.model,
                 "documents": len(run.documents),
                 "total_cost_usd": round(run.total_cost_usd, 4),
-                "calls": [asdict(call) for call in run.calls],
+                "prediction_id": prediction_set.prediction_id,
+                "raw_contract_violations": run.violation_counts(),
+                "documents_with_raw_violations": run.documents_with_violations(),
+                # Per-claim violations live in the contract CSV, not in the cost log.
+                "calls": [
+                    {
+                        key: value
+                        for key, value in asdict(call).items()
+                        if key != "violations"
+                    }
+                    for call in run.calls
+                ],
             },
             handle,
             indent=2,
@@ -105,6 +160,10 @@ def main() -> None:
     errors = sum(1 for call in run.calls if call.error)
     print(f"{system}: {len(run.documents)} documents, {errors} errors, "
           f"estimated cost ${run.total_cost_usd:.2f} -> {path}")
+
+    report_path = RESULTS_DIR / f"{system}{suffix}_raw_contract.csv"
+    write_contract_report(run, report_path)
+    print_contract_report(run, report_path)
 
 
 if __name__ == "__main__":

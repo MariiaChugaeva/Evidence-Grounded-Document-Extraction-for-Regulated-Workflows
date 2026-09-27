@@ -2,6 +2,24 @@
   "model": "qwen2.5:7b",
   "documents": 20,
   "total_cost_usd": 0.0,
+  "prediction_id": "b486c308c8e9d921",
+  "raw_contract_violations": {
+    "no_structured_output": 0,
+    "schema_invalid": 0,
+    "quote_not_verbatim": 62,
+    "state_carries_value": 8,
+    "present_without_value": 0,
+    "not_stated_with_citation": 9,
+    "claim_without_citation": 42,
+    "direct_with_rule_or_premises": 20,
+    "derived_without_rule": 0,
+    "derived_unknown_rule": 0,
+    "derived_without_premises": 0,
+    "derived_with_direct_evidence": 0,
+    "derived_premise_set_incomplete": 24,
+    "repair_failed": 0
+  },
+  "documents_with_raw_violations": 20,
   "calls": [
     {
       "document": "sds_01.pdf",
@@ -18,7 +36,7 @@
     {
       "document": "sds_02.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 4467,
       "output_tokens": 1195,
       "cache_read_tokens": 0,
@@ -30,7 +48,7 @@
     {
       "document": "sds_03.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 10068,
       "output_tokens": 1375,
       "cache_read_tokens": 0,
@@ -42,7 +60,7 @@
     {
       "document": "sds_04.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 4816,
       "output_tokens": 468,
       "cache_read_tokens": 0,
@@ -54,7 +72,7 @@
     {
       "document": "sds_05.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 7990,
       "output_tokens": 620,
       "cache_read_tokens": 0,
@@ -66,7 +84,7 @@
     {
       "document": "sds_06.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 6473,
       "output_tokens": 489,
       "cache_read_tokens": 0,
@@ -78,7 +96,7 @@
     {
       "document": "sds_07.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 4443,
       "output_tokens": 1404,
       "cache_read_tokens": 0,
@@ -90,7 +108,7 @@
     {
       "document": "sds_08.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 12638,
       "output_tokens": 1692,
       "cache_read_tokens": 0,
@@ -102,7 +120,7 @@
     {
       "document": "sds_09.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 8120,
       "output_tokens": 1768,
       "cache_read_tokens": 0,
@@ -114,7 +132,7 @@
     {
       "document": "sds_10.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 2048,
       "output_tokens": 551,
       "cache_read_tokens": 0,
@@ -126,7 +144,7 @@
     {
       "document": "sds_11.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 8658,
       "output_tokens": 1040,
       "cache_read_tokens": 0,
@@ -138,7 +156,7 @@
     {
       "document": "sds_12.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 4584,
       "output_tokens": 666,
       "cache_read_tokens": 0,
@@ -150,7 +168,7 @@
     {
       "document": "sds_13.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 6600,
       "output_tokens": 553,
       "cache_read_tokens": 0,
@@ -162,7 +180,7 @@
     {
       "document": "sds_14.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 3935,
       "output_tokens": 1380,
       "cache_read_tokens": 0,
@@ -174,7 +192,7 @@
     {
       "document": "sds_15.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 4096,
       "output_tokens": 532,
       "cache_read_tokens": 0,
@@ -186,7 +204,7 @@
     {
       "document": "sds_16.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 5443,
       "output_tokens": 403,
       "cache_read_tokens": 0,
@@ -198,7 +216,7 @@
     {
       "document": "sds_17.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 2160,
       "output_tokens": 940,
       "cache_read_tokens": 0,
@@ -210,7 +228,7 @@
     {
       "document": "sds_18.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 15029,
       "output_tokens": 1698,
       "cache_read_tokens": 0,
@@ -222,7 +240,7 @@
     {
       "document": "sds_19.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 4248,
       "output_tokens": 695,
       "cache_read_tokens": 0,
@@ -234,7 +252,7 @@
     {
       "document": "sds_20.pdf",
       "model": "qwen2.5:7b",
-      "cached": false,
+      "cached": true,
       "input_tokens": 11234,
       "output_tokens": 846,
       "cache_read_tokens": 0,

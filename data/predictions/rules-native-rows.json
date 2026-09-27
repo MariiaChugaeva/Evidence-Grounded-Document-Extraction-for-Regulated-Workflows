@@ -3,8 +3,8 @@
   "configuration": {
     "layer": "native",
     "layout": "rows",
-    "extractor": "rules-v3",
-    "commit": "0b51068",
+    "extractor": "rules-v4",
+    "commit": "5e8f927",
     "split": "dev"
   },
   "documents": [
@@ -602,6 +602,17 @@
                 0.2462445268727312,
                 0.7306046330071743,
                 0.2601658984868213
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 2,
+              "text": "There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2",
+              "bbox": [
+                0.058823529411764705,
+                0.31885809850211094,
+                0.7772134020437602,
+                0.33277947011620107
               ],
               "bbox_provenance": "system"
             }
@@ -1568,90 +1579,64 @@
           "rationale": null
         },
         "substance_or_mixture": {
+          "state": "NOT_STATED",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
           "state": "PRESENT",
-          "value": "MIXTURE",
+          "value": "7647-14-5",
           "evidence": {
-            "page": 2,
-            "text": "3.1 Substances or 3.2 Mixtures",
+            "page": 3,
+            "text": "CAS No.: 7647-14-5",
             "bbox": [
-              0.08403461360129989,
-              0.7945778454850801,
-              0.37056353913635764,
-              0.8078438584425104
+              0.2356880765001313,
+              0.17289641464124667,
+              0.4293250332359506,
+              0.18350924675368357
             ],
             "bbox_provenance": "system"
           },
           "derivation": "DIRECT",
           "rule": null,
           "premises": [],
-          "confidence": 0.8,
+          "confidence": 0.9,
           "rationale": null
         },
-        "product_cas_number": {
-          "state": "NOT_APPLICABLE",
-          "value": null,
-          "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 2,
-              "text": "3.1 Substances or 3.2 Mixtures",
-              "bbox": [
-                0.08403461360129989,
-                0.7945778454850801,
-                0.37056353913635764,
-                0.8078438584425104
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.8,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
-        },
         "chemical_formula": {
-          "state": "NOT_APPLICABLE",
-          "value": null,
-          "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 2,
-              "text": "3.1 Substances or 3.2 Mixtures",
-              "bbox": [
-                0.08403461360129989,
-                0.7945778454850801,
-                0.37056353913635764,
-                0.8078438584425104
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.8,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
+          "state": "PRESENT",
+          "value": "C 6 H 8 N 2 O 2 S",
+          "evidence": {
+            "page": 3,
+            "text": "Formula: C 6 H 8 N 2 O 2 S",
+            "bbox": [
+              0.2356883842404149,
+              0.3480375385057898,
+              0.4674082010733981,
+              0.35943516529654096
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.85,
+          "rationale": null
         },
         "molecular_weight": {
-          "state": "NOT_APPLICABLE",
+          "state": "NOT_STATED",
           "value": null,
           "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "identifier_undefined_for_form",
-          "premises": [
-            {
-              "page": 2,
-              "text": "3.1 Substances or 3.2 Mixtures",
-              "bbox": [
-                0.08403461360129989,
-                0.7945778454850801,
-                0.37056353913635764,
-                0.8078438584425104
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.8,
-          "rationale": "derived: identifiers are undefined for MIXTURE"
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
         },
         "flash_point": {
           "state": "NOT_STATED",
@@ -2766,24 +2751,22 @@
         "substance_or_mixture": {
           "state": "PRESENT",
           "value": "SUBSTANCE",
-          "evidence": null,
-          "derivation": "DERIVED",
-          "rule": "composition_implies_form",
-          "premises": [
-            {
-              "page": 2,
-              "text": "Sand 14808-60-7 EEC No. 238-878-4 >95 -",
-              "bbox": [
-                0.20064474866281148,
-                0.5038702993681936,
-                0.8142700693965738,
-                0.5151518619421757
-              ],
-              "bbox_provenance": "system"
-            }
-          ],
-          "confidence": 0.5,
-          "rationale": "composition table"
+          "evidence": {
+            "page": 2,
+            "text": "3.1. Substances",
+            "bbox": [
+              0.0881237578547858,
+              0.4416866495151712,
+              0.19910094317267923,
+              0.4543783785116793
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
         },
         "product_cas_number": {
           "state": "PRESENT",
@@ -3138,6 +3121,17 @@
           "premises": [
             {
               "page": 5,
+              "text": "Ingredient C.A.S. No. % by Wt",
+              "bbox": [
+                0.061274509803921566,
+                0.2060808123964252,
+                0.657826791401782,
+                0.22005809437144885
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 5,
               "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30 - 60 Trade Secret *",
               "bbox": [
                 0.061274509803921566,
@@ -3169,6 +3163,17 @@
           "derivation": "DERIVED",
           "rule": "identifier_undefined_for_form",
           "premises": [
+            {
+              "page": 5,
+              "text": "Ingredient C.A.S. No. % by Wt",
+              "bbox": [
+                0.061274509803921566,
+                0.2060808123964252,
+                0.657826791401782,
+                0.22005809437144885
+              ],
+              "bbox_provenance": "system"
+            },
             {
               "page": 5,
               "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30 - 60 Trade Secret *",
@@ -3204,6 +3209,17 @@
           "premises": [
             {
               "page": 5,
+              "text": "Ingredient C.A.S. No. % by Wt",
+              "bbox": [
+                0.061274509803921566,
+                0.2060808123964252,
+                0.657826791401782,
+                0.22005809437144885
+              ],
+              "bbox_provenance": "system"
+            },
+            {
+              "page": 5,
               "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30 - 60 Trade Secret *",
               "bbox": [
                 0.061274509803921566,
@@ -3235,6 +3251,17 @@
           "derivation": "DERIVED",
           "rule": "identifier_undefined_for_form",
           "premises": [
+            {
+              "page": 5,
+              "text": "Ingredient C.A.S. No. % by Wt",
+              "bbox": [
+                0.061274509803921566,
+                0.2060808123964252,
+                0.657826791401782,
+                0.22005809437144885
+              ],
+              "bbox_provenance": "system"
+            },
             {
               "page": 5,
               "text": "Castor Oil, Polymer With 1,1'-Methylenebis[4- 68424-09-9 30 - 60 Trade Secret *",

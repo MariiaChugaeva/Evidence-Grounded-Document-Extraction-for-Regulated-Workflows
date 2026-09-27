@@ -27,6 +27,8 @@ def main() -> int:
         total_spans = 0
         premise_spans = 0
         unverifiable: list[str] = []
+        ungrouped: list[str] = []
+        role_sets: Counter[str] = Counter()
         for annotation in documents:
             for name, field in annotation.fields.items():
                 states[field.state.value] += 1
@@ -44,6 +46,16 @@ def main() -> int:
                 premise_spans += len(field.resolved_premises)
                 if annotations.premise_verifiable(field) is False:
                     unverifiable.append(f"{annotation.document}/{name} ({field.rule})")
+                if field.derivation.is_derived:
+                    groups = annotations.premise_groups(field)
+                    if groups is None:
+                        ungrouped.append(f"{annotation.document}/{name} ({field.rule})")
+                    else:
+                        role_sets[
+                            " + ".join(
+                                f"{group.minimum}x {group.role}" for group in groups
+                            )
+                        ] += 1
         print("\nstate distribution:")
         for state in FieldState:
             print(f"  {state.value:<16} {states.get(state.value, 0)}")
@@ -55,6 +67,16 @@ def main() -> int:
         print(f"  spans with no OCR anchor: {ocr_missing}")
         print(f"\nderived fields whose gold premises the rule registry cannot verify: {len(unverifiable)}")
         for item in unverifiable:
+            print(f"  {item}")
+        print("\npremise role sets the registry reads off the gold premises:")
+        for roles, count in sorted(role_sets.items()):
+            print(f"  {count:>4}  {roles}")
+        print(
+            f"\nderived fields whose gold premises the registry cannot group by role: "
+            f"{len(ungrouped)}"
+        )
+        print("  (scored as one group - locate any premise - and due a second reading)")
+        for item in ungrouped:
             print(f"  {item}")
 
     if problems:

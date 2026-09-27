@@ -73,7 +73,10 @@ def main() -> None:
             suffix = "" if args.split == "dev" else f"-{args.split}"
             path = args.output / f"{prediction_set.system}{suffix}.json"
             prediction_set.save(path)
-            print(f"{prediction_set.system}: {len(prediction_set.documents)} documents -> {path}")
+            print(
+                f"{prediction_set.system}: {len(prediction_set.documents)} documents, "
+                f"split {args.split}, id {prediction_set.prediction_id} -> {path}"
+            )
 
 
 if __name__ == "__main__":

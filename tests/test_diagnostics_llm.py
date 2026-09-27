@@ -17,7 +17,7 @@ from sdsbench.annotations import (
 from sdsbench.derivation import RULE_IDENTIFIER_UNDEFINED
 from sdsbench.evaluator import SATISFIED
 from sdsbench.extractors import llm
-from sdsbench.ontology import FieldState, ProductForm
+from sdsbench.ontology import PRODUCT_FIELD_NAMES, FieldState, ProductForm
 from sdsbench.textlayer import DocumentText, Token
 
 
@@ -139,7 +139,7 @@ class TestLlmPlumbing(unittest.TestCase):
 
     def test_output_converts_to_benchmark_schema_and_repairs_violations(self):
         doc = _doc(self._page())
-        prediction = llm.to_document_prediction("synthetic.pdf", self._output(), doc, "rows")
+        prediction, _ = llm.to_document_prediction("synthetic.pdf", self._output(), doc, "rows")
         cas = prediction.fields["product_cas_number"]
         self.assertEqual(cas.derivation, "DERIVED")
         self.assertEqual(cas.rule, "identifier_undefined_for_form")
@@ -152,6 +152,78 @@ class TestLlmPlumbing(unittest.TestCase):
         self.assertEqual(prediction.fields["flash_point"].value, "12 °C")
         self.assertEqual(prediction.fields["product_name"].state, FieldState.NOT_STATED)
         self.assertIn("chemical_formula", prediction.error or "")
+
+    def test_raw_contract_failures_are_reported_next_to_the_repaired_output(self):
+        doc = _doc(self._page())
+        _, violations = llm.to_document_prediction("synthetic.pdf", self._output(), doc, "rows")
+        by_field: dict[str, set[str]] = {}
+        for violation in violations:
+            by_field.setdefault(violation.field, set()).add(violation.code)
+        # The repair downgraded this claim to direct; the raw breach stays visible.
+        self.assertIn("derived_without_rule", by_field["chemical_formula"])
+        self.assertNotIn("product_cas_number", by_field)
+        self.assertTrue(set(by_field) <= set(PRODUCT_FIELD_NAMES))
+        self.assertTrue({violation.code for violation in violations} <= set(llm.CONTRACT_CODES))
+
+    def test_an_incomplete_premise_set_is_recorded_as_a_raw_failure(self):
+        doc = _doc(self._page())
+        output = self._output(
+            product_cas_number={
+                "state": "NOT_APPLICABLE",
+                "value": None,
+                "derivation": "DERIVED",
+                "rule": "identifier_undefined_for_form",
+                "evidence": None,
+                "premises": [{"page": 1, "quote": "Flash point: 12 °C"}],
+            }
+        )
+        prediction, violations = llm.to_document_prediction("synthetic.pdf", output, doc, "rows")
+        codes = [
+            violation.code
+            for violation in violations
+            if violation.field == "product_cas_number"
+        ]
+        self.assertIn("derived_premise_set_incomplete", codes)
+        # Repair is unchanged: the claim is still scored as the model derived it.
+        self.assertEqual(prediction.fields["product_cas_number"].derivation, "DERIVED")
+
+    def test_a_quote_that_is_not_on_its_page_is_a_raw_failure(self):
+        doc = _doc(self._page())
+        output = self._output(
+            flash_point={
+                "state": "PRESENT",
+                "value": "13 °C",
+                "derivation": "DIRECT",
+                "rule": None,
+                "evidence": {"page": 1, "quote": "Flash point: 13 °C"},
+                "premises": [],
+            }
+        )
+        _, violations = llm.to_document_prediction("synthetic.pdf", output, doc, "rows")
+        self.assertIn(
+            "quote_not_verbatim",
+            [item.code for item in violations if item.field == "flash_point"],
+        )
+
+    def test_the_run_aggregates_violations_without_touching_the_predictions(self):
+        run = llm.LlmRun(model="test", layer="native", layout="rows")
+        run.calls.append(
+            llm.CallRecord(
+                document="a.pdf",
+                model="test",
+                cached=True,
+                violations=[
+                    llm.ContractViolation("a.pdf", "chemical_formula", "derived_without_rule"),
+                    llm.ContractViolation("a.pdf", "flash_point", "quote_not_verbatim"),
+                ],
+            )
+        )
+        run.calls.append(llm.CallRecord(document="b.pdf", model="test", cached=True))
+        counts = run.violation_counts()
+        self.assertEqual(counts["derived_without_rule"], 1)
+        self.assertEqual(counts["quote_not_verbatim"], 1)
+        self.assertEqual(counts["schema_invalid"], 0)
+        self.assertEqual(run.documents_with_violations(), 1)
 
     def test_prompt_states_the_rules_and_the_order(self):
         doc = _doc(self._page())

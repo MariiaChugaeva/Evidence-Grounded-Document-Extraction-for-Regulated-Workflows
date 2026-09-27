@@ -1,10 +1,14 @@
 """Rule-based baseline. Configurable by text layer (native/ocr) and layout (rows/linear).
 
-rules-v3: claims that follow from the product form are emitted as DERIVED
-claims (premises + rule) instead of citing the form declaration as if it
-were direct evidence; a product form inferred from the composition table is
-itself a derived claim; ingredient rows are split into name, CAS and
-concentration.
+rules-v4: the product form is read off an explicit declaration whenever the
+sheet prints one, and derived from the composition table only when the
+extractor can cite a premise set the rule registry accepts (see
+``sdsbench.derivation``). Neither the number of composition rows nor a single
+constituent holding a large share establishes the form on its own, because a
+substance may declare stabilisers and impurities next to itself. Claims that
+follow from the product form are emitted as DERIVED claims (premises + rule)
+instead of citing the form declaration as if it were direct evidence, and
+ingredient rows are split into name, CAS and concentration.
 
 The label lists and the form-declaration phrases were written while looking
 at the development sheets (sds_01-20). They must not be tuned on a locked
@@ -17,13 +21,23 @@ import re
 from dataclasses import dataclass, field as dataclass_field
 
 from .. import textlayer
-from ..derivation import RULE_COMPOSITION_FORM, RULE_IDENTIFIER_UNDEFINED
+from ..derivation import (
+    RULE_COMPOSITION_FORM,
+    RULE_IDENTIFIER_UNDEFINED,
+    SATISFIED,
+    PremiseRole,
+    check_rule,
+    is_partial_share,
+    is_whole_product_share,
+    premise_roles,
+)
 from ..matching import CAS_PATTERN, cas_checksum_valid, normalize_cas, parse_concentration
 from ..ontology import (
     FIELD_SPECS,
     FieldState,
     ProductForm,
     ValueKind,
+    classify_form_cue,
     classify_state_cue,
     field_is_defined_for,
 )
@@ -35,7 +49,7 @@ from ..schema import (
     IngredientsPrediction,
 )
 
-EXTRACTOR_VERSION = "rules-v3"
+EXTRACTOR_VERSION = "rules-v4"
 
 LAYOUT_ROWS = "rows"
 LAYOUT_LINEAR = "linear"
@@ -283,6 +297,13 @@ CAS_LABELS = (
 # Direct product-form declarations. A row containing one of these phrases is
 # cited as direct evidence of the form; the evaluator re-checks the citation
 # with the gold-free form lexicon (ontology.classify_form_cue).
+#
+# The list is scanned phrase by phrase over the whole document, so earlier
+# phrases win. Negated 3.1 entries ("3.1 Substances: not applicable", which
+# declares a mixture) therefore come before the bare section headings, and the
+# bare "3.1 Substances" heading comes last: any explicit mixture or article
+# declaration anywhere in the sheet outranks a substances heading that the
+# generator may print as boilerplate.
 FORM_DECLARATIONS: tuple[tuple[str, ProductForm], ...] = (
     ("defined by osha as an", ProductForm.ARTICLE),
     ("substance/mixture : substance", ProductForm.SUBSTANCE),
@@ -300,6 +321,18 @@ FORM_DECLARATIONS: tuple[tuple[str, ProductForm], ...] = (
     ("3.1 n/a", ProductForm.MIXTURE),
     ("3.2 mixtures", ProductForm.MIXTURE),
     ("3.2. mixtures", ProductForm.MIXTURE),
+)
+
+# Section headings declare the form only when the section they head is filled
+# in. REACH Annex II asks a substance sheet to describe its product under 3.1
+# and a mixture sheet under 3.2, but generators print both headings whatever
+# the product is: sds_16 identifies its substance with nothing but the 3.1
+# heading and a constituent row, while sds_19 prints the same heading over an
+# empty section and never says what the product is. The heading alone is
+# therefore not read as a declaration.
+SECTION_HEADING_DECLARATIONS: tuple[tuple[str, ProductForm], ...] = (
+    ("3.1. substances", ProductForm.SUBSTANCE),
+    ("3.1 substances", ProductForm.SUBSTANCE),
 )
 
 _ADDRESS_STOPWORDS = re.compile(
@@ -465,36 +498,95 @@ class FormFinding:
         return [self.evidence] if self.evidence is not None else []
 
 
-def determine_product_form(document_text: textlayer.DocumentText) -> FormFinding:
-    for phrase, form in FORM_DECLARATIONS:
+def _declaration_row(
+    document_text: textlayer.DocumentText, phrases: tuple[tuple[str, ProductForm], ...]
+) -> tuple[ProductForm, int, textlayer.Row] | None:
+    """The first row matching one of the phrases whose own text declares that form.
+
+    The match is confirmed against the shared gold-free form lexicon, so the
+    extractor never cites a span the evaluator would refuse: "3.1 Substances or
+    3.2 Mixtures" offers both headings and declares nothing.
+    """
+    for phrase, form in phrases:
         for page in document_text.pages:
             for row in textlayer.rows(page):
-                if phrase in _normalize(row.text):
-                    return FormFinding(
-                        form=form, evidence=_row_evidence(page.page_number, row), confidence=0.8
-                    )
+                if phrase in _normalize(row.text) and classify_form_cue(row.text) is form:
+                    return form, page.page_number, row
+    return None
 
+
+def _declared_form(document_text: textlayer.DocumentText) -> FormFinding | None:
+    """The form an explicit declaration states, cited as direct evidence."""
+    declaration = _declaration_row(document_text, FORM_DECLARATIONS)
+    if declaration is None and extract_ingredients(document_text).items:
+        declaration = _declaration_row(document_text, SECTION_HEADING_DECLARATIONS)
+    if declaration is None:
+        return None
+    form, page_number, row = declaration
+    return FormFinding(form=form, evidence=_row_evidence(page_number, row), confidence=0.8)
+
+
+def _composition_premise_rows(
+    document_text: textlayer.DocumentText,
+) -> tuple[EvidenceSpan | None, EvidenceSpan | None]:
+    """The Section 3 composition header and completeness statement, if printed."""
+    header: EvidenceSpan | None = None
+    completeness: EvidenceSpan | None = None
+    for page_number, row in _composition_rows(document_text):
+        roles = premise_roles(row.text)
+        if header is None and PremiseRole.COMPOSITION_HEADER in roles:
+            header = _row_evidence(page_number, row)
+        if completeness is None and PremiseRole.COMPLETENESS_STATEMENT in roles:
+            completeness = _row_evidence(page_number, row)
+    return header, completeness
+
+
+def _derived_form(document_text: textlayer.DocumentText) -> FormFinding:
+    """The form the composition table licenses, or UNDETERMINED.
+
+    Only the two premise shapes the registry accepts are attempted, and the
+    candidate premise set is put through ``check_rule`` before it is emitted:
+    the extractor never asserts a derivation it cannot justify from the spans
+    it is about to cite.
+    """
+    header, completeness = _composition_premise_rows(document_text)
     composition = extract_ingredients(document_text)
-    if len(composition.items) >= 2:
-        premises = [item.evidence for item in composition.items[:2] if item.evidence]
-        return FormFinding(
-            form=ProductForm.MIXTURE,
-            premises=premises,
-            rule=RULE_COMPOSITION_FORM,
-            confidence=0.5,
-        )
-    if len(composition.items) == 1:
-        only = composition.items[0]
-        parsed = parse_concentration(only.concentration)
-        full = parsed is not None and parsed.low is not None and parsed.low >= 90.0
-        if full and only.evidence is not None:
-            return FormFinding(
-                form=ProductForm.SUBSTANCE,
-                premises=[only.evidence],
-                rule=RULE_COMPOSITION_FORM,
-                confidence=0.5,
-            )
-    return FormFinding(form=ProductForm.UNDETERMINED)
+    shares = [(item, parse_concentration(item.concentration)) for item in composition.items]
+    whole = [item for item, share in shares if is_whole_product_share(share)]
+    partial = [item for item, share in shares if is_partial_share(share)]
+
+    candidates: list[tuple[ProductForm, list[EvidenceSpan]]] = []
+    if len(whole) == 1 and not partial and completeness is not None and whole[0].evidence:
+        candidates.append((ProductForm.SUBSTANCE, [whole[0].evidence, completeness]))
+    if not whole and header is not None and len(partial) >= 2:
+        rows = [item.evidence for item in partial[:2] if item.evidence]
+        if len(rows) == 2:
+            candidates.append((ProductForm.MIXTURE, [header, *rows]))
+
+    if len(candidates) != 1:
+        return FormFinding(form=ProductForm.UNDETERMINED)
+
+    form, premises = candidates[0]
+    check = check_rule(
+        RULE_COMPOSITION_FORM,
+        "substance_or_mixture",
+        FieldState.PRESENT,
+        form.value,
+        [premise.text for premise in premises],
+    )
+    if check.status != SATISFIED:
+        return FormFinding(form=ProductForm.UNDETERMINED)
+    return FormFinding(
+        form=form,
+        premises=premises,
+        rule=RULE_COMPOSITION_FORM,
+        confidence=0.5,
+    )
+
+
+def determine_product_form(document_text: textlayer.DocumentText) -> FormFinding:
+    """Explicit declaration first, a justified composition derivation second."""
+    return _declared_form(document_text) or _derived_form(document_text)
 
 
 _SECTION_3 = re.compile(
@@ -662,22 +754,31 @@ def extract_document(
         "chemical_formula": (FORMULA_LABELS, 0.85, _parse_formula),
         "molecular_weight": (WEIGHT_LABELS, 0.9, _parse_weight),
     }
+    form_premises = [premise.text for premise in finding.cited]
     for name, (labels, prior, parser) in conditional.items():
         explicit = _first_usable(find_candidates(document_text, labels, layout), prior, parser)
         if explicit is not None and explicit.state is not FieldState.PRESENT:
             fields[name] = explicit
             continue
         if not field_is_defined_for(name, form) and finding.cited:
-            fields[name] = FieldPrediction(
-                state=FieldState.NOT_APPLICABLE,
-                value=None,
-                derivation="DERIVED",
-                rule=RULE_IDENTIFIER_UNDEFINED,
-                premises=finding.cited,
-                confidence=finding.confidence,
-                rationale=f"derived: identifiers are undefined for {form.value}",
+            licensed = check_rule(
+                RULE_IDENTIFIER_UNDEFINED,
+                name,
+                FieldState.NOT_APPLICABLE,
+                None,
+                form_premises,
             )
-            continue
+            if licensed.status == SATISFIED:
+                fields[name] = FieldPrediction(
+                    state=FieldState.NOT_APPLICABLE,
+                    value=None,
+                    derivation="DERIVED",
+                    rule=RULE_IDENTIFIER_UNDEFINED,
+                    premises=finding.cited,
+                    confidence=finding.confidence,
+                    rationale=f"derived: identifiers are undefined for {form.value}",
+                )
+                continue
         fields[name] = explicit or _not_stated()
 
     fields["flash_point"] = (

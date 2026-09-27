@@ -1,0 +1,5 @@
+date,split,system,extractor,commit,prediction_id,documents,prediction_file
+2026-09-13,locked,rules-native-rows,rules-v3,5e8f927,a39319fe50961c8a,9,data/predictions/rules-native-rows-locked.json
+2026-09-13,locked,rules-native-linear,rules-v3,5e8f927,6a9030d04fa61cd8,9,data/predictions/rules-native-linear-locked.json
+2026-09-13,locked,rules-ocr-rows,rules-v3,5e8f927,18e08680222f924e,9,data/predictions/rules-ocr-rows-locked.json
+2026-09-13,locked,rules-ocr-linear,rules-v3,5e8f927,88880f675e55fb83,9,data/predictions/rules-ocr-linear-locked.json

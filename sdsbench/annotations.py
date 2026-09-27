@@ -393,6 +393,22 @@ def premise_verifiable(field: FieldAnnotation) -> bool | None:
     return derivation.premise_form(item.text for item in field.resolved_premises) is not None
 
 
+def premise_groups(field: FieldAnnotation) -> tuple[derivation.PremiseGroup, ...] | None:
+    """The gold premises of a derived field, grouped by the role its rule needs.
+
+    A prediction has to locate ``minimum`` spans of every group, so a claim
+    that cites one good span out of a two-role premise set fails localization.
+    None means the registry cannot describe this premise set - the annotation
+    does not fill the rule's roles - and the caller should fall back to "locate
+    any one premise" and put the annotation on the review list.
+    """
+    if not field.derivation.is_derived:
+        return None
+    return derivation.premise_groups(
+        field.rule, field.value, [item.text for item in field.resolved_premises]
+    )
+
+
 def _serialize(value: Any) -> Any:
     if isinstance(value, (FieldState, ProductForm, Derivation)):
         return value.value

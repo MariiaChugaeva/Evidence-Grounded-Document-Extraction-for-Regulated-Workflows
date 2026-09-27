@@ -26,6 +26,15 @@ the gold span, coverage >= 0.8 and IoU >= 0.5 (a short fragment fails
 coverage; a paragraph fails IoU). ``bbox``: the cited box covers >= 0.8 of the
 gold box and has IoU >= 0.5 with it (a box that is the right height but the
 page's width fails IoU). Every threshold is a parameter of ``Thresholds``.
+
+Localization is scored over the *whole* target set, not over its best member.
+The gold spans are grouped by the premise role the rule needs (see
+``sdsbench.derivation``) and every group has to be hit as often as the rule
+requires: a claim derived from "one constituent at 100 %" and "no further
+constituent is declared" fails until it locates both, however good the one
+span it cites is. Alternative spans for the same role stay alternatives - any
+one of them satisfies its group - so a field with two acceptable direct
+citations is unaffected.
 """
 
 from __future__ import annotations
@@ -34,7 +43,13 @@ from dataclasses import dataclass, field as dataclass_field
 from typing import Iterable
 
 from . import derivation, textlayer
-from .annotations import DocumentAnnotation, FieldAnnotation, Ingredient, ResolvedEvidence
+from .annotations import (
+    DocumentAnnotation,
+    FieldAnnotation,
+    Ingredient,
+    ResolvedEvidence,
+    premise_groups as gold_premise_groups,
+)
 from .matching import (
     canonical_value,
     concentrations_equal,
@@ -117,6 +132,9 @@ class InstanceResult:
     state_correct_lenient: bool = False
     bbox_provenance: str = "none"
     support_note: str = ""
+    target_groups: int = 0
+    groups_located: int = 0
+    premise_roles_described: bool = True
     note: str = ""
 
     @property
@@ -140,6 +158,42 @@ class _Localization:
     box_iou: float = 0.0
     span_dilution: float = 0.0
     box_dilution: float = 0.0
+
+
+@dataclass(frozen=True)
+class _TargetGroup:
+    """Gold spans filling one premise role; ``minimum`` of them must be located."""
+
+    role: str
+    targets: tuple[ResolvedEvidence, ...]
+    minimum: int = 1
+
+
+def _target_groups(gold: FieldAnnotation) -> tuple[tuple[_TargetGroup, ...], bool]:
+    """(groups, whether the registry could describe the premise roles).
+
+    Direct evidence entries are alternatives for one another, so they form a
+    single group. The premises of a derived field are grouped by role; when the
+    annotation does not fill the rule's roles they fall back to one group and
+    the field is reported for annotation review.
+    """
+    targets = tuple(gold.gold_targets)
+    if not gold.derivation.is_derived:
+        return (_TargetGroup("evidence", targets),), True
+    groups = gold_premise_groups(gold)
+    if groups is None:
+        return (_TargetGroup("premises", targets),), False
+    return (
+        tuple(
+            _TargetGroup(
+                role=group.role,
+                targets=tuple(targets[index] for index in group.indices),
+                minimum=group.minimum,
+            )
+            for group in groups
+        ),
+        True,
+    )
 
 
 def _score_against_gold(cited: EvidenceSpan, gold: ResolvedEvidence) -> _Localization:
@@ -298,32 +352,55 @@ def evaluate_instance(
         for axis in LOCALIZATION_AXES:
             axes[axis] = NOT_APPLICABLE
     elif not cited:
+        groups, described = _target_groups(gold)
+        result.target_groups = len(groups)
+        result.premise_roles_described = described
         for axis in LOCALIZATION_AXES:
             axes[axis] = VIOLATED
     else:
-        best = max(
-            (_score_against_gold(span, target) for span in cited for target in gold_targets),
-            default=_Localization(page_match=False),
-        )
+        groups, described = _target_groups(gold)
+        result.target_groups = len(groups)
+        result.premise_roles_described = described
+
+        best = _Localization(page_match=False)
+        hits: dict[str, int] = {axis: 0 for axis in LOCALIZATION_AXES}
+        for group in groups:
+            located = {axis: 0 for axis in LOCALIZATION_AXES}
+            for target in group.targets:
+                closest = max(
+                    (_score_against_gold(span, target) for span in cited),
+                    default=_Localization(page_match=False),
+                )
+                best = max(best, closest)
+                if closest.page_match:
+                    located["page"] += 1
+                if (
+                    closest.span_coverage >= thresholds.span_coverage
+                    and closest.span_iou >= thresholds.span_iou
+                ):
+                    located["span"] += 1
+                if (
+                    closest.box_coverage >= thresholds.bbox_coverage
+                    and closest.box_iou >= thresholds.bbox_iou
+                ):
+                    located["bbox"] += 1
+            for axis in LOCALIZATION_AXES:
+                hits[axis] += located[axis] >= group.minimum
+
+        result.groups_located = hits["span"]
         result.span_coverage = best.span_coverage
         result.span_dilution = best.span_dilution
         result.span_iou = best.span_iou
         result.bbox_coverage = best.box_coverage
         result.bbox_dilution = best.box_dilution
         result.bbox_iou = best.box_iou
-        axes["page"] = SATISFIED if best.page_match else VIOLATED
-        axes["span"] = (
-            SATISFIED
-            if best.span_coverage >= thresholds.span_coverage
-            and best.span_iou >= thresholds.span_iou
-            else VIOLATED
-        )
-        axes["bbox"] = (
-            SATISFIED
-            if best.box_coverage >= thresholds.bbox_coverage
-            and best.box_iou >= thresholds.bbox_iou
-            else VIOLATED
-        )
+        for axis in LOCALIZATION_AXES:
+            axes[axis] = SATISFIED if hits[axis] == len(groups) else VIOLATED
+        if len(groups) > 1 and axes["span"] == VIOLATED:
+            result.note = (result.note + "; " if result.note else "") + (
+                f"located {hits['span']} of {len(groups)} required premise roles "
+                f"({', '.join(group.role for group in groups)})"
+            )
 
     if gold.state is FieldState.NOT_STATED or prediction.state is FieldState.NOT_STATED:
         axes["derivation"] = NOT_APPLICABLE

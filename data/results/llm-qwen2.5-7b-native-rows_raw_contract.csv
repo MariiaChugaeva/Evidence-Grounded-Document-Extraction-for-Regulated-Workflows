@@ -1,0 +1,166 @@
+document,field,code,description,detail
+sds_01.pdf,product_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_01.pdf,supplier_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_01.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.1 Substance: Non-applicable'
+sds_01.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.2 Mixture: Chemical description: Mixture of substances'
+sds_01.pdf,substance_or_mixture,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'MIXTURE'
+sds_01.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"rule composition_implies_form concludes PRESENT, not NOT_APPLICABLE [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_01.pdf,chemical_formula,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.1 Substance: Non-applicable'
+sds_01.pdf,chemical_formula,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.2 Mixture: Chemical description: Mixture of substances'
+sds_01.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.1 Substance: Non-applicable'
+sds_01.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.2 Mixture: Chemical description: Mixture of substances'
+sds_01.pdf,flash_point,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p9: 'Flammability: Flash Point: Non Flammable (>60 ºC)'
+sds_01.pdf,flash_point,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_02.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_02.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_02.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p1: 'This product is an '
+sds_02.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p1: 'article'
+sds_02.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p1: 'used with the contents sealed. Therefore, issuing and provid'"
+sds_02.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,rule identifier_undefined_for_form does not apply to substance_or_mixture [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_02.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p1: 'This product is an '
+sds_02.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p1: 'article'
+sds_02.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p1: 'used with the contents sealed. Therefore, issuing and provid'"
+sds_02.pdf,molecular_weight,not_stated_with_citation,NOT_STATED carries evidence or premises,3 citation(s)
+sds_02.pdf,ingredients[0],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p4: 'Positive electrode 182442-95-1 20~60'
+sds_02.pdf,ingredients[5],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p4: 'Lithium hexafluorophosphate 21324-40-3 105-58-8 96-49-1 5~25'
+sds_03.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_03.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_03.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: '3.2 Mixture:\n- CONTINUED ON NEXT PAGE -'
+sds_03.pdf,substance_or_mixture,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'MIXTURE'
+sds_03.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"rule composition_implies_form concludes PRESENT, not NOT_APPLICABLE [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_03.pdf,chemical_formula,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: '3.2 Mixture:\n- CONTINUED ON NEXT PAGE -'
+sds_03.pdf,chemical_formula,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), [rule needs 1x form_declaration (a span whose value slot names the product form)]"
+sds_03.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: '3.2 Mixture:\n- CONTINUED ON NEXT PAGE -'
+sds_03.pdf,molecular_weight,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), [rule needs 1x form_declaration (a span whose value slot names the product form)]"
+sds_04.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_04.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_04.pdf,substance_or_mixture,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_04.pdf,chemical_formula,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_04.pdf,molecular_weight,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_04.pdf,flash_point,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'Not applicable'
+sds_04.pdf,flash_point,claim_without_citation,a claim other than NOT_STATED cites nothing,NOT_APPLICABLE
+sds_05.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_05.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_05.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"the cited premises declare the form explicitly (MIXTURE); a declared form is direct evidence, not a composition derivation [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_05.pdf,chemical_formula,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_05.pdf,molecular_weight,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_05.pdf,flash_point,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p4: 'FLAMMABILITY PROPERTIES Flash Point [Method]: >225°C (437°F)'
+sds_05.pdf,flash_point,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_06.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_06.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_06.pdf,substance_or_mixture,claim_without_citation,a claim other than NOT_STATED cites nothing,NOT_APPLICABLE
+sds_06.pdf,product_cas_number,claim_without_citation,a claim other than NOT_STATED cites nothing,NOT_APPLICABLE
+sds_06.pdf,chemical_formula,claim_without_citation,a claim other than NOT_STATED cites nothing,NOT_APPLICABLE
+sds_06.pdf,molecular_weight,claim_without_citation,a claim other than NOT_STATED cites nothing,NOT_APPLICABLE
+sds_06.pdf,flash_point,claim_without_citation,a claim other than NOT_STATED cites nothing,NOT_APPLICABLE
+sds_07.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_07.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_07.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p1: '60% ~ 70% Styrene / acrylate resin\nThe product is not classi'
+sds_07.pdf,molecular_weight,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_07.pdf,ingredients[3],quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p1: '1% ~ 10% Amorphous silica\nAUS, S050193_en Version 8.0 Page n'"
+sds_08.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_08.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_08.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p19: 'EUH208: Contains a solution of a methacrylate-based polymer.'
+sds_08.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"the cited premises declare the form explicitly (MIXTURE); a declared form is direct evidence, not a composition derivation [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_08.pdf,ingredients[3],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p4: 'Content (W/W): < 3 % Flam. Liq. 2\nCAS Number: 80-62-6 Skin S'
+sds_09.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_09.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_09.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: '3.1 Substances or 3.2 Mixtures\n23 g NO 2 -2\n3.3 Remarks\nWhen'
+sds_09.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: '9.1 Information on basic physical and chemical properties\n23'
+sds_09.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: '100 mL NO 2 -1\na) State of aggregation: liquid\nb) Colour: co'
+sds_09.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,incomplete premise set for MIXTURE: missing partial_constituent (0/2: a constituent row whose declared share stays strictly below 100 %) [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]
+sds_09.pdf,product_cas_number,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,premise declares SUBSTANCE; identifiers stay defined for SUBSTANCE [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_09.pdf,chemical_formula,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,premise declares SUBSTANCE; identifiers stay defined for SUBSTANCE [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_09.pdf,molecular_weight,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,premise declares SUBSTANCE; identifiers stay defined for SUBSTANCE [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_09.pdf,flash_point,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 2 premise(s)"
+sds_10.pdf,product_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_10.pdf,supplier_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_10.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,rule identifier_undefined_for_form does not apply to substance_or_mixture [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_10.pdf,chemical_formula,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_10.pdf,molecular_weight,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_10.pdf,flash_point,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_11.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_11.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_11.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: 'All liquid components of the preparation are infinite water-'
+sds_11.pdf,substance_or_mixture,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'MIXTURE'
+sds_11.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"rule composition_implies_form concludes PRESENT, not NOT_APPLICABLE [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_11.pdf,chemical_formula,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: 'All liquid components of the preparation are infinite water-'
+sds_11.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: 'All liquid components of the preparation are infinite water-'
+sds_11.pdf,flash_point,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: 'All liquid components of the preparation are infinite water-'
+sds_11.pdf,flash_point,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,rule identifier_undefined_for_form does not apply to flash_point [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_11.pdf,ingredients[0],quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p6: '5-Bromo-5-Nitro-1,3-Dioxane 30007-47-7 250-001-7 ≤ 0.01 % H3'"
+sds_11.pdf,ingredients[1],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: 'Nitrozellulose 9004-70-0 936-908-7 ≤ 0.1 % H201 P250‐372'
+sds_11.pdf,ingredients[2],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p6: 'Boric acid 10043-35-3 233-139-2 < 0.004 % H360 P201 P202 P28'
+sds_12.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_12.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_12.pdf,substance_or_mixture,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'MIXTURE'
+sds_12.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"rule composition_implies_form concludes PRESENT, not NOT_APPLICABLE [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_13.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_13.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_13.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"the cited premises declare the form explicitly (SUBSTANCE); a declared form is direct evidence, not a composition derivation [rule needs 1x sole_constituent (a constituent row declared at exactly 100 %); 1x completeness_statement (a span ruling out any further constituent (impurity, stabiliser, additive))]"
+sds_13.pdf,molecular_weight,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_14.pdf,product_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_14.pdf,supplier_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_14.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'Mixture of substances as listed below.'
+sds_14.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'Name of substance CAS No Wt% Classification acc. to GHS'
+sds_14.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"the cited premises declare the form explicitly (MIXTURE, SUBSTANCE); a declared form is direct evidence, not a composition derivation [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_14.pdf,chemical_formula,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Mixture of substances as listed below.'
+sds_14.pdf,chemical_formula,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_14.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Mixture of substances as listed below.'
+sds_14.pdf,molecular_weight,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_14.pdf,ingredients[0],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Acetatocobalamin 22465-48-1 ≤\u202f0.2 Carc. 2 / H351'
+sds_14.pdf,ingredients[1],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Clostridium septicum toxoid ≤\u202f0.1'
+sds_14.pdf,ingredients[2],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Clostridium novyl Type B toxoid ≤\u202f0.1'
+sds_14.pdf,ingredients[3],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Clostridium tetani toxoid ≤\u202f0.1'
+sds_14.pdf,ingredients[4],quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p2: 'Clostridium perfringens Type D, ≤\u202f0.1\n  toxoid'"
+sds_14.pdf,ingredients[5],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Clostridium chauvoei bacterin ≤\u202f0.1'
+sds_14.pdf,ingredients[6],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Corynebacterium Pseudotuber- culosis bacterin ≤\u202f0.1'
+sds_14.pdf,ingredients[7],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p2: 'Thimerosal 54-64-8 ≤\u202f0.015 Acute Tox. 2 / H300\nAcute Tox. 1 '
+sds_15.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_15.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_15.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,rule identifier_undefined_for_form does not apply to substance_or_mixture [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_15.pdf,flash_point,claim_without_citation,a claim other than NOT_STATED cites nothing,NO_DATA
+sds_16.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_16.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_16.pdf,substance_or_mixture,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_16.pdf,product_cas_number,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_16.pdf,chemical_formula,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_16.pdf,molecular_weight,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_17.pdf,product_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_17.pdf,supplier_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_17.pdf,substance_or_mixture,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'MIXTURE'
+sds_17.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,"rule composition_implies_form concludes PRESENT, not NOT_APPLICABLE [rule needs 1x composition_header (the composition header naming the CAS and share columns); 2x partial_constituent (a constituent row whose declared share stays strictly below 100 %)]"
+sds_17.pdf,flash_point,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'Not applicable; product is a solid.'
+sds_17.pdf,flash_point,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_18.pdf,product_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 2 premise(s)"
+sds_18.pdf,supplier_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_18.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'This product is a kit or a multipart product which consists '
+sds_18.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,rule identifier_undefined_for_form does not apply to substance_or_mixture [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_18.pdf,molecular_weight,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'This product is a kit or a multipart product which consists '
+sds_18.pdf,molecular_weight,not_stated_with_citation,NOT_STATED carries evidence or premises,1 citation(s)
+sds_18.pdf,flash_point,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p9: 'Flash Point: >=290 ºF [Test Method:Tagliabue Closed Cup]'
+sds_18.pdf,flash_point,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_18.pdf,ingredients[0],quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p3: ""Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyantobenzen"""
+sds_18.pdf,ingredients[1],quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p3: ""P,P'-Methylenebis(phenyl isocyanate) 101-68-8 30 - 60 Trade """
+sds_18.pdf,ingredients[2],quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p3: ""4,4'-Diisocyanatodiphenylmethane polymer 25686-28-6 < 20 Tra"""
+sds_18.pdf,ingredients[3],quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p3: 'Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Pro'"
+sds_18.pdf,ingredients[4],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'Carbon Black 1333-86-4 0.1 - 1 Trade Secret *'
+sds_18.pdf,ingredients[5],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'Chromium Compound 1 71701-12-7 0.01 - 0.3 Trade Secret *'
+sds_18.pdf,ingredients[6],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'Chromium Compound 2 74421-71-9 0.01 - 0.1 Trade Secret *'
+sds_18.pdf,ingredients[7],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'Chromium Compound 3 71839-90-2 0.01 - 0.1 Trade Secret *'
+sds_18.pdf,ingredients[8],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: 'Chromium 7440-47-3 < 0.02 Trade Secret *'
+sds_19.pdf,product_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_19.pdf,supplier_name,claim_without_citation,a claim other than NOT_STATED cites nothing,PRESENT
+sds_19.pdf,substance_or_mixture,state_carries_value,a state other than PRESENT carries a value,NOT_APPLICABLE with value 'MIXTURE'
+sds_19.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,rule identifier_undefined_for_form does not apply to substance_or_mixture [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_19.pdf,chemical_formula,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,premise declares SUBSTANCE; identifiers stay defined for SUBSTANCE [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_19.pdf,molecular_weight,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,premise declares SUBSTANCE; identifiers stay defined for SUBSTANCE [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_19.pdf,ingredients[0],quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.1 Substances\nNo ingredients are hazardous according to Reg'
+sds_20.pdf,product_name,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p1: '1.1.1 Product name Petrochemical Stillage Residue KON-92 (he'
+sds_20.pdf,product_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_20.pdf,supplier_name,quote_not_verbatim,a cited quote does not occur on the page it was cited from,"p1: ""1.2.1 Full official company name JSC 'Sibur-Khimprom'"""
+sds_20.pdf,supplier_name,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"
+sds_20.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.1.1 Chemical name No. [l]. (as per IUPAC)'
+sds_20.pdf,substance_or_mixture,quote_not_verbatim,a cited quote does not occur on the page it was cited from,p3: '3.1.3 General description of the composition Petrochemical S'
+sds_20.pdf,substance_or_mixture,derived_premise_set_incomplete,a DERIVED claim cites premises that do not complete the rule's premise set,rule identifier_undefined_for_form does not apply to substance_or_mixture [rule needs 1x form_declaration (a span whose value slot names the product form)]
+sds_20.pdf,flash_point,direct_with_rule_or_premises,a DIRECT claim names a rule or cites premises,"rule=None, 1 premise(s)"

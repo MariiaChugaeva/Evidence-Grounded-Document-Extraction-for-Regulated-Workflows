@@ -380,21 +380,180 @@ class TestDerivedClaims(unittest.TestCase):
         self.assertEqual(
             derivation.check_rule(
                 RULE_COMPOSITION_FORM, "substance_or_mixture", FieldState.PRESENT, "SUBSTANCE",
-                ["Argon 100 7440-37-1"],
+                ["Argon 100 7440-37-1", "The product contains no other constituents."],
             ).status,
             SATISFIED,
         )
         self.assertEqual(
             derivation.check_rule(
                 RULE_COMPOSITION_FORM, "substance_or_mixture", FieldState.PRESENT, "MIXTURE",
-                ["Argon 100 7440-37-1"],
+                ["Argon 100 7440-37-1", "The product contains no other constituents."],
             ).status,
-            VIOLATED,
+            UNDECIDABLE,
         )
         self.assertIs(
-            derivation.premise_form(["Aluminum 7429-90-5 1~10", "Copper 7440-50-8 1~15"]),
+            derivation.premise_form(
+                [
+                    "Ingredient C.A.S. No. % by Wt",
+                    "Aluminum 7429-90-5 1~10",
+                    "Copper 7440-50-8 1~15",
+                ]
+            ),
             ProductForm.MIXTURE,
         )
+
+
+# --------------------------------------------------------------------------
+# A derived claim needs the complete premise set its rule declares, and the
+# product form is never read off a row count or a large share.
+# --------------------------------------------------------------------------
+
+
+class TestPremiseSetsAreComplete(unittest.TestCase):
+    STABILISED = [
+        "Chemical name CAS-No. EC-No. Concentration (% w/w)",
+        "Diethyl ether 60-29-7 200-467-2 >= 90 - <= 100",
+        "butyl hydroxytoluene 128-37-0 >= 1 - < 2,5",
+    ]
+    SOLE_CONSTITUENT = "1,1,1,2-Tetrafluoroethane 811-97-2 100"
+    COMPLETENESS = (
+        "There are no impurities or stabilizers that contribute to the classification"
+    )
+
+    def test_stabilised_substance_is_not_read_as_a_mixture(self):
+        """Two composition rows do not make a mixture: the main one may be the product."""
+        self.assertIsNone(derivation.premise_form(self.STABILISED))
+        check = derivation.check_rule(
+            RULE_COMPOSITION_FORM, "substance_or_mixture", FieldState.PRESENT, "MIXTURE",
+            self.STABILISED,
+        )
+        self.assertEqual(check.status, UNDECIDABLE)
+        self.assertIn(derivation.PremiseRole.PARTIAL_CONSTITUENT, check.missing)
+
+    def test_identifiers_are_not_ruled_out_by_a_stabilised_composition(self):
+        check = derivation.check_rule(
+            RULE_IDENTIFIER_UNDEFINED, "product_cas_number", FieldState.NOT_APPLICABLE, None,
+            self.STABILISED,
+        )
+        self.assertEqual(check.status, UNDECIDABLE)
+
+    def test_a_large_share_alone_does_not_establish_a_substance(self):
+        self.assertIsNone(
+            derivation.premise_form(["Sand 14808-60-7 EEC No. 238-878-4 >95"])
+        )
+        self.assertIsNone(derivation.premise_form([self.SOLE_CONSTITUENT]))
+
+    def test_composition_substance_needs_the_completeness_statement(self):
+        incomplete = derivation.check_rule(
+            RULE_COMPOSITION_FORM, "substance_or_mixture", FieldState.PRESENT, "SUBSTANCE",
+            [self.SOLE_CONSTITUENT],
+        )
+        self.assertEqual(incomplete.status, UNDECIDABLE)
+        self.assertIn(derivation.PremiseRole.COMPLETENESS_STATEMENT, incomplete.missing)
+        complete = derivation.check_rule(
+            RULE_COMPOSITION_FORM, "substance_or_mixture", FieldState.PRESENT, "SUBSTANCE",
+            [self.SOLE_CONSTITUENT, self.COMPLETENESS],
+        )
+        self.assertEqual(complete.status, SATISFIED)
+
+    def test_a_declared_form_must_be_cited_directly(self):
+        check = derivation.check_rule(
+            RULE_COMPOSITION_FORM, "substance_or_mixture", FieldState.PRESENT, "MIXTURE",
+            ["3.1. Substances Not Applicable. This material is regulated as a mixture."],
+        )
+        self.assertEqual(check.status, VIOLATED)
+        self.assertIn("direct evidence", check.note)
+
+    def test_conflicting_premises_establish_nothing(self):
+        self.assertIsNone(
+            derivation.premise_form(
+                ["Substance/mixture : Substance", "Product definition : Mixture"]
+            )
+        )
+
+    def test_one_span_of_a_two_role_premise_set_fails_localization(self):
+        page = _page(
+            [
+                (0.30, ["1,1,1,2-Tetrafluoroethane", "811-97-2", "100"]),
+                (0.34, ["There", "are", "no", "impurities", "or", "stabilizers"]),
+            ]
+        )
+        gold = FieldAnnotation(
+            state=FieldState.PRESENT,
+            derivation=Derivation.COMPOSITION_IMPLIED,
+            rule=RULE_COMPOSITION_FORM,
+            value="SUBSTANCE",
+            resolved_premises=[
+                _resolved(page, "1,1,1,2-Tetrafluoroethane 811-97-2 100"),
+                _resolved(page, "There are no impurities or stabilizers"),
+            ],
+        )
+
+        def predict(*texts: str) -> FieldPrediction:
+            return FieldPrediction(
+                state=FieldState.PRESENT,
+                value="SUBSTANCE",
+                derivation="DERIVED",
+                rule=RULE_COMPOSITION_FORM,
+                premises=[_span(page, text) for text in texts],
+            )
+
+        partial = _score(
+            _doc(page),
+            "substance_or_mixture",
+            gold,
+            predict("1,1,1,2-Tetrafluoroethane 811-97-2 100"),
+        )
+        self.assertEqual(partial.target_groups, 2)
+        self.assertEqual(partial.groups_located, 1)
+        self.assertEqual(partial.axes["span"], VIOLATED)
+        self.assertEqual(partial.axes["support"], UNDECIDABLE)
+        self.assertFalse(partial.joint_correct)
+
+        whole = _score(
+            _doc(page),
+            "substance_or_mixture",
+            gold,
+            predict(
+                "1,1,1,2-Tetrafluoroethane 811-97-2 100",
+                "There are no impurities or stabilizers",
+            ),
+        )
+        self.assertEqual(whole.groups_located, 2)
+        self.assertEqual(whole.axes["span"], SATISFIED)
+        self.assertEqual(whole.axes["support"], SATISFIED)
+        self.assertTrue(whole.joint_correct)
+
+    def test_alternative_spans_for_one_role_stay_alternatives(self):
+        page = _page(
+            [
+                (0.30, ["Chemical", "description:", "Mixture", "of", "substances"]),
+                (0.34, ["Substance:", "Non-applicable"]),
+            ]
+        )
+        gold = FieldAnnotation(
+            state=FieldState.NOT_APPLICABLE,
+            derivation=Derivation.ONTOLOGY,
+            rule=RULE_IDENTIFIER_UNDEFINED,
+            resolved_premises=[
+                _resolved(page, "Chemical description: Mixture of substances"),
+                _resolved(page, "Substance: Non-applicable"),
+            ],
+        )
+        result = _score(
+            _doc(page),
+            "product_cas_number",
+            gold,
+            FieldPrediction(
+                state=FieldState.NOT_APPLICABLE,
+                derivation="DERIVED",
+                rule=RULE_IDENTIFIER_UNDEFINED,
+                premises=[_span(page, "Chemical description: Mixture of substances")],
+            ),
+        )
+        self.assertEqual(result.target_groups, 1)
+        self.assertEqual(result.axes["span"], SATISFIED)
+        self.assertTrue(result.joint_correct)
 
     def test_schema_keeps_premises_and_direct_evidence_apart(self):
         span = EvidenceSpan(page=1, text="Substance/mixture : Mixture")
@@ -557,6 +716,98 @@ class TestSplitsAndManifest(unittest.TestCase):
         entries = load_manifest()
         for number in range(1, 21):
             self.assertEqual(entries[f"sds_{number:02d}.pdf"].split, "dev")
+
+
+class TestPredictionSetGuard(unittest.TestCase):
+    """A prediction file is only scored against the gold it was produced on."""
+
+    @staticmethod
+    def _gold(*documents: str, split: str = "dev") -> list[DocumentAnnotation]:
+        return [
+            DocumentAnnotation(
+                document=document,
+                split=split,
+                product_form=ProductForm.UNDETERMINED,
+                fields={},
+                ingredients=IngredientAnnotation(state=FieldState.NOT_STATED),
+            )
+            for document in documents
+        ]
+
+    @staticmethod
+    def _predictions(*documents: str, split: str | None = "dev") -> PredictionSet:
+        configuration = {"layer": "native", "layout": "rows", "extractor": "rules-test"}
+        if split is not None:
+            configuration["split"] = split
+        return PredictionSet(
+            system="rules-test",
+            configuration=configuration,
+            documents=[
+                DocumentPrediction(document=document, fields={}) for document in documents
+            ],
+        )
+
+    def test_matching_split_and_document_set_is_accepted(self):
+        from scripts.evaluate import guard_predictions
+
+        guard_predictions(
+            self._gold("a.pdf", "b.pdf"),
+            self._predictions("b.pdf", "a.pdf"),
+            "dev",
+            allow_locked=False,
+        )
+
+    def test_a_locked_run_cannot_be_reported_as_a_development_number(self):
+        from scripts.evaluate import PredictionSetError, guard_predictions
+
+        with self.assertRaises(PredictionSetError):
+            guard_predictions(
+                self._gold("a.pdf"),
+                self._predictions("a.pdf", split="locked"),
+                "dev",
+                allow_locked=False,
+            )
+
+    def test_a_different_document_set_is_refused(self):
+        from scripts.evaluate import PredictionSetError, guard_predictions
+
+        with self.assertRaises(PredictionSetError):
+            guard_predictions(
+                self._gold("a.pdf", "b.pdf"),
+                self._predictions("a.pdf"),
+                "dev",
+                allow_locked=False,
+            )
+
+    def test_a_file_without_a_recorded_split_is_refused(self):
+        from scripts.evaluate import PredictionSetError, guard_predictions
+
+        with self.assertRaises(PredictionSetError):
+            guard_predictions(
+                self._gold("a.pdf"),
+                self._predictions("a.pdf", split=None),
+                "dev",
+                allow_locked=False,
+            )
+
+    def test_prediction_id_covers_the_documents_and_the_configuration(self):
+        from scripts.evaluate import PredictionSetError, guard_predictions
+
+        predictions = self._predictions("a.pdf", "b.pdf")
+        self.assertEqual(predictions.prediction_id, self._predictions("b.pdf", "a.pdf").prediction_id)
+        self.assertNotEqual(predictions.prediction_id, self._predictions("a.pdf").prediction_id)
+        self.assertNotEqual(
+            predictions.prediction_id,
+            self._predictions("a.pdf", "b.pdf", split="locked").prediction_id,
+        )
+        with self.assertRaises(PredictionSetError):
+            guard_predictions(
+                self._gold("a.pdf", "b.pdf"),
+                predictions,
+                "dev",
+                allow_locked=False,
+                expect_id="0" * 16,
+            )
 
 
 # --------------------------------------------------------------------------
