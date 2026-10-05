@@ -1,0 +1,16 @@
+# Farit's additional dependencies
+# Base dependencies are in ../requirements.txt
+
+# Retrieval
+rank-bm25>=0.2.2
+sentence-transformers>=2.2.0
+
+# Evaluation
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter
+jupyter>=1.0.0
