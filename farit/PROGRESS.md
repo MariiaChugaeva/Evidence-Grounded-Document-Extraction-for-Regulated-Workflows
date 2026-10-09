@@ -6,7 +6,7 @@ Scope: first phase of topic scoping — verify that the problem (a) exists in ou
 
 ## 1. Research question
 
-Given a limited reading budget (pages or tokens), retrieve the **complete** evidence set for each SDS field — all complementary premises and alternative valid derivations — and know when the set is incomplete (abstain). This complements Maria's source-binding work; with the project now single-author, her framework is reused as infrastructure only.
+Given a limited reading budget (pages or tokens), retrieve the **complete** evidence set for each SDS field — all complementary premises — and know when the set is incomplete (abstain). This complements Maria's source-binding work; with the project now single-author, her framework is reused as infrastructure only.
 
 ## 2. Infrastructure audit (prerequisite)
 
