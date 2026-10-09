@@ -3,3 +3,9 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .idea/
+
+# Farit: локальная координация и регенерируемые данные (не коммитим)
+farit/tasks/
+farit/docs/
+farit/data/
+farit/results/data_exploration_latest.txt
